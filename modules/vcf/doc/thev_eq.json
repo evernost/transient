@@ -1,0 +1,109 @@
+{
+    "version": "0.1",
+    "components": [
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 377.953,
+                    "y": -368.504
+                },
+                {
+                    "x": 377.953,
+                    "y": -292.913
+                }
+            ],
+            "label": {
+                "value": "\\alpha V",
+                "distance": "0.12cm"
+            },
+            "id": "american voltage source"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 387.402,
+                    "y": -377.953
+                },
+                {
+                    "x": 462.992,
+                    "y": -377.953
+                }
+            ],
+            "label": {
+                "value": "R_{TH}",
+                "distance": "0.12cm"
+            },
+            "id": "american resistor",
+            "scale": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 377.953,
+                    "y": -368.504
+                },
+                {
+                    "x": 377.953,
+                    "y": -377.953
+                },
+                {
+                    "x": 406.299,
+                    "y": -377.953
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "--",
+                "--"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 377.953,
+                    "y": -292.913
+                },
+                {
+                    "x": 377.953,
+                    "y": -283.465
+                },
+                {
+                    "x": 462.992,
+                    "y": -283.465
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "--",
+                "--"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 462.992,
+                "y": -377.953
+            },
+            "id": "ocirc"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 462.992,
+                "y": -283.465
+            },
+            "id": "ocirc"
+        }
+    ]
+}

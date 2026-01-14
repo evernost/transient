@@ -44,63 +44,27 @@ It follows that the cutoff frequency is directly proportional to the voltage gai
 
 \section*{Voltage Controlled Attenuator}
 
-From the "Filter Structure" section, it follows that
-In order to sustain very high resonance, the attenuator must endure
+From the "Filter Structure" section, there is a linear relationship between the voltage gain and the cutoff frequency. Therefore, for a frequency sweep from 10 to 10kHz, the attenuation must reach a similar ratio i.e. at least 1:1000. Unlike a VCA, it is not necessary to reach a complete null signal.
+
+Also, in order to get a \textit{spicy} resonance (high Q value), the attenuator must be capable of handling large signals (up to a few volts)
+
+\section*{Annex 1: useful formulas}
+
+\section*{Resistive Voltage Divider with target $R_eq$}
+Use this formula when you want your voltage divider to have a specific series resistance in the Thevenin equivalent:
+
 
 \begin{circuitikz}
-	\node[eground2] at (2, 1){};
-	\draw (2, 2.5) to[empty diode, l={$D$}] (2, 1);
-	\draw (2, 4.5) to[american resistor, /tikz/circuitikz/bipoles/length=1.05cm, l={$R$}] (2, 2.5);
-	\draw (2, 4.5) |- (1, 5);
-	\node[ocirc](N1) at (1, 5){} node[anchor=east] at (N1.west){$V$};
-	\draw[line width=1.6pt, -latex] (3.5, 1.25) -- (3.5, 2.5);
-	\draw[dash pattern={on 0.4pt off 1.6pt}] (2.25, 2.75) -- (3.5, 2.75);
-	\draw[dash pattern={on 0.4pt off 1.6pt}] (2.25, 1) -- (3.5, 1);
-	\node[shape=rectangle, minimum width=0.715cm, minimum height=1.215cm] at (3.875, 1.875){} node[anchor=center, align=center, text width=0.327cm, inner sep=6pt] at (3.875, 1.875){$V_D$};
-	\draw[line width=1.6pt, -latex] (2, 4.5) -- (2, 4.25);
-	\node[shape=rectangle, minimum width=0.715cm, minimum height=1.215cm] at (2.5, 4.375){} node[anchor=center, align=center, text width=0.327cm, inner sep=6pt] at (2.5, 4.375){$I_D$};
+	\draw (10, 9.75) to[american voltage source, l={$\alpha V$}] (10, 7.75);
+	\draw (10.25, 10) to[american resistor, /tikz/circuitikz/bipoles/length=0.700cm, l={$R_{TH}$}] (12.25, 10);
+	\draw (10, 9.75) -- (10, 10) -- (10.75, 10);
+	\draw (10, 7.75) -- (10, 7.5) -- (12.25, 7.5);
+	\node[ocirc] at (12.25, 10){};
+	\node[ocirc] at (12.25, 7.5){};
 \end{circuitikz}
 
-Even though it is probably the simplest circuit involving a diode, the exponential behaviour of the $I/V$ curve takes a bit of method to solve the circuit.
 
-Here are some common approaches.
-
-\subsubsection*{Method 1: the constant diode voltage}
-This is the most common approach when you want to adjust $R$ so that a current $I_D$ flows into the diode. 
-
-Assume the diode voltage is constant ($V_D = 0.7V$ for silicon diodes or up to a few Volts for LEDs) \textit {i.e.} $V_D$ is independent of the current $I_D$. Then:
-$$
-	R = \dfrac{V - V_D}{I_D}
-$$
-
-Treating $V_D$ as a constant is a very common assumption and yields results that are precise enough for most applications. You find these in:
-\begin{itemize}
-	\item the 0.7V drop in the base-emitter junction in silicon BJTs
-	\item diode voltage dropper	
-	\item zener diode regulator
-\end{itemize} 
-
-It works pretty well as soon as enough current (even a few mA) starts flowing in the diode. In the \textbf{method 4} we will investigate some more the justification behind this.
-
-\subsubsection*{Method 2: the iterative solving}
-	\begin{enumerate}
-		\item Propose a first \textit{guess} voltage accross the diode: $V_D = 0.7V$ (no need to be accurate)
-		\item Determine the current $I_D$ using the diode $I/V$ model: $I_D = I_S \left( \exp \left( \dfrac{V_D}{V_T}\right)-1\right)$
-		\item Calculate the new $V_D$: $V_D = V - R I_D$ 
-		\item Go back to 2. until $V_D$ and $I_D$ eventually settle. 
-	\end{enumerate}
-	Convergence rate is \textit{crazy} fast and the result gets accurate to a few digits after only 2 or 3 iteration. 
-	However, this method is more of a theoretical fact. It might be useful in a simulator, but for practical situations it won't bring much more precision. The natural dispersion in $I/V$ curves within the same batch of diodes, the lack of detailed information about the model (\textit{e.g.} $I_S$), not even mentioning the limits of the model itself lowers the benefit of this method.
-
-\subsubsection*{Method 3: Analytical solving (Lambert's W function)}
-Assume we know how to solve for $x$ in the equation $\exp(x) = ax + b$ with $a \in \mathbb{R}^*$ and $b \in \mathbb{R}$. 
-
-Although the analytical method could in principle yield better results, the conclusions here are similar to the previous method: the solution can't be better than the weakest element of the model.
-
-% TODO: precision analysis on V_D vs I_S,\eta,°T to show that they are huge contributors.
-% Therefore, considering their dispersion, its pretty useless.
-
-
+\section*{Annex 2: impact of non-linearities}
 
 
 
