@@ -1,7 +1,34 @@
+# -*- coding: utf-8 -*-
+# =============================================================================
+# Project       : Transient
+# Module name   : vcf_distortion
+# File name     : main.py
+# File type     : Python script (Python 3)
+# Purpose       : study of nonlinearities in the VCF
+# Author        : QuBi (nitrogenium@outlook.fr)
+# Creation date : Thursday, 15 January 2026
+# -----------------------------------------------------------------------------
+# Best viewed with space indentation (2 spaces)
+# =============================================================================
+
+# =============================================================================
+# EXTERNALS
+# =============================================================================
+# Project libraries
+# None.
+
+# Standard libraries
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import signal
 from IPython.display import Audio, display
+
+
+
+# =============================================================================
+# MAIN SCRIPT
+# =============================================================================
+
 
 # Simulation parameters
 fs = 44100  # Sample rate (Hz)
@@ -105,10 +132,10 @@ print("AUDIO PLAYBACK")
 print("="*60)
 
 # Normalize signals to prevent clipping
-def normalize(sig):
+def normalize(sig) :
     max_val = np.max(np.abs(sig))
     if max_val > 0:
-        return sig / max_val * 0.8  # Scale to 80% to prevent clipping
+        return sig / max_val * 0.8
     return sig
 
 print("\nPlaying Input (Square Wave)...")

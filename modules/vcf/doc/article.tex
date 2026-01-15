@@ -23,14 +23,14 @@
 
 \maketitle
 
-This document summarises all the design choices and technical justifications.\\
+This document summarises all the design choices and technical justifications for the Voltage-Controlled Filter module.\\
 
-Implementation is a State Variable Filter.
+The filter is based on a State Variable Filter.
 Reasons:
 \begin{itemize}
-	\item versatile functions
+	\item versatile functions with a single block
 	\item no drop in the bass at high Q
-	\item possibility extend it to very different topologies
+	\item possibility extend it to very different topologies (Chebychev, Elliptic)
 \end{itemize}
 
 
@@ -50,9 +50,9 @@ Also, in order to get a \textit{spicy} resonance (high Q value), the attenuator 
 
 \section*{Annex 1: useful formulas}
 
-\section*{Resistive Voltage Divider with target $R_eq$}
-Use this formula when you want your voltage divider to have a specific series resistance in the Thevenin equivalent:
-
+\subsection*{Resistive Voltage Divider with target equivalent resistor}
+With a resistor divider, there are multiple values for the 2 resistor to get the target ratio. 
+However, there is only one pair of resistors $(R_1, R_2)$ that will have a given series resistor in the Thevenin equivalent.
 
 \begin{circuitikz}
 	\draw (10, 9.75) to[american voltage source, l={$\alpha V$}] (10, 7.75);
@@ -63,9 +63,36 @@ Use this formula when you want your voltage divider to have a specific series re
 	\node[ocirc] at (12.25, 7.5){};
 \end{circuitikz}
 
+\begin{circuitikz}
+	\draw (10, 9.75) to[american voltage source, l={$V$}] (10, 7.75);
+	\draw (10.25, 10) to[american resistor, /tikz/circuitikz/bipoles/length=0.700cm, l={$R_{1}$}] (12, 10);
+	\draw (10, 9.75) -- (10, 10) -- (10.75, 10);
+	\draw (10, 7.75) -- (10, 7.5) -| (13, 7.5);
+	\node[ocirc] at (13, 7.5){};
+	\draw (12, 10) to[american resistor, /tikz/circuitikz/bipoles/length=0.700cm, l={$R_{2}$}] (12, 7.5);
+	\draw (12, 10) -- (13, 10);
+	\node[ocirc] at (13, 10){};
+	\node[circ] at (12, 10){};
+	\node[circ] at (12, 7.5){};
+	\node[shape=rectangle, minimum width=1.465cm, minimum height=2.465cm] at (14.25, 8.75){} node[anchor=west, align=left, text width=1.077cm, inner sep=6pt] at (13.5, 8.75){$\alpha V$};
+	\draw[line width=1pt, -latex] (13.5, 7.75) -- (13.5, 9.75);
+\end{circuitikz}
+
+This is the formula you need: 
+$$
+\left\{
+	\begin{array}{ll}
+		R_1 = \dfrac{R_{TH}}{\alpha} \\
+    R_2 = \dfrac{R_{TH}}{1-\alpha}
+	\end{array}
+\right.
+$$\\
+
+\subsection*{Generalized resistor divider}
+
 
 \section*{Annex 2: impact of non-linearities}
-
+In this circuit, the main source of nonlinearities is the VCA.
 
 
 
