@@ -29,8 +29,6 @@ from IPython.display import Audio, display
 # MAIN SCRIPT
 # =============================================================================
 
-
-# Simulation parameters
 fs = 44100  # Sample rate (Hz)
 T = 1/fs    # Sample period
 duration = 2.0  # Duration in seconds (longer to see sweep)
@@ -46,6 +44,12 @@ Q = 0.707   # Q factor (0.707 for Butterworth response)
 f_input = 440  # Input frequency (Hz)
 input_signal = signal.square(2 * np.pi * f_input * t)
 
+
+
+# =============================================================================
+# MAIN SCRIPT
+# =============================================================================
+
 # Initialize state variables
 BP = np.zeros(len(t))  # Bandpass output
 LP = np.zeros(len(t))  # Lowpass output
@@ -58,7 +62,7 @@ HP_prev = 0
 
 # Simulate the filter with time-varying cutoff
 for n in range(len(t)):
-  # Current input
+  
   x = input_signal[n]
   
   # Current cutoff frequency
