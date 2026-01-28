@@ -1,13 +1,15 @@
-# VCA Module
+# Digital Noise Module
 
-A simple analog Voltage-Controlled Amplifier for audio signals.
+A Digital Noise Generator module for pink and white noise generation.
+
+
 
 ---
 
 ## Overview
 
-- **Type:** VCA
-- **Domain:** Analog
+- **Type:** Noise generator
+- **Domain:** Digital
 - **Status:** Work in progress
 
 Block diagram: TODO!
@@ -15,8 +17,10 @@ Block diagram: TODO!
 ---
 
 ## Features
-- **Overdrive**: the input can be overdriven on purpose to add _colors_ to the function
-- **Control**: linear and logarithmic control
+
+- **Waveforms**: Noise
+- **Control**: 
+
 
 ---
 
@@ -25,8 +29,8 @@ Block diagram: TODO!
 ### Inputs
 | Name | Type | Range | Description |
 |-----|------|-------|-------------|
-| IN | Audio | ±1V | Input signal |
-| AMP_CV | Analog | 0–5 V | Volume control |
+| clock | Digital | 0–5 V | Clock for the PRBS generator |
+| RES_CV | Analog | 0–5 V | Resonance modulation |
 
 ### Outputs
 | Name | Type | Description |
@@ -53,8 +57,13 @@ Block diagram: TODO!
 ---
 
 ## Implementation Notes
-Section is TODO.
 
+Design details, assumptions, or decisions worth remembering later.
+
+Examples:
+- Filter core based on [reference / paper / IC]
+- Uses matched transistor pair for temperature stability
+- Digital control smoothed with RC + oversampling
 
 ---
 
