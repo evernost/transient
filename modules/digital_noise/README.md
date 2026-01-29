@@ -71,10 +71,10 @@ Examples:
 
 | File | Description |
 |-----|-------------|
-| `schematic.pdf` | Electrical schematic |
-| `pcb.kicad_pcb` | PCB layout |
-| `firmware/` | MCU code (if applicable) |
-| `simulation/` | SPICE or other simulations |
+| `digital_noise_rev1.pdf` | Electrical schematic (PDF export)|
+| `digital_noise_rev1.kicad_pcb` | Schematic (KiCad 9.0.6)|
+| `digital_noise_rev1.kicad_pcb` | PCB layout (KiCad 9.0.6)|
+| `sim/XXX.asc` | SPICE simulation of the 6dB/oct filter |
 
 ---
 
