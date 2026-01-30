@@ -1,0 +1,1083 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "51c02520-3020-44bf-9fa3-01d2e6bafd73")
+	(paper "A3")
+	(title_block
+		(title "Ring Modulator (Balanced Modulator)")
+		(rev "A")
+		(company "QuBi")
+	)
+	(lib_symbols
+		(symbol "ProjectLib_Transient:2N2978"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "2N2978"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "ProjectLib_Transient:TO-5-6"
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual NPN transistor, 6 pin package"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BJT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "2N2978_0_1"
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "2N2978_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "2N2978_2_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 154.94 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03afb72d-0369-4382-8779-d082321c87c7")
+	)
+	(junction
+		(at 133.35 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0cddc879-f36d-49a8-97bf-22d0c13a69a3")
+	)
+	(junction
+		(at 184.15 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57cff73e-df90-44e3-8b73-9efbc746249a")
+	)
+	(junction
+		(at 111.76 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f45b110-5523-47a8-9117-b575c41776a6")
+	)
+	(wire
+		(pts
+			(xy 165.1 81.28) (xy 162.56 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "022f9df6-3a31-459b-8051-1bfafb532715")
+	)
+	(wire
+		(pts
+			(xy 172.72 88.9) (xy 184.15 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aae2c3c-63ad-47de-af2e-43b0b012ccd3")
+	)
+	(wire
+		(pts
+			(xy 144.78 88.9) (xy 144.78 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11287cf1-4815-4621-b6a6-7d5a93680801")
+	)
+	(wire
+		(pts
+			(xy 133.35 88.9) (xy 133.35 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "117db5ed-3ea4-449e-8026-30f7d7ecf171")
+	)
+	(wire
+		(pts
+			(xy 101.6 97.79) (xy 111.76 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c4c2c9d-9446-4d03-8737-309cf9292049")
+	)
+	(wire
+		(pts
+			(xy 170.18 129.54) (xy 170.18 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cd17a53-23fc-48e0-865f-c9f143376688")
+	)
+	(wire
+		(pts
+			(xy 111.76 81.28) (xy 114.3 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "273aee76-3be7-4259-8a1d-37bf21d0b207")
+	)
+	(wire
+		(pts
+			(xy 147.32 127) (xy 147.32 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e3317c1-33ad-4806-846c-f7bdec5733a7")
+	)
+	(wire
+		(pts
+			(xy 184.15 88.9) (xy 195.58 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "304574cb-f2b9-4361-993c-eebff0f9754b")
+	)
+	(wire
+		(pts
+			(xy 111.76 97.79) (xy 111.76 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cb7d0bf-2faf-434b-8012-0a13b4d13be4")
+	)
+	(wire
+		(pts
+			(xy 162.56 81.28) (xy 162.56 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d21f0e6-0216-4b92-81b2-18b4f700cd3a")
+	)
+	(wire
+		(pts
+			(xy 121.92 86.36) (xy 121.92 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f991cc6-ea2e-47d1-9d12-75a551e1d314")
+	)
+	(wire
+		(pts
+			(xy 152.4 81.28) (xy 154.94 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6106dc00-c38b-4418-9e83-14c9c1d1ab73")
+	)
+	(wire
+		(pts
+			(xy 170.18 116.84) (xy 170.18 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61d3d121-f246-4848-870b-8fa7ad66c8cd")
+	)
+	(wire
+		(pts
+			(xy 133.35 106.68) (xy 147.32 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80f28192-85af-4a29-aca7-efea5f92e517")
+	)
+	(wire
+		(pts
+			(xy 207.01 81.28) (xy 203.2 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ea609c4-6857-4af5-be14-759c1fbd7a5b")
+	)
+	(wire
+		(pts
+			(xy 184.15 106.68) (xy 184.15 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ee537c4-aa28-410e-aea6-b01390272d31")
+	)
+	(wire
+		(pts
+			(xy 154.94 81.28) (xy 154.94 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d8c666c-a8c1-48ce-b0f9-05703e5c4ce1")
+	)
+	(wire
+		(pts
+			(xy 133.35 88.9) (xy 144.78 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0ca487d-9da5-4275-928b-6ee582e6b607")
+	)
+	(wire
+		(pts
+			(xy 154.94 95.25) (xy 162.56 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4608a85-50ec-4530-a1c4-26813fcf4efe")
+	)
+	(wire
+		(pts
+			(xy 121.92 88.9) (xy 133.35 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b96bcc99-cf59-41b5-a015-26b53900a431")
+	)
+	(wire
+		(pts
+			(xy 170.18 106.68) (xy 184.15 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9aca979-8b73-443a-b170-d2ed77b460dd")
+	)
+	(wire
+		(pts
+			(xy 111.76 97.79) (xy 207.01 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9f90b05-0754-4cbd-ba49-c0fc76739e61")
+	)
+	(wire
+		(pts
+			(xy 147.32 129.54) (xy 170.18 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceaba461-a0e2-4b84-9db0-2b947582058d")
+	)
+	(wire
+		(pts
+			(xy 101.6 95.25) (xy 154.94 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3f0489e-3a44-4d38-9d8c-35a3d2d58a38")
+	)
+	(wire
+		(pts
+			(xy 195.58 88.9) (xy 195.58 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db0ab707-04bc-4de5-9320-c7bf0efe89c4")
+	)
+	(wire
+		(pts
+			(xy 207.01 97.79) (xy 207.01 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f327323e-c76e-4d72-b157-e0ae0ea0ad18")
+	)
+	(wire
+		(pts
+			(xy 172.72 86.36) (xy 172.72 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa346c81-0e5e-4576-937d-5cc0a97f02d0")
+	)
+	(wire
+		(pts
+			(xy 147.32 106.68) (xy 147.32 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fca7c748-782d-4f8c-b1dd-8deb4767a101")
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 198.12 81.28 0)
+		(mirror y)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "176a329b-a4c3-4e31-a449-1171f9ffc2fe")
+		(property "Reference" "Q2"
+			(at 193.04 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 193.04 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 193.04 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 198.12 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "ded8b3a1-34ee-4686-99f2-b16301b5415d")
+		)
+		(pin "1"
+			(uuid "619581f6-96e3-437d-8e4b-d295c4005148")
+		)
+		(pin "5"
+			(uuid "a7efbc6b-8575-4ad9-8409-a78c5e1fc693")
+		)
+		(pin "2"
+			(uuid "0194bad0-cc05-47fd-8868-ad5c08d10557")
+		)
+		(pin "3"
+			(uuid "231509d1-aeb1-4c8a-8c82-9f1058665bd2")
+		)
+		(pin "7"
+			(uuid "01f669fa-b33e-4244-866b-654e82bbba3d")
+		)
+		(instances
+			(project "ring_modulator_rev1"
+				(path "/51c02520-3020-44bf-9fa3-01d2e6bafd73"
+					(reference "Q2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 170.18 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f11c362-c13c-45e6-8a6b-39dffb921e6f")
+		(property "Reference" "Q2"
+			(at 175.26 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 175.26 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 175.26 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 170.18 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "5e310939-3a8c-4a6c-a12b-2c1d3aa4ccbe")
+		)
+		(pin "1"
+			(uuid "1affaffd-53e1-4d7b-81f5-6f62506ecba8")
+		)
+		(pin "5"
+			(uuid "303c5d33-c21e-48a0-b8dc-de2422f7b47f")
+		)
+		(pin "2"
+			(uuid "397652fd-4086-41b5-b754-bc32dbe69a5e")
+		)
+		(pin "3"
+			(uuid "cc06e3b8-139a-4005-add0-1300f5ab1a9f")
+		)
+		(pin "7"
+			(uuid "bb0ac038-c647-4167-9a29-2388a47dab7e")
+		)
+		(instances
+			(project "ring_modulator_rev1"
+				(path "/51c02520-3020-44bf-9fa3-01d2e6bafd73"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 172.72 121.92 0)
+		(mirror y)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "693ae164-18bb-4daa-8160-8570f0e73d49")
+		(property "Reference" "Q3"
+			(at 167.64 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 167.64 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 167.64 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 172.72 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "71f057bd-048a-4661-9b17-008b8afda0f1")
+		)
+		(pin "1"
+			(uuid "619581f6-96e3-437d-8e4b-d295c4005149")
+		)
+		(pin "5"
+			(uuid "591d206d-f03d-490b-80eb-f2a9c837d714")
+		)
+		(pin "2"
+			(uuid "0194bad0-cc05-47fd-8868-ad5c08d10558")
+		)
+		(pin "3"
+			(uuid "231509d1-aeb1-4c8a-8c82-9f1058665bd3")
+		)
+		(pin "7"
+			(uuid "47bb0af0-ed74-48d7-b57c-7b776ed977d3")
+		)
+		(instances
+			(project "ring_modulator_rev1"
+				(path "/51c02520-3020-44bf-9fa3-01d2e6bafd73"
+					(reference "Q3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 144.78 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f670c57-9bde-4c42-b9a6-ba95ccdbcadc")
+		(property "Reference" "Q3"
+			(at 149.86 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 149.86 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 149.86 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 144.78 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "5e310939-3a8c-4a6c-a12b-2c1d3aa4ccbf")
+		)
+		(pin "1"
+			(uuid "62d9f181-6534-4085-b142-3bd10a2cf310")
+		)
+		(pin "5"
+			(uuid "303c5d33-c21e-48a0-b8dc-de2422f7b480")
+		)
+		(pin "2"
+			(uuid "e3c1f7aa-cc42-4c3a-9b17-8ec1bdcef61f")
+		)
+		(pin "3"
+			(uuid "29c275a9-df11-4592-bb33-894dec4cf16b")
+		)
+		(pin "7"
+			(uuid "bb0ac038-c647-4167-9a29-2388a47dab7f")
+		)
+		(instances
+			(project "ring_modulator_rev1"
+				(path "/51c02520-3020-44bf-9fa3-01d2e6bafd73"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 119.38 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ec17766-f18a-433f-b408-5bc818830424")
+		(property "Reference" "Q1"
+			(at 124.46 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 124.46 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 124.46 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 119.38 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "5e310939-3a8c-4a6c-a12b-2c1d3aa4ccbd")
+		)
+		(pin "1"
+			(uuid "619581f6-96e3-437d-8e4b-d295c400514a")
+		)
+		(pin "5"
+			(uuid "303c5d33-c21e-48a0-b8dc-de2422f7b47e")
+		)
+		(pin "2"
+			(uuid "0194bad0-cc05-47fd-8868-ad5c08d10559")
+		)
+		(pin "3"
+			(uuid "231509d1-aeb1-4c8a-8c82-9f1058665bd4")
+		)
+		(pin "7"
+			(uuid "bb0ac038-c647-4167-9a29-2388a47dab7d")
+		)
+		(instances
+			(project ""
+				(path "/51c02520-3020-44bf-9fa3-01d2e6bafd73"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 147.32 81.28 0)
+		(mirror y)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f156aff3-1941-4eb5-bcaa-e4e70202d214")
+		(property "Reference" "Q1"
+			(at 142.24 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 142.24 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 142.24 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 147.32 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "5e310939-3a8c-4a6c-a12b-2c1d3aa4ccc0")
+		)
+		(pin "1"
+			(uuid "619581f6-96e3-437d-8e4b-d295c400514b")
+		)
+		(pin "5"
+			(uuid "303c5d33-c21e-48a0-b8dc-de2422f7b481")
+		)
+		(pin "2"
+			(uuid "0194bad0-cc05-47fd-8868-ad5c08d1055a")
+		)
+		(pin "3"
+			(uuid "231509d1-aeb1-4c8a-8c82-9f1058665bd5")
+		)
+		(pin "7"
+			(uuid "bb0ac038-c647-4167-9a29-2388a47dab80")
+		)
+		(instances
+			(project ""
+				(path "/51c02520-3020-44bf-9fa3-01d2e6bafd73"
+					(reference "Q1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

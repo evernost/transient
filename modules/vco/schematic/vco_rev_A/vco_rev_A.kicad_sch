@@ -1,0 +1,20 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "06df6441-3706-4d81-809c-6908b7c5817b")
+	(paper "A3")
+	(title_block
+		(title "Voltage Controlled Oscillator")
+		(date "30 January 2026")
+		(rev "1")
+		(company "QuBi")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

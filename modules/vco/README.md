@@ -1,16 +1,16 @@
 # VCO Module
 
-Voltage-Controlled Module with digital control for the tuning.
+Voltage-Controlled Module, with digital control for accurate tuning.
 
-Example:
-> This module implements a voltage-controlled low-pass filter based on a 4-pole ladder topology, intended for use in the analog signal path.
+<!-- Example:
+> This module implements a voltage-controlled low-pass filter based on a 4-pole ladder topology, intended for use in the analog signal path. -->
 
 ---
 
 ## Overview
 
 - **Type:** VCO
-- **Domain:** Analog with Digital stabilisation
+- **Domain:** Analog, with Digital stabilisation
 - **Status:** Work in progress
 
 Block diagram: TODO!
@@ -21,6 +21,8 @@ Block diagram: TODO!
 
 - **Waveforms**: Sawtooth, Rectangular
 - **Control**: exponential (1V/oct)
+- **Inner Modulation**: up to 2 synchronised modulators to add more depth 
+- **Sync**: digital input for synchronisation effect + random synchronisation
 
 
 ---
@@ -30,13 +32,12 @@ Block diagram: TODO!
 ### Inputs
 | Name | Type | Range | Description |
 |-----|------|-------|-------------|
-| CV_IN | Analog | 0–5 V | Cutoff frequency control |
-| RES_CV | Analog | 0–5 V | Resonance modulation |
+| TODO | TODO | TODO |
 
 ### Outputs
 | Name | Type | Description |
 |------|------|-------------|
-| OUT | Audio | Filtered signal |
+| TODO | TODO | TODO |
 
 ---
 
@@ -44,8 +45,8 @@ Block diagram: TODO!
 
 | Control | Type | Description |
 |--------|------|-------------|
-| Cutoff | Potentiometer | Manual cutoff frequency |
-| Resonance | Potentiometer | Feedback amount |
+| TODO | TODO | TODO |
+
 
 ---
 
@@ -72,32 +73,22 @@ Examples:
 
 | File | Description |
 |-----|-------------|
-| `schematic.pdf` | Electrical schematic |
-| `pcb.kicad_pcb` | PCB layout |
-| `firmware/` | MCU code (if applicable) |
-| `simulation/` | SPICE or other simulations |
+| `vco_rev1.pdf` | Electrical schematic (PDF export)|
+| `vco_rev1.kicad_pcb` | Schematic (KiCad 9.0.6)|
+| `vco_rev1.kicad_pcb` | PCB layout (KiCad 9.0.6)|
+| `sim/XXX.asc` | SPICE simulation of the Schmitt Trigger |
 
 ---
 
 ## Calibration / Tuning
+> This section is TODO!
 
-If applicable:
-- Calibration steps
-- Test points
-- Required equipment
 
-Example:
-1. Apply 1 V to CV_IN
-2. Adjust TRIM1 until cutoff = 1 kHz
-3. Repeat for 5 V
 
 ---
 
 ## Known Issues / TODO
-
-- [ ] Noise floor higher than expected
-- [ ] Resonance unstable above 80%
-- [ ] Add output buffer
+- [ ] Create footprint for the STM32G441KB
 
 ---
 
@@ -105,8 +96,8 @@ Example:
 
 | Revision | Date | Notes |
 |--------|------|-------|
-| Rev A | YYYY-MM-DD | Initial prototype |
-| Rev B | YYYY-MM-DD | Fixed grounding issue |
+| Rev A | 30 January 2026 | Initial prototype |
+
 
 ---
 
@@ -119,10 +110,6 @@ Links to other submodules in the repository:
 ---
 
 ## References
-
-- Datasheets
-- Papers
-- App notes
-- Inspiration designs
+- Elektor FORMANT, Chapter 4 and 5
 
 

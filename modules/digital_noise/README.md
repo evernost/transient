@@ -1,6 +1,6 @@
 # Digital Noise Module
 
-A Digital Noise Generator module for pink and white noise generation.
+A Digital Noise Generator module for White Noise and Pink Noise generation.
 
 
 
@@ -8,9 +8,9 @@ A Digital Noise Generator module for pink and white noise generation.
 
 ## Overview
 
-- **Type:** Noise generator
-- **Domain:** Digital
-- **Status:** Work in progress
+- **Type:** noise generator
+- **Domain:** mixed (Analog + Digital)
+- **Status:** work in progress
 
 Block diagram: TODO!
 
@@ -18,8 +18,8 @@ Block diagram: TODO!
 
 ## Features
 
-- **Waveforms**: Noise
-- **Control**: 
+- **Waveforms**: noise
+- **Control**: clock frequency
 
 
 ---
@@ -29,13 +29,12 @@ Block diagram: TODO!
 ### Inputs
 | Name | Type | Range | Description |
 |-----|------|-------|-------------|
-| clock | Digital | 0–5 V | Clock for the PRBS generator |
-| RES_CV | Analog | 0–5 V | Resonance modulation |
+| TODO | TODO | TODO |
 
 ### Outputs
 | Name | Type | Description |
 |------|------|-------------|
-| OUT | Audio | Filtered signal |
+| TODO | TODO | TODO |
 
 ---
 
@@ -43,27 +42,21 @@ Block diagram: TODO!
 
 | Control | Type | Description |
 |--------|------|-------------|
-| Cutoff | Potentiometer | Manual cutoff frequency |
-| Resonance | Potentiometer | Feedback amount |
+| TODO | TODO | TODO |
 
 ---
 
 ## Electrical Characteristics
 
 - **Supply voltage:** ±12V
-- **Current consumption:** TBD mA
+- **Current consumption:** TBD mA (+12V), TBD mA (-12V)
 - **Signal levels:** TBD
 
 ---
 
 ## Implementation Notes
 
-Design details, assumptions, or decisions worth remembering later.
-
-Examples:
-- Filter core based on [reference / paper / IC]
-- Uses matched transistor pair for temperature stability
-- Digital control smoothed with RC + oversampling
+> This section is TODO!
 
 ---
 
