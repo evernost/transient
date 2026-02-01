@@ -3,10 +3,10 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "3fbef366-554c-45da-b612-19de5a64a7d5")
-	(paper "A4")
+	(paper "A3")
 	(title_block
 		(title "Voltage-Controlled Filter")
-		(rev "1")
+		(rev "A")
 		(company "QuBi")
 	)
 	(lib_symbols
@@ -5291,13 +5291,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "9d08ce15-d931-4997-a3fc-7d57a9015a60")
+			(uuid "9d08ce15-d931-4997-a3fc-7d57a9015a61")
 		)
 		(pin "2"
-			(uuid "9ce639c7-8c27-4aa3-a03b-f1fdd414dbd1")
+			(uuid "9ce639c7-8c27-4aa3-a03b-f1fdd414dbd2")
 		)
 		(pin "3"
-			(uuid "cce5f758-0e25-4ee1-9b24-1abecb643d46")
+			(uuid "cce5f758-0e25-4ee1-9b24-1abecb643d47")
 		)
 		(pin "7"
 			(uuid "4f979035-d642-498b-8aa7-47f43bcb2b57")
@@ -6563,22 +6563,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "9d08ce15-d931-4997-a3fc-7d57a9015a61")
+			(uuid "9d08ce15-d931-4997-a3fc-7d57a9015a62")
 		)
 		(pin "2"
-			(uuid "9ce639c7-8c27-4aa3-a03b-f1fdd414dbd2")
+			(uuid "9ce639c7-8c27-4aa3-a03b-f1fdd414dbd3")
 		)
 		(pin "3"
-			(uuid "cce5f758-0e25-4ee1-9b24-1abecb643d47")
+			(uuid "cce5f758-0e25-4ee1-9b24-1abecb643d48")
 		)
 		(pin "7"
-			(uuid "4f979035-d642-498b-8aa7-47f43bcb2b58")
+			(uuid "4f979035-d642-498b-8aa7-47f43bcb2b59")
 		)
 		(pin "5"
-			(uuid "a3268227-b5a3-4e18-84bd-5fd543bcffeb")
+			(uuid "a3268227-b5a3-4e18-84bd-5fd543bcffec")
 		)
 		(pin "6"
-			(uuid "67ca06ab-3249-4dc6-97b6-2fb176e6ce18")
+			(uuid "67ca06ab-3249-4dc6-97b6-2fb176e6ce19")
 		)
 		(instances
 			(project ""
