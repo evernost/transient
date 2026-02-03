@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ProjectLib_Transient")(type "KiCad")(uri "${KIPRJMOD}../../../../libraries/footprints/ProjectLib_Transient.pretty")(options "")(descr ""))
+)

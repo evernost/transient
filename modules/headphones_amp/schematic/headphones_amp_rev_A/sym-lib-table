@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ProjectLib_Transient")(type "KiCad")(uri "${KIPRJMOD}/../../../../libraries/symbols/ProjectLib_Transient.kicad_sym")(options "")(descr ""))
+)
