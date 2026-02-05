@@ -1,2 +1,5 @@
 # Ignore KiCad backups ('**' = explore all folders and subfolders)
 **/*-backups/
+
+# Ignore cache file
+fp-info-cache
