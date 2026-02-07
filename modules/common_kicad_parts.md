@@ -9,6 +9,11 @@ List of the KiCad references frequently used in the modules.
 ### Through Hole Resistor
 Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
 
+## Capacitor
+
+### Through Hole Capacitor
+Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm
+
 ### Trimpot
 R_Potentiometer_US -> Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical
 

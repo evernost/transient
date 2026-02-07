@@ -1,4 +1,4 @@
-27242887555638707
+27242887708823968
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -95039,12 +95039,12 @@ Potentiometer vertical vishay
 3
 3
 ProjectLib_Transient
-Potentiometer_Bourns_PTV112_4_Dual_Vertical
-
-
+Potentiometer_Bourns_PTV112-4_Dual_Vertical
+2 Gang dual Through Hole, Snap In potentiometer, https://www.bourns.com/docs/Product-Datasheets/PTVPTT.pdf
+PTV112-4 Dual gang
 0
-6
-6
+8
+7
 ProjectLib_Transient
 TO-5-6
 TO-5-6, generated with kicad-footprint-generator TO_SOT_THT_generate.py

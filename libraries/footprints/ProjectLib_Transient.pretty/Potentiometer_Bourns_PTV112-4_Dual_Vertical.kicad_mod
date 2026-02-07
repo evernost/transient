@@ -761,7 +761,7 @@
 		(remove_unused_layers no)
 		(uuid "5e1047ce-007f-4ac5-b358-79a08497e490")
 	)
-	(pad "SH" thru_hole oval
+	(pad "SH1" thru_hole oval
 		(at 11 -2.8 270)
 		(size 3 3.9)
 		(drill oval 2 2.9)
@@ -769,7 +769,7 @@
 		(remove_unused_layers no)
 		(uuid "b1f1e619-c756-4655-9b9c-046268042768")
 	)
-	(pad "SH" thru_hole oval
+	(pad "SH2" thru_hole oval
 		(at 11 8.8 270)
 		(size 3 3.9)
 		(drill oval 2 2.9)
