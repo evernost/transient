@@ -4,7 +4,7 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at -3.5 -4 270)
+		(at -2.6 -3.6 270)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "4805aebb-7bed-4faa-8e9f-385e5b0f0a54")
@@ -16,7 +16,7 @@
 		)
 	)
 	(property "Value" "Potentiometer_Bourns_PTV112_4_Dual_Vertical"
-		(at 0 1 0)
+		(at -5.2 3.2 270)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "27aed2ab-7707-47ab-be61-63e833514734")
@@ -55,6 +55,26 @@
 	)
 	(attr through_hole)
 	(fp_line
+		(start 2 -3.4)
+		(end 17.2 -3.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b4a2c25c-9960-41c9-9a97-e7abd7ce7167")
+	)
+	(fp_line
+		(start 2 9.4)
+		(end 2 -3.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8dd9bb41-1636-48d2-8828-34603547959c")
+	)
+	(fp_line
 		(start 10.511833 -0.164126)
 		(end 13.779825 4.58826)
 		(stroke
@@ -63,6 +83,26 @@
 		)
 		(layer "F.SilkS")
 		(uuid "ab4c0f46-45cd-44f1-b9cd-0cbbd7f88db3")
+	)
+	(fp_line
+		(start 17.2 -3.4)
+		(end 17.2 9.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "36ca8a1b-0213-489e-b6b9-99aa963ff27e")
+	)
+	(fp_line
+		(start 17.2 9.4)
+		(end 2 9.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fffd4612-c29d-48a6-bfa7-cbf990da9131")
 	)
 	(fp_circle
 		(center 11 3)
@@ -116,7 +156,7 @@
 		(uuid "e0b1b806-5b4e-43c7-848d-ad67d211e093")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 2.5 0)
+		(at -2.8 4.8 270)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "fe3bc7da-38f8-4871-b842-cad3ca200193")
