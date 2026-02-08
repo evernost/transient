@@ -1254,6 +1254,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ProjectLib_Transient:R_Potentiometer_Dual_Shield_US"
 			(pin_names
 				(offset 1.016)
@@ -1573,6 +1680,182 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_SPDT"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPDT"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Switch, single pole double throw"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPDT_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 0.254) (xy 1.651 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPDT_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2843,6 +3126,12 @@
 		(uuid "3a1e802c-0fd2-4956-afb4-7cb59e9687d8")
 	)
 	(junction
+		(at 34.29 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b45ccd9-81f0-4636-a0c1-8c28211a008d")
+	)
+	(junction
 		(at 187.96 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3009,6 +3298,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e5f7add0-3062-410b-b294-39755c0a5596")
+	)
+	(junction
+		(at 34.29 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2e43de5-72eb-47db-9c61-a05d380ce93c")
 	)
 	(junction
 		(at 134.62 227.33)
@@ -3600,6 +3895,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 34.29) (xy 34.29 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ceb0511-2a77-4c76-ba10-7b39a730b3bf")
+	)
+	(wire
+		(pts
 			(xy 331.47 107.95) (xy 331.47 111.76)
 		)
 		(stroke
@@ -3880,6 +4185,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 24.13) (xy 34.29 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74c09465-42ee-4e64-b427-815fc1b77793")
+	)
+	(wire
+		(pts
 			(xy 187.96 46.99) (xy 187.96 50.8)
 		)
 		(stroke
@@ -3967,6 +4282,16 @@
 			(type default)
 		)
 		(uuid "7c9f50bc-3dd2-404c-9d62-7655a451615b")
+	)
+	(wire
+		(pts
+			(xy 29.21 34.29) (xy 34.29 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e8b8446-e5cb-4a3c-90f0-53eb2b151359")
 	)
 	(wire
 		(pts
@@ -4147,6 +4472,16 @@
 			(type default)
 		)
 		(uuid "97a0f7a4-7e2e-4df3-ac9b-da8755421a4f")
+	)
+	(wire
+		(pts
+			(xy 34.29 24.13) (xy 34.29 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "981e4716-e67c-4f36-bcb2-af3b3be01fd9")
 	)
 	(wire
 		(pts
@@ -4660,6 +4995,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 34.29) (xy 39.37 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d05b7d8d-e154-4636-8a4a-e7402814196b")
+	)
+	(wire
+		(pts
 			(xy 134.62 262.89) (xy 134.62 265.43)
 		)
 		(stroke
@@ -4890,6 +5235,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 24.13) (xy 39.37 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f43dc6cb-00b7-475b-9d3e-803f04bf83f3")
+	)
+	(wire
+		(pts
 			(xy 208.28 39.37) (xy 208.28 41.91)
 		)
 		(stroke
@@ -5093,6 +5448,77 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPDT")
+		(at 337.82 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0231b685-f927-4b04-aead-66e606ed03bc")
+		(property "Reference" "SW1"
+			(at 337.82 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPDT"
+			(at 337.82 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
+			(at 337.82 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 337.82 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 337.82 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d2748fdd-47eb-4c8f-a7e7-89f19fa0793f")
+		)
+		(pin "3"
+			(uuid "78b0f44e-173b-4cae-ae71-5626723784f2")
+		)
+		(pin "1"
+			(uuid "892107ac-2689-4468-8700-9f34ffc5c0f2")
+		)
+		(instances
+			(project ""
+				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
+					(reference "SW1")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5453,6 +5879,71 @@
 				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
 					(reference "RV3")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 26.67 34.29 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a4593b4-dc3c-4bb3-bd96-78a3c0ccbcc4")
+		(property "Reference" "H4"
+			(at 25.4 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 25.4 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 26.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 26.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6f25820-8da0-4e3e-82c3-d5df22d3872e")
+		)
+		(instances
+			(project "headphones_amp_rev_A"
+				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
+					(reference "H4")
+					(unit 1)
 				)
 			)
 		)
@@ -5952,6 +6443,82 @@
 			(project "headphones_amp_rev1"
 				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack3_SwitchTR")
+		(at 334.01 71.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "196bc6fe-f078-4e0a-bd2e-252829a4b378")
+		(property "Reference" "J2"
+			(at 335.915 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AudioJack3_SwitchTR"
+			(at 335.915 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Audio:Jack_3.5mm_CUI_SJ1-3515N_Horizontal"
+			(at 334.01 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 334.01 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)"
+			(at 334.01 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "TN"
+			(uuid "486537a2-aa0c-4b07-8546-635aaf83adab")
+		)
+		(pin "RN"
+			(uuid "1dd0c4f1-078d-4a22-a398-4c282b17cb99")
+		)
+		(pin "R"
+			(uuid "2109bb45-e0cb-4278-a712-9744c84c3a7a")
+		)
+		(pin "S"
+			(uuid "72df606c-ea42-48d2-9c07-e3ea34dbcc0c")
+		)
+		(pin "T"
+			(uuid "d64d88f3-55ca-4518-bf67-9a5d96220aff")
+		)
+		(instances
+			(project "headphones_amp_rev_A"
+				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -6716,6 +7283,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 41.91 24.13 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34ea9751-d7da-4b3a-91db-b6f40db4fcc4")
+		(property "Reference" "H2"
+			(at 45.72 22.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 45.72 25.3999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 41.91 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 41.91 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca7b0f3d-e80b-4d96-bb5b-f97f1ba434a3")
+		)
+		(instances
+			(project "headphones_amp_rev_A"
+				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:BC557")
 		(at 300.99 199.39 0)
 		(mirror x)
@@ -7401,6 +8035,72 @@
 			(project "headphones_amp_rev1"
 				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 34.29 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48c54f6a-0244-4f29-903d-c69590ae9b3b")
+		(property "Reference" "#PWR034"
+			(at 34.29 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 34.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44e3bce8-92ea-49ce-b9e9-088c1b177fed")
+		)
+		(instances
+			(project "headphones_amp_rev_A"
+				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -9616,7 +10316,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220µ"
+		(property "Value" "47µF"
 			(at 310.896 31.496 0)
 			(effects
 				(font
@@ -10793,6 +11493,73 @@
 			(project "headphones_amp_rev_A"
 				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 41.91 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1018d66-9cd6-4cbe-864a-7e3883acbf75")
+		(property "Reference" "H3"
+			(at 45.72 33.0199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 45.72 35.5599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 41.91 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 41.91 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 41.91 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d753ea45-f8cb-42d2-bde9-02a8fa47b7d6")
+		)
+		(instances
+			(project "headphones_amp_rev_A"
+				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -12883,6 +13650,71 @@
 			(project "headphones_amp_rev1"
 				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 26.67 24.13 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f026ba96-9acf-4c27-bae9-2774395f6cca")
+		(property "Reference" "H1"
+			(at 25.4 17.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 25.4 20.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 26.67 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 26.67 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8489f0d9-285f-4364-a423-a59804c623a9")
+		)
+		(instances
+			(project ""
+				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
+					(reference "H1")
 					(unit 1)
 				)
 			)

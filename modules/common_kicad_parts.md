@@ -37,3 +37,6 @@ LED_THT:LED_D3.0mm
 
 ### Test point
 Connector -> TestPoint -> TestPoint:TestPoint_Pad_D2.0mm
+
+### Mount holes
+MountingHole:MountingHole_3.2mm_M3_Pad_Via
