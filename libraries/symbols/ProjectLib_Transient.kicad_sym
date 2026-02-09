@@ -612,7 +612,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ProjectLib_Transient:SW_CIT_ANT13_SPDT_Straight"
 			(at 0 0 0)
 			(effects
 				(font
@@ -710,7 +710,7 @@
 			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
-				(name "B"
+				(name "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -728,7 +728,7 @@
 			(pin passive line
 				(at 5.08 2.54 180)
 				(length 2.54)
-				(name "A"
+				(name "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -746,7 +746,7 @@
 			(pin passive line
 				(at 5.08 -2.54 180)
 				(length 2.54)
-				(name "C"
+				(name "3"
 					(effects
 						(font
 							(size 1.27 1.27)

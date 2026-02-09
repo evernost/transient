@@ -1,5 +1,10 @@
 # Ignore KiCad backups ('**' = explore all folders and subfolders)
 **/*-backups/
+**/*.bak
 
 # Ignore cache file
 fp-info-cache
+
+# Ignore LTSPICE raw data simulation files
+**/*.raw
+**/*.log
