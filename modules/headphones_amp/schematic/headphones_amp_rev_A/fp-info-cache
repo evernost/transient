@@ -1,4 +1,4 @@
-26793879321510489
+26795650076779126
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -93671,8 +93671,8 @@ SW_CIT_ANT13_SPDT_Straight
 CIT Miniature Toggle Switch, ANT series, SPDT, right angle, https://www.citrelay.com/wp-content/uploads/2025/05/Switch-ANT.pdf
 switch SPDT
 0
-6
-6
+3
+3
 ProjectLib_Transient
 TO-5-6
 TO-5-6, generated with kicad-footprint-generator TO_SOT_THT_generate.py
@@ -93680,6 +93680,13 @@ TO-5-6
 0
 6
 6
+ProjectLib_Transient
+WuerthElectronik_WR_TBL_Series_2109_1x02_P2.54mm_Horizontal
+Generic Phoenix Contact connector footprint for: MC_1,5/2-G-3.81; number of pins: 02; pin pitch: 3.81mm; Angled || order number: 1803277 8A 160V
+phoenix_contact connector MC_01x02_G_3.81mm
+0
+2
+2
 RF
 Skyworks_SKY13575_639LF
 http://www.skyworksinc.com/uploads/documents/SKY13575_639LF_203270D.pdf
