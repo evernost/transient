@@ -310,6 +310,14 @@
 				(hide yes)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "resistor dual shield mount"
 			(at 0 0 0)
 			(effects
@@ -534,7 +542,7 @@
 			(pin passive line
 				(at 0 3.81 270)
 				(length 1.27)
-				(name "1"
+				(name "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -552,7 +560,7 @@
 			(pin passive line
 				(at 0 -3.81 90)
 				(length 1.27)
-				(name "3"
+				(name "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -570,7 +578,7 @@
 			(pin passive line
 				(at 3.81 0 180)
 				(length 1.27)
-				(name "2"
+				(name "5"
 					(effects
 						(font
 							(size 1.27 1.27)

@@ -1,4 +1,4 @@
-26795650076779126
+26795650078132181
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -93682,8 +93682,8 @@ TO-5-6
 6
 ProjectLib_Transient
 WuerthElectronik_WR_TBL_Series_2109_1x02_P2.54mm_Horizontal
-Generic Phoenix Contact connector footprint for: MC_1,5/2-G-3.81; number of pins: 02; pin pitch: 3.81mm; Angled || order number: 1803277 8A 160V
-phoenix_contact connector MC_01x02_G_3.81mm
+Generic  Wuerth Elektronik connector WR TBL Series 2109 ; number of pins: 02; pin pitch: 2.54mm
+wuerth elektronik connector 2.54mm
 0
 2
 2
