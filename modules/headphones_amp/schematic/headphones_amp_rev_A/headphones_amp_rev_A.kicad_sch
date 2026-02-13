@@ -3270,12 +3270,6 @@
 		(uuid "2b531025-8f4a-4e4e-801f-962fbe35d471")
 	)
 	(junction
-		(at 208.28 218.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2c9afe15-6db8-4bed-8848-efcd2a2f9d69")
-	)
-	(junction
 		(at 303.53 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3376,12 +3370,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7b3eff21-3e32-476f-905a-4ca0423ab6a3")
-	)
-	(junction
-		(at 208.28 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7e9c19ed-e8ec-485c-8156-0c94ea155d1f")
 	)
 	(junction
 		(at 303.53 179.07)
@@ -3801,16 +3789,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 88.9) (xy 208.28 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a768078-f7ea-4e18-b935-cf32a73add5f")
-	)
-	(wire
-		(pts
 			(xy 322.58 207.01) (xy 323.85 207.01)
 		)
 		(stroke
@@ -3858,6 +3836,16 @@
 			(type default)
 		)
 		(uuid "21fc5752-1a28-44ba-a274-24709b11e64d")
+	)
+	(wire
+		(pts
+			(xy 229.87 142.24) (xy 270.51 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "231c914a-0a64-43e3-a659-4d28baadf89e")
 	)
 	(wire
 		(pts
@@ -4061,16 +4049,6 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 142.24) (xy 270.51 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3dfc6c8c-c20c-4ed6-9c50-31d77b54f6c8")
-	)
-	(wire
-		(pts
 			(xy 156.21 109.22) (xy 166.37 109.22)
 		)
 		(stroke
@@ -4191,7 +4169,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 207.01) (xy 208.28 218.44)
+			(xy 208.28 207.01) (xy 208.28 220.98)
 		)
 		(stroke
 			(width 0)
@@ -4301,7 +4279,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 209.55) (xy 251.46 209.55)
+			(xy 270.51 209.55) (xy 229.87 209.55)
 		)
 		(stroke
 			(width 0)
@@ -4551,16 +4529,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 218.44) (xy 208.28 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bf9efc2-cd4c-41f2-82b0-85fcc8410269")
-	)
-	(wire
-		(pts
 			(xy 170.18 224.79) (xy 170.18 229.87)
 		)
 		(stroke
@@ -4731,16 +4699,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 218.44) (xy 251.46 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78cca04b-5539-4f8b-9b66-2635ce4f1255")
-	)
-	(wire
-		(pts
 			(xy 173.99 168.91) (xy 187.96 168.91)
 		)
 		(stroke
@@ -4791,7 +4749,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 100.33) (xy 208.28 102.87)
+			(xy 208.28 88.9) (xy 208.28 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4858,6 +4816,16 @@
 			(type default)
 		)
 		(uuid "81993ccd-d333-4ac8-bd96-f0e34eb232d1")
+	)
+	(wire
+		(pts
+			(xy 212.09 106.68) (xy 229.87 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82502f84-d02a-42ec-bcfd-73dbb64eb9c5")
 	)
 	(wire
 		(pts
@@ -5181,16 +5149,6 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 100.33) (xy 208.28 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a603c69b-be0e-4886-a7b5-5f15b378055d")
-	)
-	(wire
-		(pts
 			(xy 208.28 21.59) (xy 208.28 27.94)
 		)
 		(stroke
@@ -5218,16 +5176,6 @@
 			(type default)
 		)
 		(uuid "a9426307-bad9-4960-b2a2-dfac293c6e7a")
-	)
-	(wire
-		(pts
-			(xy 251.46 100.33) (xy 251.46 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa41f948-432c-4535-a5fa-6c0b4cb20412")
 	)
 	(wire
 		(pts
@@ -5581,13 +5529,13 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 218.44) (xy 251.46 209.55)
+			(xy 212.09 224.79) (xy 229.87 224.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd19aa8c-3f5e-47f8-8ba0-aab0344a2c31")
+		(uuid "cd1733d8-9a2c-47ca-ad57-425497ab0271")
 	)
 	(wire
 		(pts
@@ -5921,6 +5869,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 209.55) (xy 229.87 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0cf00e0-fbbf-451c-81b5-eac5c327fb83")
+	)
+	(wire
+		(pts
 			(xy 347.98 22.86) (xy 365.76 22.86)
 		)
 		(stroke
@@ -5998,6 +5956,16 @@
 			(type default)
 		)
 		(uuid "f619def0-f7fa-4455-b42d-00cb77487579")
+	)
+	(wire
+		(pts
+			(xy 229.87 106.68) (xy 229.87 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f65d226b-0b9b-44e7-936a-4f6b79438a00")
 	)
 	(wire
 		(pts
@@ -7436,6 +7404,79 @@
 			(project "headphones_amp_rev_A"
 				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
 					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer_US")
+		(at 208.28 224.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2abcf8bc-fdc2-4e2b-ad9a-6b4624a87211")
+		(property "Reference" "RV7"
+			(at 205.74 223.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "50"
+			(at 205.74 226.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
+			(at 208.28 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer, US symbol"
+			(at 208.28 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00eaf32b-2c2a-4d97-bf4a-8f36ecfe3325")
+		)
+		(pin "3"
+			(uuid "e5205ad5-dd77-4d0f-b4f5-2caed17eeb67")
+		)
+		(pin "2"
+			(uuid "4905e76f-6d7b-41fd-b99b-628b0a0bac1f")
+		)
+		(instances
+			(project "headphones_amp_rev_A"
+				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
+					(reference "RV7")
 					(unit 1)
 				)
 			)
@@ -13240,6 +13281,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer_US")
+		(at 208.28 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bbe14392-3108-477e-9b6a-943397635e9b")
+		(property "Reference" "RV4"
+			(at 205.74 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "50"
+			(at 205.74 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
+			(at 208.28 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer, US symbol"
+			(at 208.28 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19b0cac0-189d-40c0-8710-597e8f724f8d")
+		)
+		(pin "3"
+			(uuid "2c207c5e-fbf2-46aa-b2a6-2f67497fb6d4")
+		)
+		(pin "2"
+			(uuid "9e4bac09-6acc-41da-adba-838d9a55fbf0")
+		)
+		(instances
+			(project "headphones_amp_rev_A"
+				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
+					(reference "RV4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:BC548")
 		(at 185.42 115.57 0)
 		(unit 1)
@@ -14074,76 +14188,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 208.28 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d2d1b3dd-b32f-44f8-a8de-6f996d33ff29")
-		(property "Reference" "R4"
-			(at 210.82 105.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22"
-			(at 210.82 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 209.296 106.934 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 208.28 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f6044cda-fbbc-4ec8-87ed-677d30d6d5d0")
-		)
-		(pin "2"
-			(uuid "5f2ab8fc-5db6-4315-bb92-f8ec1fe9196f")
-		)
-		(instances
-			(project "headphones_amp_rev1"
-				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_BJT:BC548")
 		(at 185.42 64.77 0)
 		(unit 1)
@@ -14492,76 +14536,6 @@
 			(project "headphones_amp_rev_A"
 				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
 					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 208.28 224.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d652637a-40d9-4719-b5c5-31222f1b8584")
-		(property "Reference" "R36"
-			(at 210.82 223.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22"
-			(at 210.82 226.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 209.296 225.044 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 208.28 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dad8e293-3a65-4720-a7fb-258aa99e57db")
-		)
-		(pin "2"
-			(uuid "09265566-b9f6-470b-9e8c-4ae50227a3cb")
-		)
-		(instances
-			(project "headphones_amp_rev_A"
-				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
-					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -15761,28 +15735,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "21403b5d-6657-4d6b-bf6e-23203ca83bb6")
+			(uuid "21403b5d-6657-4d6b-bf6e-23203ca83bb7")
 		)
 		(pin "2"
-			(uuid "29c33008-6936-4ec9-a772-cd82dd69230e")
+			(uuid "29c33008-6936-4ec9-a772-cd82dd69230f")
 		)
 		(pin "3"
-			(uuid "c294b03f-690e-4237-9fb1-f67b0d87bd98")
+			(uuid "c294b03f-690e-4237-9fb1-f67b0d87bd99")
 		)
 		(pin "7"
-			(uuid "324409e2-56ac-44ba-8a51-c3c82bf76469")
+			(uuid "324409e2-56ac-44ba-8a51-c3c82bf7646a")
 		)
 		(pin "8"
-			(uuid "25f9b58d-a286-4268-bc96-a615ac277977")
+			(uuid "25f9b58d-a286-4268-bc96-a615ac277978")
 		)
 		(pin "5"
-			(uuid "1e85089a-b731-4efd-99b0-7fd54f3ffcc1")
+			(uuid "1e85089a-b731-4efd-99b0-7fd54f3ffcc2")
 		)
 		(pin "6"
-			(uuid "c36ce3e2-328f-410d-ad18-ada492c1564a")
+			(uuid "c36ce3e2-328f-410d-ad18-ada492c1564b")
 		)
 		(pin "4"
-			(uuid "1974acc1-1439-41ad-bd0b-1dfa8fc3d280")
+			(uuid "1974acc1-1439-41ad-bd0b-1dfa8fc3d281")
 		)
 		(instances
 			(project ""
