@@ -6,7 +6,7 @@
 	(descr "Potentiometer, vertical, Bourns PTV09A-1 Single, http://www.bourns.com/docs/Product-Datasheets/ptv09.pdf")
 	(tags "Potentiometer vertical Bourns PTV09A-1 Single")
 	(property "Reference" "REF**"
-		(at 6.05 -10.35 0)
+		(at 6.05 -5.35 0)
 		(layer "F.SilkS")
 		(uuid "10f4afcc-558a-4851-b76f-61f1427eb5f0")
 		(effects
@@ -17,7 +17,7 @@
 		)
 	)
 	(property "Value" "Potentiometer_Bourns_PTV09A-4_Single_Vertical"
-		(at 6.05 5.35 0)
+		(at 6.05 10.35 0)
 		(layer "F.Fab")
 		(uuid "f9b0d4b6-bd65-42ce-97d1-8d24bccef05a")
 		(effects
@@ -53,8 +53,8 @@
 	)
 	(attr through_hole)
 	(fp_line
-		(start 0.89 -7.46)
-		(end 4.635 -7.46)
+		(start 0.89 -2.46)
+		(end 4.635 -2.46)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -63,8 +63,8 @@
 		(uuid "fe98d332-523c-4ea7-834c-cfd2a66cc02d")
 	)
 	(fp_line
-		(start 0.89 -5.696)
-		(end 0.89 -7.46)
+		(start 0.89 -0.696)
+		(end 0.89 -2.46)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -73,8 +73,8 @@
 		(uuid "5a531148-4e95-4b34-ba55-eae918a7c08b")
 	)
 	(fp_line
-		(start 0.89 -3.196)
-		(end 0.89 -4.304)
+		(start 0.89 1.804)
+		(end 0.89 0.696)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -83,8 +83,8 @@
 		(uuid "10c40c95-e1cf-4e8c-b3e1-57c0444d81cc")
 	)
 	(fp_line
-		(start 0.89 -0.696)
-		(end 0.89 -1.804)
+		(start 0.89 4.304)
+		(end 0.89 3.196)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -93,8 +93,8 @@
 		(uuid "50ccf74a-2dfa-42ac-b1cf-8184a312ba03")
 	)
 	(fp_line
-		(start 0.89 2.46)
-		(end 0.89 0.696)
+		(start 0.89 7.46)
+		(end 0.89 5.696)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -103,8 +103,8 @@
 		(uuid "1141e5ff-70e0-4bf9-a65e-6f9f5e8d7794")
 	)
 	(fp_line
-		(start 4.635 2.46)
-		(end 0.89 2.46)
+		(start 4.635 7.46)
+		(end 0.89 7.46)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -113,8 +113,8 @@
 		(uuid "409c677c-f88b-4187-98a2-b0fa0b3c5f7f")
 	)
 	(fp_line
-		(start 9.365 -7.46)
-		(end 13.11 -7.46)
+		(start 9.365 -2.46)
+		(end 13.11 -2.46)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -123,8 +123,8 @@
 		(uuid "a2391ffd-b2df-4a02-86e9-e0ecec39af5d")
 	)
 	(fp_line
-		(start 13.11 -7.46)
-		(end 13.11 2.46)
+		(start 13.11 -2.46)
+		(end 13.11 7.46)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -133,8 +133,8 @@
 		(uuid "a9ffc698-e3e0-427d-85d3-7f278ad1a5ec")
 	)
 	(fp_line
-		(start 13.11 2.46)
-		(end 9.365 2.46)
+		(start 13.11 7.46)
+		(end 9.365 7.46)
 		(stroke
 			(width 0.12)
 			(type solid)
@@ -143,8 +143,8 @@
 		(uuid "51868d24-2c4c-4613-b9a4-b7851625b391")
 	)
 	(fp_rect
-		(start -1.15 -9.36)
-		(end 13.25 4.36)
+		(start -0.557 -4.36)
+		(end 13.843 9.36)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -154,8 +154,8 @@
 		(uuid "a49be5a3-36fe-4a4a-a3e8-e6e27992bdde")
 	)
 	(fp_rect
-		(start 1 -7.35)
-		(end 13 2.35)
+		(start 1 -2.35)
+		(end 13 7.35)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -165,8 +165,8 @@
 		(uuid "55959819-39ce-496f-a060-dd89969523b9")
 	)
 	(fp_circle
-		(center 7 -2.5)
-		(end 10 -2.5)
+		(center 7 2.5)
+		(end 10 2.5)
 		(stroke
 			(width 0.1)
 			(type solid)
@@ -176,7 +176,7 @@
 		(uuid "223d4e9b-13ad-463d-a345-adac0224647a")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 2 -2.5 90)
+		(at 2 2.5 90)
 		(layer "F.Fab")
 		(uuid "b819761a-2976-4a31-b797-26b65567234d")
 		(effects
@@ -186,16 +186,16 @@
 			)
 		)
 	)
-	(pad "1" thru_hole circle
+	(pad "1" thru_hole rect
 		(at 0 0)
 		(size 1.8 1.8)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "67500063-cd88-4a5d-b412-cb8ddb8ea34c")
+		(uuid "84bd5cc3-93c4-4fe0-a084-3b857e9c7c4e")
 	)
 	(pad "2" thru_hole circle
-		(at 0 -2.5)
+		(at 0 2.5)
 		(size 1.8 1.8)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -203,25 +203,25 @@
 		(uuid "707c9a24-4402-4478-8490-841be9bb6a63")
 	)
 	(pad "3" thru_hole circle
-		(at 0 -5)
+		(at 0 5)
 		(size 1.8 1.8)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "84bd5cc3-93c4-4fe0-a084-3b857e9c7c4e")
+		(uuid "67500063-cd88-4a5d-b412-cb8ddb8ea34c")
 	)
-	(pad "MP" thru_hole circle
-		(at 7 -6.9)
-		(size 4.4 4.4)
-		(drill 2.2)
+	(pad "SH" thru_hole circle
+		(at 7 -1.9)
+		(size 3.6 3.6)
+		(drill oval 2.4 2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "94a9a5ae-09eb-4ec1-833d-d1b99fa569f8")
 	)
-	(pad "MP" thru_hole circle
-		(at 7 1.9)
-		(size 4.4 4.4)
-		(drill 2.2)
+	(pad "SH" thru_hole circle
+		(at 7 6.9)
+		(size 3.6 3.6)
+		(drill oval 2.4 2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "7aefb819-38a2-4093-81fb-58362e5f738c")
