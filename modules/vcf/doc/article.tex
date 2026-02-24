@@ -83,12 +83,42 @@ $$
 \left\{
 	\begin{array}{ll}
 		R_1 = \dfrac{R_{TH}}{\alpha} \\
-    R_2 = \dfrac{R_{TH}}{1-\alpha}
+    	R_2 = \dfrac{R_{TH}}{1-\alpha}
 	\end{array}
 \right.
 $$\\
 
+
 \subsection*{Generalized resistor divider}
+A generalized resistor divider consists in attaching the bottom resistor to any potential instead of the GND. 
+
+
+\subsection*{Potentiometer input}
+A linear potentiometer used for voltage ajustment (like input volume) might yield some nonlinearities if the input impedance of the next stage cannot be neglected compared to the impedance of the potentiometer itself.
+
+Let's consider the following:\\
+
+\begin{circuitikz}
+	\draw (8, 8) to[american voltage source, l={$E$}] (8, 5);
+	\draw (10, 8) to[american resistor, /tikz/circuitikz/bipoles/length=0.700cm, l={$(1-\alpha) R$}] (10, 6.5);
+	\draw (10, 6.5) to[american resistor, /tikz/circuitikz/bipoles/length=0.700cm, l={$\alpha R$}] (10, 5);
+	\draw (8, 8) -- (10, 8);
+	\draw (8, 5) -- (10, 5);
+	\draw (10, 6.5) -- (12, 6.5);
+	\draw (12, 6.5) to[american resistor, /tikz/circuitikz/bipoles/length=0.700cm, l={$R_L$}] (12, 5);
+	\draw (10, 5) -- (12, 5);
+	\node[circ] at (10, 6.5){};
+	\node[circ] at (10, 5){};
+	\draw[line width=1.2pt, -latex] (13, 5) -- (13, 6.5);
+	\node[shape=rectangle, minimum width=0.715cm, minimum height=1.465cm] at (13.375, 5.75){} node[anchor=center, align=center, text width=0.327cm, inner sep=6pt] at (13.375, 5.75){$V$};
+\end{circuitikz}
+
+Then we get:
+$$
+	V = \frac{\alpha}{1+\alpha(1-\alpha)\dfrac{R}{R_L}}E
+$$\\
+
+Ideal linearity is achieved with $R_L \gg R$
 
 
 \section*{Annex 2: impact of non-linearities}
