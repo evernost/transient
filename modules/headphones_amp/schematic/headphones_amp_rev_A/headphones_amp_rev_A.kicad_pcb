@@ -159,7 +159,7 @@
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R33"
-			(at 5.08 -2.37 0)
+			(at 5.08 0 0)
 			(layer "F.SilkS")
 			(uuid "5ec7cebf-50d5-4fc9-9d4d-c4ca57872f41")
 			(effects
@@ -281,17 +281,6 @@
 			(fill no)
 			(layer "F.Fab")
 			(uuid "c7cce90d-677b-4ca8-b719-e350ddd3bd29")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 5.08 0 0)
-			(layer "F.Fab")
-			(uuid "3a44acf2-7142-47ce-8fb1-371711eeddf4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -901,6 +890,7 @@
 		(property "Value" "BC548"
 			(at 2.54 2.79 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "37395f85-ea7d-4b3c-b317-8d1e4e914305")
 			(effects
 				(font
@@ -8226,7 +8216,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "38cc8730-a217-467a-b082-0d9d1bb3c0da")
-		(at 110.16 55.54)
+		(at 69.84 125)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R15"
@@ -14703,7 +14693,7 @@
 	(footprint "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
 		(layer "F.Cu")
 		(uuid "69e1e528-15f3-49f7-8163-b45d9ec6d314")
-		(at 129.98 48.6)
+		(at 91 120)
 		(descr "Potentiometer, vertical, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf")
 		(tags "Potentiometer vertical Bourns 3296W")
 		(property "Reference" "RV1"
@@ -16034,7 +16024,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "7d20aafd-edf0-4a6a-b3f6-1e8962364224")
-		(at 110.16 51.49)
+		(at 85.84 115)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R14"
@@ -30268,7 +30258,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "b7a36249-db6e-4863-bb87-1f2c2b7dc637")
-		(at 35.61 38.91)
+		(at 77.84 155)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R29"
@@ -32597,7 +32587,7 @@
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "ca35007e-6af7-48c1-91bf-95cf9d2f8801")
-		(at 35.61 42.96)
+		(at 75.84 140)
 		(descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
 		(tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
 		(property "Reference" "R30"
@@ -38545,7 +38535,7 @@
 	(footprint "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical"
 		(layer "F.Cu")
 		(uuid "e86c6c9f-fbe3-4b32-b618-06d788a1ca81")
-		(at 67.87 58.6)
+		(at 88 147)
 		(descr "Potentiometer, vertical, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf")
 		(tags "Potentiometer vertical Bourns 3296W")
 		(property "Reference" "RV6"
@@ -39454,6 +39444,7 @@
 		(property "Value" "BC548"
 			(at 2.54 2.79 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "f687a047-15aa-4615-ab3b-0879caaf7e2f")
 			(effects
 				(font
