@@ -1,0 +1,3038 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "197f4a44-5606-4614-9f30-04e68d42fe94")
+	(paper "A3")
+	(title_block
+		(title "Phaser")
+		(company "QuBi")
+	)
+	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ProjectLib_Transient:2N2978"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "2N2978"
+				(at 5.08 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "ProjectLib_Transient:TO-5-6"
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual NPN transistor, 6 pin package"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BJT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "2N2978_0_1"
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "2N2978_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "2N2978_2_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 144.78 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c0cc54d-95af-4999-8acf-4d7053905f2b")
+	)
+	(junction
+		(at 144.78 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0da40b0e-484b-4fd0-ba68-1950c840e64d")
+	)
+	(junction
+		(at 120.65 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c87581a-8946-4a6c-918f-9c6ea5dce0bc")
+	)
+	(junction
+		(at 144.78 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "440191ec-0e67-4eb5-a28e-33d34b17b2cf")
+	)
+	(junction
+		(at 120.65 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "490bf82f-f495-4889-9b6c-3b5ac7958676")
+	)
+	(junction
+		(at 120.65 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c270c0a-98bd-4479-9a47-f7f9da6ce7ab")
+	)
+	(junction
+		(at 120.65 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c68a0e2-7120-4e37-a410-0bf77f782d59")
+	)
+	(junction
+		(at 144.78 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53e01e19-0174-4fc1-9ed2-ce8e017be889")
+	)
+	(junction
+		(at 120.65 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b42e0a8-786e-4005-a4a4-112fe8a1e9fb")
+	)
+	(junction
+		(at 144.78 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d33e765-e4ca-4a1b-aaf5-4a9670fbc6a9")
+	)
+	(junction
+		(at 144.78 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70d994d6-f84d-4ff4-99ec-08ddacc8af67")
+	)
+	(junction
+		(at 144.78 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c00576e-60d8-482e-83b8-2107877c2c05")
+	)
+	(junction
+		(at 120.65 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "915e386d-7458-4a5b-8f8d-2229608f39a3")
+	)
+	(junction
+		(at 120.65 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfd788f6-e6f2-47e4-aedc-6978d065fa2c")
+	)
+	(junction
+		(at 144.78 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c10c6984-c11e-44e4-a804-5a2b92184ad1")
+	)
+	(junction
+		(at 120.65 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4855d60-9195-4d9d-9350-c205d56f7785")
+	)
+	(junction
+		(at 120.65 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb5f571a-c50d-44d1-aa6e-acdf30240e4f")
+	)
+	(junction
+		(at 144.78 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe542d82-ae3e-4a77-ab69-5c20c5283958")
+	)
+	(wire
+		(pts
+			(xy 106.68 170.18) (xy 120.65 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "023027fc-f886-425d-bb39-def94d88d79e")
+	)
+	(wire
+		(pts
+			(xy 106.68 157.48) (xy 120.65 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "029eade5-c17c-4e24-9691-d025869ace24")
+	)
+	(wire
+		(pts
+			(xy 158.75 120.65) (xy 144.78 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03121e73-f5ec-4738-9913-0aafa837c9d0")
+	)
+	(wire
+		(pts
+			(xy 106.68 127) (xy 106.68 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09b927dc-8851-4e4a-9d40-77bcde77bdcb")
+	)
+	(wire
+		(pts
+			(xy 120.65 170.18) (xy 120.65 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0adf381e-03f6-4a4d-bc67-ff095911e1ca")
+	)
+	(wire
+		(pts
+			(xy 106.68 173.99) (xy 120.65 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dde8073-4a03-46c5-927d-f99b6adbc944")
+	)
+	(wire
+		(pts
+			(xy 120.65 120.65) (xy 120.65 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13dc4fec-2ca2-40ba-91cf-226b2feacd36")
+	)
+	(wire
+		(pts
+			(xy 158.75 153.67) (xy 144.78 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14fd5828-48e4-4870-86d1-76c2d885ad86")
+	)
+	(wire
+		(pts
+			(xy 158.75 176.53) (xy 158.75 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17b5680c-861d-4fc1-91d5-dace3e23e374")
+	)
+	(wire
+		(pts
+			(xy 158.75 157.48) (xy 144.78 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19f9af9e-59a4-40b0-885a-3337e39d447e")
+	)
+	(wire
+		(pts
+			(xy 128.27 180.34) (xy 129.54 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d38b3e4-f9c4-446e-bcd7-6b43ebe8fee6")
+	)
+	(wire
+		(pts
+			(xy 158.75 173.99) (xy 144.78 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f3e0395-a8cc-4219-bf8d-ed8937975569")
+	)
+	(wire
+		(pts
+			(xy 158.75 184.15) (xy 158.75 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f947605-d736-4d8c-884d-3953c307a437")
+	)
+	(wire
+		(pts
+			(xy 144.78 140.97) (xy 144.78 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2205931d-2d89-42b6-856f-fef79bfbcd9e")
+	)
+	(wire
+		(pts
+			(xy 106.68 151.13) (xy 106.68 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23c3bf15-12af-44e3-8066-69c7fa3cb142")
+	)
+	(wire
+		(pts
+			(xy 120.65 153.67) (xy 120.65 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2631492a-b5d9-4282-b888-31a8af427004")
+	)
+	(wire
+		(pts
+			(xy 120.65 168.91) (xy 120.65 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "292d145b-e384-4808-ac6c-776629d870b8")
+	)
+	(wire
+		(pts
+			(xy 120.65 157.48) (xy 120.65 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a93ffe1-0c31-419a-a6a2-db6efe2526a4")
+	)
+	(wire
+		(pts
+			(xy 106.68 120.65) (xy 120.65 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d7fedd7-7436-419b-8b21-db39402a57ff")
+	)
+	(wire
+		(pts
+			(xy 120.65 104.14) (xy 120.65 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31ca0d8b-1f80-4aef-8816-f6b1f70fd55a")
+	)
+	(wire
+		(pts
+			(xy 120.65 152.4) (xy 120.65 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a7cea91-35b7-47e3-8195-24b73845f25b")
+	)
+	(wire
+		(pts
+			(xy 135.89 107.95) (xy 144.78 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "439e44ff-551b-4e8a-b96f-93eda009de24")
+	)
+	(wire
+		(pts
+			(xy 135.89 147.32) (xy 129.54 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43b63c9c-d310-4ef2-854d-a513c41828a2")
+	)
+	(wire
+		(pts
+			(xy 144.78 170.18) (xy 144.78 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45354d5c-49fe-4478-889d-a4c0db03593a")
+	)
+	(wire
+		(pts
+			(xy 137.16 114.3) (xy 135.89 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45dbc37d-7954-4425-a978-d3796fc113de")
+	)
+	(wire
+		(pts
+			(xy 120.65 157.48) (xy 129.54 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45e08101-3f8c-4775-946f-9348d6ba3b39")
+	)
+	(wire
+		(pts
+			(xy 120.65 173.99) (xy 129.54 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "462f9436-a2f7-4831-afc3-3d371c0c887a")
+	)
+	(wire
+		(pts
+			(xy 158.75 107.95) (xy 144.78 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47d47341-a579-432d-a223-e64e2944bf4e")
+	)
+	(wire
+		(pts
+			(xy 106.68 107.95) (xy 120.65 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49a23be9-f450-470d-8e35-13221e067f62")
+	)
+	(wire
+		(pts
+			(xy 120.65 107.95) (xy 129.54 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a96034c-4c72-49f4-8f4f-2f0c23637f51")
+	)
+	(wire
+		(pts
+			(xy 120.65 135.89) (xy 120.65 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bce7ef5-d6c7-43cc-8238-89e41879a7e4")
+	)
+	(wire
+		(pts
+			(xy 144.78 173.99) (xy 144.78 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dde1ef3-c061-409d-937e-70fb37d27853")
+	)
+	(wire
+		(pts
+			(xy 158.75 167.64) (xy 158.75 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f2f60b4-2661-4ab5-a7ba-226197aeb17f")
+	)
+	(wire
+		(pts
+			(xy 135.89 130.81) (xy 129.54 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "556bb0c2-9cc4-407e-b212-ee23f3ae41e5")
+	)
+	(wire
+		(pts
+			(xy 137.16 180.34) (xy 135.89 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "578341a4-7416-4325-b52b-769263dd0317")
+	)
+	(wire
+		(pts
+			(xy 158.75 124.46) (xy 144.78 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58ac4ba2-e09d-44ce-8efe-bd452970ba3b")
+	)
+	(wire
+		(pts
+			(xy 135.89 157.48) (xy 144.78 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a967331-2380-47fe-b184-98e09112102a")
+	)
+	(wire
+		(pts
+			(xy 120.65 107.95) (xy 120.65 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e80a03f-aa97-4510-92a3-c7cabc266441")
+	)
+	(wire
+		(pts
+			(xy 135.89 124.46) (xy 144.78 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "606898c2-a00b-4c8a-8055-ef61c65670b5")
+	)
+	(wire
+		(pts
+			(xy 158.75 170.18) (xy 144.78 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61017d70-1397-4bde-aa5b-ee6ad2e6869f")
+	)
+	(wire
+		(pts
+			(xy 144.78 124.46) (xy 144.78 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "651c844c-246c-451d-bf23-300f9b743ed6")
+	)
+	(wire
+		(pts
+			(xy 135.89 180.34) (xy 129.54 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "659bcf45-c9f1-4c23-867b-281dff832df4")
+	)
+	(wire
+		(pts
+			(xy 120.65 137.16) (xy 120.65 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "684b0c45-3b2b-49a4-92bc-5d8b5e9d8936")
+	)
+	(wire
+		(pts
+			(xy 128.27 163.83) (xy 129.54 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68cf71d9-1104-4b24-a611-b18a9c808b81")
+	)
+	(wire
+		(pts
+			(xy 144.78 185.42) (xy 144.78 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bbe25a1-3781-4bff-a18a-8c217414ce2f")
+	)
+	(wire
+		(pts
+			(xy 128.27 130.81) (xy 129.54 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d7ae860-3d6a-4c5e-8f92-6a04d4158464")
+	)
+	(wire
+		(pts
+			(xy 106.68 184.15) (xy 106.68 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f1deef8-5b7c-44b4-b990-9332d233acfa")
+	)
+	(wire
+		(pts
+			(xy 106.68 186.69) (xy 120.65 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70c3ec4e-c4b4-44f1-91f7-a7932a7a901e")
+	)
+	(wire
+		(pts
+			(xy 120.65 140.97) (xy 120.65 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72218741-4898-4223-a10e-f7e52c108064")
+	)
+	(wire
+		(pts
+			(xy 135.89 163.83) (xy 129.54 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "724a9628-11d3-4778-8893-8babd6a3c40f")
+	)
+	(wire
+		(pts
+			(xy 129.54 163.83) (xy 135.89 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "736b847d-28fa-4dc2-bfcf-76c6e18c26dd")
+	)
+	(wire
+		(pts
+			(xy 158.75 110.49) (xy 158.75 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7580d614-1f70-48e2-b49b-5bb823a0da3d")
+	)
+	(wire
+		(pts
+			(xy 106.68 140.97) (xy 120.65 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "776f6a70-ce36-4153-aa91-116b4ca7036f")
+	)
+	(wire
+		(pts
+			(xy 128.27 147.32) (xy 129.54 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7968573e-7032-42b1-810b-ce30e8a0f8a6")
+	)
+	(wire
+		(pts
+			(xy 137.16 147.32) (xy 135.89 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d72ff49-3317-45ac-bcc3-b6b6003f8937")
+	)
+	(wire
+		(pts
+			(xy 106.68 110.49) (xy 106.68 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "843b39b0-19ef-49d3-bbbe-2dc74af2a93b")
+	)
+	(wire
+		(pts
+			(xy 144.78 107.95) (xy 144.78 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88db58ed-7e6d-4733-81c3-a3327a24bc57")
+	)
+	(wire
+		(pts
+			(xy 106.68 153.67) (xy 120.65 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8973693a-94e8-4e15-b0c5-18ad626a3eeb")
+	)
+	(wire
+		(pts
+			(xy 158.75 137.16) (xy 144.78 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bf5ccf2-bbc4-457c-a711-cc479c7fb303")
+	)
+	(wire
+		(pts
+			(xy 144.78 168.91) (xy 144.78 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c61c80d-9038-4301-b636-96fb4e08c878")
+	)
+	(wire
+		(pts
+			(xy 137.16 163.83) (xy 135.89 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9095167a-ebdc-42c9-9e7d-1f2f4b7db09e")
+	)
+	(wire
+		(pts
+			(xy 144.78 157.48) (xy 144.78 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94f180cb-786c-4429-97d6-683dbc168adf")
+	)
+	(wire
+		(pts
+			(xy 120.65 173.99) (xy 120.65 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9623843d-202a-4b15-bbaf-f4cb66259e9b")
+	)
+	(wire
+		(pts
+			(xy 158.75 118.11) (xy 158.75 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "964f63ec-fda5-40cc-8d7b-9330a38b4a25")
+	)
+	(wire
+		(pts
+			(xy 144.78 120.65) (xy 144.78 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9aaf1ac8-cc9d-43fd-ae9f-cc9bbdbc8466")
+	)
+	(wire
+		(pts
+			(xy 120.65 140.97) (xy 129.54 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e071d66-a21c-4325-bf32-934e27167831")
+	)
+	(wire
+		(pts
+			(xy 144.78 152.4) (xy 144.78 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f242725-f30a-4b6c-9baf-ed52bd144c06")
+	)
+	(wire
+		(pts
+			(xy 135.89 140.97) (xy 144.78 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fb75630-34ce-4178-9baf-03efb61db61c")
+	)
+	(wire
+		(pts
+			(xy 144.78 104.14) (xy 144.78 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0651723-53b6-41f7-984d-7637e70105d7")
+	)
+	(wire
+		(pts
+			(xy 137.16 130.81) (xy 135.89 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a074b76b-41ef-4a5c-8a5a-17020205464b")
+	)
+	(wire
+		(pts
+			(xy 144.78 137.16) (xy 144.78 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a300e086-102e-4138-b9af-a87e32399f36")
+	)
+	(wire
+		(pts
+			(xy 144.78 135.89) (xy 144.78 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a34a857c-d199-4a3c-b737-d137fb3bfe41")
+	)
+	(wire
+		(pts
+			(xy 106.68 137.16) (xy 120.65 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a48eaa07-e3c5-4835-a335-d790d7a1639c")
+	)
+	(wire
+		(pts
+			(xy 144.78 153.67) (xy 144.78 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa539ac4-07c3-4985-82a9-e8e9521cd7f8")
+	)
+	(wire
+		(pts
+			(xy 106.68 124.46) (xy 120.65 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abad9cde-a574-4f75-938a-72b642de2afa")
+	)
+	(wire
+		(pts
+			(xy 158.75 143.51) (xy 158.75 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af9aae8d-9519-49c8-b368-bef488ae2ab3")
+	)
+	(wire
+		(pts
+			(xy 158.75 134.62) (xy 158.75 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2eed1e9-71b6-4d66-9676-d021a1d46b4f")
+	)
+	(wire
+		(pts
+			(xy 106.68 134.62) (xy 106.68 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba75f7af-8da4-4d17-825f-1fdab1f457c0")
+	)
+	(wire
+		(pts
+			(xy 106.68 160.02) (xy 106.68 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc299987-7ff3-4854-8454-87b143d0623b")
+	)
+	(wire
+		(pts
+			(xy 158.75 127) (xy 158.75 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be58cfa1-8d74-4c4b-b436-51c7e8f88ceb")
+	)
+	(wire
+		(pts
+			(xy 106.68 143.51) (xy 106.68 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfb2dad6-af53-42f7-81f2-4d484f9d2e2c")
+	)
+	(wire
+		(pts
+			(xy 120.65 185.42) (xy 120.65 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0df81d4-9577-4373-82ea-b89fa114af02")
+	)
+	(wire
+		(pts
+			(xy 158.75 160.02) (xy 158.75 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c28eaac6-18f0-446f-9a2c-27ea8457e7cc")
+	)
+	(wire
+		(pts
+			(xy 129.54 180.34) (xy 135.89 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c295a746-0e4d-4ee5-8188-d1069269cddc")
+	)
+	(wire
+		(pts
+			(xy 129.54 147.32) (xy 135.89 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c51a33a4-0807-497e-a904-45ba42eec2ef")
+	)
+	(wire
+		(pts
+			(xy 158.75 140.97) (xy 144.78 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6bfde54-a967-48a7-ae56-01bdd016d95f")
+	)
+	(wire
+		(pts
+			(xy 129.54 114.3) (xy 135.89 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cabfe37a-11f0-46e2-8a03-7e26cfd7650c")
+	)
+	(wire
+		(pts
+			(xy 120.65 119.38) (xy 120.65 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d036837b-caf2-4c79-b4a3-d7aa5fbe56b0")
+	)
+	(wire
+		(pts
+			(xy 158.75 151.13) (xy 158.75 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d42c15b9-8215-42c6-be42-4b70ec93a352")
+	)
+	(wire
+		(pts
+			(xy 158.75 186.69) (xy 144.78 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d68b71c7-1818-4cc9-9d45-a814956c127c")
+	)
+	(wire
+		(pts
+			(xy 129.54 130.81) (xy 135.89 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6c6ee70-c45e-45da-a1d9-32381b130317")
+	)
+	(wire
+		(pts
+			(xy 144.78 119.38) (xy 144.78 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d90f32cc-cf54-4daa-b0da-38ae5023a34b")
+	)
+	(wire
+		(pts
+			(xy 135.89 173.99) (xy 144.78 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e18e20d5-aa8d-42b4-bf3f-bac411e20045")
+	)
+	(wire
+		(pts
+			(xy 106.68 167.64) (xy 106.68 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e73e6837-91f5-4ac0-a377-626bedde92e2")
+	)
+	(wire
+		(pts
+			(xy 135.89 114.3) (xy 129.54 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2971772-97aa-4d94-937d-0a5b6544f0bd")
+	)
+	(wire
+		(pts
+			(xy 128.27 114.3) (xy 129.54 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f356aa44-9bc8-49fe-8cd1-c476bc17f6e9")
+	)
+	(wire
+		(pts
+			(xy 120.65 124.46) (xy 120.65 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f59041e6-f8f9-41b3-9bfc-37958a41a58a")
+	)
+	(wire
+		(pts
+			(xy 106.68 118.11) (xy 106.68 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6025180-3025-4009-bb53-e4f8859ab08b")
+	)
+	(wire
+		(pts
+			(xy 120.65 124.46) (xy 129.54 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faf0d285-c5c7-41bb-8e2e-45c3185ec5ff")
+	)
+	(wire
+		(pts
+			(xy 106.68 176.53) (xy 106.68 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe225371-ca7e-4fb9-a0f8-b0630914e33c")
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 123.19 180.34 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11f7c62f-8306-4574-a605-774776d9e929")
+		(property "Reference" "Q5"
+			(at 118.11 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 118.11 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 118.11 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 123.19 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "f23b1e82-8589-4046-9379-059b4e301ea9")
+		)
+		(pin "7"
+			(uuid "579e1a93-9a5b-4de8-99d4-955f0cb7fb59")
+		)
+		(pin "2"
+			(uuid "c7cd993c-753b-4978-88e6-91b043fad26a")
+		)
+		(pin "6"
+			(uuid "d8415150-cd7b-4c27-90cd-83524a452b9f")
+		)
+		(pin "1"
+			(uuid "4207564d-4727-4f44-9b64-c82045a7bfe4")
+		)
+		(pin "3"
+			(uuid "287f2054-597a-4ea5-a4b2-ff37c9a9df3f")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 142.24 163.83 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17a295fd-6c01-4c92-8634-a3648efce0be")
+		(property "Reference" "Q4"
+			(at 147.32 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 147.32 165.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 147.32 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 142.24 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "2385b477-9b49-4a6a-9dc1-eb9a1b978067")
+		)
+		(pin "7"
+			(uuid "a863ebe1-f393-4ed1-a0b8-6265d298a482")
+		)
+		(pin "2"
+			(uuid "fcb1eefc-9029-45d0-9ebd-2353387f2277")
+		)
+		(pin "6"
+			(uuid "4daa7d35-6082-4ec4-bc04-07614304757e")
+		)
+		(pin "1"
+			(uuid "d3a07aa6-a2bd-4317-a8fa-b9992cd353fb")
+		)
+		(pin "3"
+			(uuid "9898ef8c-42ac-49cb-9208-6f2b077caf2a")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "Q4")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 106.68 130.81 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b13c835-dd25-4ef1-9a94-57d1240e4b73")
+		(property "Reference" "C3"
+			(at 102.87 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22nF"
+			(at 102.87 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+			(at 105.7148 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 106.68 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8c29f355-03a1-40b5-83d1-ffc8d2e2aa5c")
+		)
+		(pin "1"
+			(uuid "4bb9734c-8100-4010-834b-f1156d28fca8")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 123.19 130.81 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b4b8db3-ce24-43bf-a162-da371d07afc1")
+		(property "Reference" "Q2"
+			(at 118.11 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 118.11 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 118.11 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 123.19 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "f23b1e82-8589-4046-9379-059b4e301ea9")
+		)
+		(pin "7"
+			(uuid "579e1a93-9a5b-4de8-99d4-955f0cb7fb59")
+		)
+		(pin "2"
+			(uuid "64897dca-77f0-4ae8-8941-02d23905ae8f")
+		)
+		(pin "6"
+			(uuid "d8415150-cd7b-4c27-90cd-83524a452b9f")
+		)
+		(pin "1"
+			(uuid "c7573e9f-f891-4010-b07d-95357b98d7a4")
+		)
+		(pin "3"
+			(uuid "de5e0167-5140-4d1d-9200-09c095b18c50")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 158.75 163.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5444b541-5641-44dd-9741-3c2d6a347c87")
+		(property "Reference" "C8"
+			(at 162.56 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22nF"
+			(at 162.56 165.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+			(at 159.7152 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 158.75 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "382b6961-9577-459c-85d7-16268d2f5e61")
+		)
+		(pin "1"
+			(uuid "6948274b-2a6a-4fcb-b3c4-1a4622c642db")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 123.19 163.83 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55982c1d-efe7-446b-96df-9e8c6d14c903")
+		(property "Reference" "Q4"
+			(at 118.11 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 118.11 165.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 118.11 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 123.19 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "f23b1e82-8589-4046-9379-059b4e301ea9")
+		)
+		(pin "7"
+			(uuid "579e1a93-9a5b-4de8-99d4-955f0cb7fb59")
+		)
+		(pin "2"
+			(uuid "c01ed33b-fca5-4747-9887-6889f7d95c71")
+		)
+		(pin "6"
+			(uuid "d8415150-cd7b-4c27-90cd-83524a452b9f")
+		)
+		(pin "1"
+			(uuid "d0f292e5-9521-4e7a-86d3-1948c8bb0470")
+		)
+		(pin "3"
+			(uuid "025febf6-b7e5-4bcf-b6be-e2964e3fd962")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 158.75 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5e6343ba-3612-49df-a4fb-c4eaf137d697")
+		(property "Reference" "C1"
+			(at 162.56 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22nF"
+			(at 162.56 115.5699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+			(at 159.7152 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 158.75 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "24d09362-3bdf-4529-929b-ab2593bb8ece")
+		)
+		(pin "1"
+			(uuid "adbdaa1e-cbc8-47ee-8fdf-0558c9e7106f")
+		)
+		(instances
+			(project ""
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 106.68 147.32 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "71c7177f-96be-4a80-813b-21230a495d39")
+		(property "Reference" "C5"
+			(at 102.87 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22nF"
+			(at 102.87 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+			(at 105.7148 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 106.68 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "062bf10c-3f13-46d0-9af1-b9254497dd48")
+		)
+		(pin "1"
+			(uuid "876aea1e-1090-48b2-83d6-d5905439e0b4")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 142.24 114.3 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "80d8222d-e04b-4d8d-a533-823356dedc48")
+		(property "Reference" "Q1"
+			(at 147.32 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 147.32 115.5699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 147.32 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 142.24 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "f23b1e82-8589-4046-9379-059b4e301ea8")
+		)
+		(pin "7"
+			(uuid "579e1a93-9a5b-4de8-99d4-955f0cb7fb58")
+		)
+		(pin "2"
+			(uuid "fcb1eefc-9029-45d0-9ebd-2353387f2277")
+		)
+		(pin "6"
+			(uuid "d8415150-cd7b-4c27-90cd-83524a452b9e")
+		)
+		(pin "1"
+			(uuid "d3a07aa6-a2bd-4317-a8fa-b9992cd353fb")
+		)
+		(pin "3"
+			(uuid "9898ef8c-42ac-49cb-9208-6f2b077caf2a")
+		)
+		(instances
+			(project ""
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "Q1")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 142.24 180.34 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9533fe28-bb5d-4089-9a86-43371745519e")
+		(property "Reference" "Q5"
+			(at 147.32 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 147.32 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 147.32 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 142.24 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "61c0071d-6b17-4e55-b48e-836d6353141f")
+		)
+		(pin "7"
+			(uuid "9087cf92-3ccd-4dfe-a1c9-0bdf5717a17e")
+		)
+		(pin "2"
+			(uuid "fcb1eefc-9029-45d0-9ebd-2353387f2277")
+		)
+		(pin "6"
+			(uuid "3018468b-bafa-4b80-8139-58a384109236")
+		)
+		(pin "1"
+			(uuid "d3a07aa6-a2bd-4317-a8fa-b9992cd353fb")
+		)
+		(pin "3"
+			(uuid "9898ef8c-42ac-49cb-9208-6f2b077caf2a")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "Q5")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 123.19 114.3 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1d1c6f5-27bf-4891-8ca4-ba27681664db")
+		(property "Reference" "Q1"
+			(at 118.11 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 118.11 115.5699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 118.11 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 123.19 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "f23b1e82-8589-4046-9379-059b4e301ea8")
+		)
+		(pin "7"
+			(uuid "579e1a93-9a5b-4de8-99d4-955f0cb7fb58")
+		)
+		(pin "2"
+			(uuid "fcb1eefc-9029-45d0-9ebd-2353387f2277")
+		)
+		(pin "6"
+			(uuid "d8415150-cd7b-4c27-90cd-83524a452b9e")
+		)
+		(pin "1"
+			(uuid "d3a07aa6-a2bd-4317-a8fa-b9992cd353fb")
+		)
+		(pin "3"
+			(uuid "9898ef8c-42ac-49cb-9208-6f2b077caf2a")
+		)
+		(instances
+			(project ""
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 106.68 180.34 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "babcb415-1cee-4a2e-8fb0-df9a32c00439")
+		(property "Reference" "C9"
+			(at 102.87 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22nF"
+			(at 102.87 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+			(at 105.7148 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 106.68 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "476466ec-36d8-4539-bc3c-577e80eafe8a")
+		)
+		(pin "1"
+			(uuid "78f29aa4-cf41-4f9e-9e83-c0cc901622a2")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 142.24 130.81 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bd2758e2-0ca0-4dfb-93ca-6e55c5c4621f")
+		(property "Reference" "Q2"
+			(at 147.32 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 147.32 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 147.32 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 142.24 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "32618b7e-b1fd-4c0f-b670-290032007bd7")
+		)
+		(pin "7"
+			(uuid "c02a4071-93a9-4c13-974f-dacd809ddb76")
+		)
+		(pin "2"
+			(uuid "fcb1eefc-9029-45d0-9ebd-2353387f2277")
+		)
+		(pin "6"
+			(uuid "1da98458-3f57-492c-845f-572cf8f50a42")
+		)
+		(pin "1"
+			(uuid "d3a07aa6-a2bd-4317-a8fa-b9992cd353fb")
+		)
+		(pin "3"
+			(uuid "9898ef8c-42ac-49cb-9208-6f2b077caf2a")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "Q2")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 158.75 180.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c094fb9b-2cfb-4467-a7e9-21cc093aea00")
+		(property "Reference" "C10"
+			(at 162.56 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22nF"
+			(at 162.56 181.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+			(at 159.7152 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 158.75 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8b4d035d-af02-4d8b-9db4-515c4647d6ad")
+		)
+		(pin "1"
+			(uuid "f5ba0f38-fb59-4dab-a9b4-c1466ddc4438")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 106.68 163.83 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ceec4f18-d72d-4798-8b0e-ff572c8dd838")
+		(property "Reference" "C7"
+			(at 102.87 162.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22nF"
+			(at 102.87 165.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+			(at 105.7148 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 106.68 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a935fd56-64c1-4ab1-97f7-05647ddb9944")
+		)
+		(pin "1"
+			(uuid "7d1c7262-590c-46b6-a60e-ddc29fe2c9cf")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 142.24 147.32 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e535e710-c02d-49ac-ace8-b2ae688de739")
+		(property "Reference" "Q3"
+			(at 147.32 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 147.32 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 147.32 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 142.24 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "e61c602a-4fa5-4763-851c-4c12ae147bfb")
+		)
+		(pin "7"
+			(uuid "348c9dc4-2993-4d24-b8f5-e905eaedb910")
+		)
+		(pin "2"
+			(uuid "fcb1eefc-9029-45d0-9ebd-2353387f2277")
+		)
+		(pin "6"
+			(uuid "dc8b0c67-249f-4f29-86b7-dcf125f51f14")
+		)
+		(pin "1"
+			(uuid "d3a07aa6-a2bd-4317-a8fa-b9992cd353fb")
+		)
+		(pin "3"
+			(uuid "9898ef8c-42ac-49cb-9208-6f2b077caf2a")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "Q3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 158.75 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f186b765-cefb-4d79-8ca7-2bf91cb1629a")
+		(property "Reference" "C6"
+			(at 162.56 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22nF"
+			(at 162.56 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+			(at 159.7152 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 158.75 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "10edbc29-e999-459a-b5fe-27d9cffc7509")
+		)
+		(pin "1"
+			(uuid "b0d839f8-987e-4edc-b4fc-5eee925f980b")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProjectLib_Transient:2N2978")
+		(at 123.19 147.32 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f93435bc-617b-488c-881f-25b32f489a46")
+		(property "Reference" "Q3"
+			(at 118.11 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N2978"
+			(at 118.11 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "ProjectLib_Transient:TO-5-6"
+			(at 118.11 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NPN transistor, 6 pin package"
+			(at 123.19 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "f23b1e82-8589-4046-9379-059b4e301ea9")
+		)
+		(pin "7"
+			(uuid "579e1a93-9a5b-4de8-99d4-955f0cb7fb59")
+		)
+		(pin "2"
+			(uuid "37957bf1-8431-4d50-ba5b-45a0c949663b")
+		)
+		(pin "6"
+			(uuid "d8415150-cd7b-4c27-90cd-83524a452b9f")
+		)
+		(pin "1"
+			(uuid "d40dbf10-985d-46f1-a13a-21a2e205a30f")
+		)
+		(pin "3"
+			(uuid "f72e9abe-697b-4c0d-ad26-fe95af5a8231")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 106.68 114.3 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ffa9072e-a1aa-4b8d-9cc2-eb37ca9da9aa")
+		(property "Reference" "C2"
+			(at 102.87 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22nF"
+			(at 102.87 115.5699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+			(at 105.7148 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 106.68 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b382fb51-4696-41e6-ba0c-5754d56879e4")
+		)
+		(pin "1"
+			(uuid "492164fd-e59e-449a-b0b8-6453c9fa1a1b")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 158.75 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffef9489-0752-4f21-a1d0-61c481e26dce")
+		(property "Reference" "C4"
+			(at 162.56 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22nF"
+			(at 162.56 132.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
+			(at 159.7152 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 158.75 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5c87b715-d720-414a-83f4-99c5b557108f")
+		)
+		(pin "1"
+			(uuid "701c1cde-2765-4e43-acfa-dd0b4613a761")
+		)
+		(instances
+			(project "phaser_rev_A"
+				(path "/197f4a44-5606-4614-9f30-04e68d42fe94"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
