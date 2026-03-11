@@ -1,0 +1,155 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{circuitikz}
+\usepackage{fontspec}
+\usepackage{array}
+\usepackage{float}
+
+\setmainfont{Times New Roman}
+
+%
+% NOTE: schematics generated using the online tool: 'https://www.circuit2tikz.tf.fau.de/designer'.
+% Special thanks to them!
+%
+
+\title{Analysis of the ARP Quadra Phaser}
+\author{QuBi}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Foreword}
+
+A few methodological points for approaching such a problem correctly:
+
+\begin{itemize}
+  \item \textbf{A synthesizer module is not a laboratory instrument.}
+  It is not designed to be perfect or to precisely implement the function it advertises.
+  It may simply be an approximation that \textit{sounds good} --- and ultimately, that is the only thing a synthesizer is asked to do.
+  As such, when we speak of a ``filter'' or a ``phaser'', there are implicit fine-print conditions that are not always spelled out. For example:
+  \begin{itemize}
+    \item Ladder Filter: only operates correctly at very small amplitudes; noticeable gain loss at high Q, etc.
+    \item VCO: waveform is a rough approximation, especially at extreme frequencies.
+  \end{itemize}
+  The limitations and deviations from ideal behaviour are never stated explicitly.
+  This can introduce assumptions in the analysis that turn out to be misleading.
+
+  \item \textbf{A technical service schematic is not designed to be pedagogical.}
+  Such documents are primarily intended for assemblers, repair technicians, and the like.
+  The draughtsmen therefore had different priorities:
+  \begin{itemize}
+    \item fitting a coherent set of components onto a single page,
+    \item making it easy to locate individual components.
+  \end{itemize}
+  At the time, schematics were drawn by hand, leaving little room for revision.
+  As a result, what one sees on the page is not necessarily the most conducive representation for understanding.
+  Do not hesitate to redraw or rearrange the schematic to better grasp its origin and operating principle.
+
+  \item \textbf{A purely computational analytical approach rarely helps in understanding how a system works.}
+  It is powerful for quantitative analysis (how much? what is the exact relationship between two quantities? etc.),
+  but it tends to obscure the overarching principles that explain why the system performs a given function.
+  Setting up equations should only be done for a specific sub-system, and only to shed light on a very precise aspect.
+
+  \item \textbf{There is no point overcomplicating matters by considering fifteenth-order effects.}
+  In most cases, these circuits were designed using first-order models.
+  There is therefore no value in burdening the analysis with unnecessary assumptions.
+\end{itemize}
+
+
+\section*{Analysis}
+
+\subsection*{Reducing the Problem}
+
+The repetitive ladder structure immediately suggests focusing, as a first step, on the role of a single rung.
+By induction, this should provide good insight into the overall behaviour.
+
+The functions of the surrounding stages are abstracted away, as they are secondary:
+\begin{itemize}
+  \item the lower section sinks a current $I$ in each branch,
+  \item the upper section injects the signal to be phase-shifted.
+\end{itemize}
+
+Since we are working in the frequency domain (harmonic analysis), capacitors can be replaced by simple resistors to fix ideas.
+
+The circuit exhibits a manifest symmetry: the left half is a mirror image of the right half.
+Again, this invites us to consider only one half of the circuit.
+
+This kind of symmetry is quite common: it is routinely used to separate the operating point
+(static and identical in each branch) from the signal component (varying and of opposite sign in each branch).
+
+A simple subtraction then eliminates the unwanted operating point.
+
+
+\subsection*{Qualitative Operation}
+
+We observe the voltage at the transistor's emitter.
+
+Let us consider the extreme values of the control current.
+By continuity, we will infer the general behaviour.
+
+\paragraph{Zero control current.}
+If the current is zero, the transistor is inactive and only the resistor connects input to output.
+With no current, the collector voltage is reproduced identically at the emitter: the stage is transparent.
+
+\paragraph{Increasing the control current.}
+The collector potential is imposed by a voltage source and therefore remains essentially unchanged.
+This current flows through $R_C$, creating a voltage drop between collector and emitter that tends to pull the emitter potential down
+(which is possible since the current sink below does not, by definition, impose a voltage).
+As the base voltage is fixed, $v_{BE}$ increases and begins driving a current through $Q$.
+
+$Q$ and $R_C$ share the same constant total current $I_\mathrm{cmd}$.
+Consequently, the onset of conduction in $Q$ alters the distribution of current between $Q$ and $R_C$,
+and therefore the value of $v_{BE}$.
+
+A negative feedback loop on $I_C$ takes shape:
+\[
+  I_{R_C} \uparrow \;\Rightarrow\; v_{BE} \uparrow \;\Rightarrow\; I_C \uparrow \;\Rightarrow\; I_{R_C} \downarrow
+\]
+
+\begin{quote}
+  \textbf{Stability aside.}
+  This type of mechanism typically converges naturally toward equilibrium, but it can also oscillate.
+  A precise knowledge of the loop parameters (gain and phase shift) would be needed to draw a firm conclusion; however, in the present case:
+  \begin{itemize}
+    \item there are no significant delay elements (e.g.\ capacitors) that would give cause for doubt,
+    \item simulations and bench tests support the stability hypothesis.
+  \end{itemize}
+  Delay is an important stability criterion.
+  It is somewhat analogous to the situation where two people walking toward each other on a pavement both step aside --- but sometimes their reaction times are such that they mirror each other, and the awkward dance continues for a while.
+  Here, stability can reasonably be assumed.
+\end{quote}
+
+An equilibrium is thus established between $I_C$ and $I_{R_C}$, and it depends on the control current:
+a higher $I_\mathrm{cmd}$ leads to a higher $v_{BE}$.
+
+\paragraph{Effect on the input signals.}
+From the emitter's perspective, the upper input is still seen through resistor $R_C$.
+The second input, however, is seen through a dynamic resistance that decreases as the control current increases.
+(In this region of the curve, a very small $\Delta V$ produces a very large $\Delta I$, so $r_d = \Delta V / \Delta I$ is very small.)
+
+Since the $v_{BE}$ vs.\ $I_C$ characteristic is exponential, a point will be reached where \ldots
+
+
+\subsection*{Application to the Complete Schematic}
+
+As noted above, the differential (symmetrised) configuration eliminates the bias operating point.
+
+The operation can then be summarised in the following key points:
+\begin{enumerate}
+  \item Each stage performs a blend between the signal and its $180°$-phase-shifted version.
+  \item The mixing ratio depends on the control current.
+  \item Replacing the resistors with capacitors makes the ratio frequency-dependent:
+    \begin{itemize}
+      \item $f \ll f_0$: the original signal passes through,
+      \item $f \gg f_0$: the $180°$-shifted version passes through,
+      \item $f \approx f_0$: \ldots
+    \end{itemize}
+\end{enumerate}
+
+\end{document}
