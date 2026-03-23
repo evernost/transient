@@ -153,7 +153,7 @@
 	(net 73 "Net-(C17-Pad1)")
 	(net 74 "Net-(Q17-C)")
 	(net 75 "Net-(Q18-C)")
-	(net 76 "Net-(C6-Pad1)")
+	(net 76 "Net-(C10-Pad2)")
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "0076f39d-a3b9-4472-a3ad-00b7c2aacab2")
@@ -2270,7 +2270,7 @@
 			(drill 1.85)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 20 "Net-(Q8-C)")
+			(net 65 "Net-(RV3A-W)")
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "125a1f9c-1be5-4c52-8794-c032c6f34676")
@@ -2281,7 +2281,7 @@
 			(drill 1.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 76 "Net-(C6-Pad1)")
+			(net 76 "Net-(C10-Pad2)")
 			(pinfunction "2")
 			(pintype "passive")
 			(uuid "b8ee64d6-328b-4325-bb59-b225ebde326b")
@@ -2292,7 +2292,7 @@
 			(drill 1.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 31 "Net-(RV8-B)")
+			(net 66 "Net-(RV3B-W)")
 			(pinfunction "3")
 			(pintype "passive")
 			(uuid "a48dc07e-e6cb-4d67-949f-c577910ca4db")
@@ -9849,7 +9849,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 66 "Net-(RV3B-W)")
+			(net 76 "Net-(C10-Pad2)")
 			(pintype "passive")
 			(uuid "b32a875f-2f2d-4411-b2ab-0d265f475f6e")
 		)
@@ -9865,6 +9865,110 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D2.0mm"
+		(layer "F.Cu")
+		(uuid "35805c64-c80c-41b2-bce9-f0f78fee6290")
+		(at 93.98 78.74)
+		(descr "SMD pad as test Point, diameter 2.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP8"
+			(at 0 -1.998 0)
+			(layer "F.SilkS")
+			(uuid "dcfb2941-4fb5-4437-b5f9-2395ade4c8e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 2.05 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6731dc4-c63c-4c02-bbc0-1c217a4774de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63252a40-f271-4ea5-be50-1de0ac405a02")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66e9eeea-2d84-4837-9c6d-4b3f0d3be7dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/613d9a0c-91cf-4088-90aa-f875d04af890")
+		(sheetname "/")
+		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(attr exclude_from_pos_files)
+		(fp_circle
+			(center 0 0)
+			(end 0 1.2)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "1a1dbce3-d1cf-4439-8fad-86ce32fd6356")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.5 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "13d5efcf-dd98-4dd5-ac4a-65d9760493ec")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(layer "F.Fab")
+			(uuid "1a289956-a9bb-43b5-8c56-b629a62b027f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 2 2)
+			(layers "F.Cu" "F.Mask")
+			(net 75 "Net-(Q18-C)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "70001a7e-00e9-4b7e-9b7a-8723a339530d")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "LED_THT:LED_D3.0mm"
 		(layer "F.Cu")
@@ -13256,6 +13360,7 @@
 		(property "Value" "33µF"
 			(at 2.5 6.25 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "435ee42b-759f-47ac-91e9-50cc00d80fe8")
 			(effects
 				(font
@@ -15284,7 +15389,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.125)
-			(net 76 "Net-(C6-Pad1)")
+			(net 31 "Net-(RV8-B)")
 			(pintype "passive")
 			(uuid "125f021b-782c-4a4d-b463-0635b5d65ea0")
 		)
@@ -16353,7 +16458,7 @@
 		(descr "Potentiometer, vertical, Bourns PTV09A-1 Single, http://www.bourns.com/docs/Product-Datasheets/ptv09.pdf")
 		(tags "Potentiometer vertical Bourns PTV09A-1 Single")
 		(property "Reference" "RV8"
-			(at 6.05 -5.35 90)
+			(at 15.374 -2.58 180)
 			(layer "F.SilkS")
 			(uuid "0b45cdd3-771c-4ac7-a499-48c29939cd4e")
 			(effects
@@ -16366,6 +16471,7 @@
 		(property "Value" "1k"
 			(at 6.05 10.35 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "fb032c2f-5c30-45b2-9f98-2e243f23a5b9")
 			(effects
 				(font
@@ -21705,6 +21811,7 @@
 		(property "Value" "33µF"
 			(at 2.5 6.25 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "e0637ac2-5e1a-4f62-b74a-c94babbb79e0")
 			(effects
 				(font
@@ -23763,7 +23870,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D2.0mm"
 		(layer "F.Cu")
 		(uuid "866facc2-8188-466c-a771-fb5bcbb49567")
-		(at 95.25 83.82)
+		(at 111.76 95.25)
 		(descr "SMD pad as test Point, diameter 2.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP6"
@@ -23780,6 +23887,7 @@
 		(property "Value" "TestPoint"
 			(at 0 2.05 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "1ca19a38-415e-46e5-a855-940278c81951")
 			(effects
 				(font
@@ -24362,7 +24470,7 @@
 		(descr "2 Gang dual Through Hole, Snap In potentiometer, https://www.bourns.com/docs/Product-Datasheets/PTVPTT.pdf")
 		(tags "PTV112-4 Dual gang")
 		(property "Reference" "RV3"
-			(at 8.5 -6.2 90)
+			(at 19.4625 -2.08 180)
 			(layer "F.SilkS")
 			(uuid "0ba78607-74b8-4529-a717-4e3e4f48f556")
 			(effects
@@ -25666,6 +25774,7 @@
 		(property "Value" "4.7k"
 			(at -2.54 3.67 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "1a18a1ec-dd5b-4426-8506-8e4672f15f61")
 			(effects
 				(font
@@ -34542,7 +34651,7 @@
 		(descr "Potentiometer, vertical, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf")
 		(tags "Potentiometer vertical Bourns 3296W")
 		(property "Reference" "RV5"
-			(at -2.54 -3.66 90)
+			(at 3.81 1.27 180)
 			(layer "F.SilkS")
 			(uuid "a964d60f-0f93-44a6-aa81-a527e12042c0")
 			(effects
@@ -36706,6 +36815,110 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(footprint "TestPoint:TestPoint_Pad_D2.0mm"
+		(layer "F.Cu")
+		(uuid "ca611820-13a2-45f8-a42d-017f258d77f2")
+		(at 93.98 44.45)
+		(descr "SMD pad as test Point, diameter 2.0mm")
+		(tags "test point SMD pad")
+		(property "Reference" "TP7"
+			(at 0 -1.998 0)
+			(layer "F.SilkS")
+			(uuid "a0edfbaa-c91e-409c-925b-6eca726a344d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 0 2.05 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e08e457c-971f-4648-a3a7-5a7a85b47a63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "349c1594-3088-470b-99c7-ecc7e0abc690")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a7fe561-1062-4eb3-a272-3225891b3594")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Pin* Test*")
+		(path "/fbc7ba77-fb97-462b-a499-ed61703b498a")
+		(sheetname "/")
+		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(attr exclude_from_pos_files)
+		(fp_circle
+			(center 0 0)
+			(end 0 1.2)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "ed6d049b-f466-41b8-b1a6-2bb16e7c7681")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.5 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "bc709a62-3f5c-452c-a598-cc39d774c541")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(layer "F.Fab")
+			(uuid "b2c0e28b-c252-473c-ae4f-e0c662038f4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd circle
+			(at 0 0)
+			(size 2 2)
+			(layers "F.Cu" "F.Mask")
+			(net 74 "Net-(Q17-C)")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "6758f375-fed7-42e3-b643-24ab6b7fe561")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "ProjectLib_Transient:WuerthElectronik_WR_TBL_Series_2109_1x02_P2.54mm_Horizontal"
 		(layer "F.Cu")
@@ -43378,6 +43591,18 @@
 		(layer "Edge.Cuts")
 		(uuid "f4455226-c8c6-4819-aa3e-094513456014")
 	)
+	(gr_text "L\n"
+		(at 74.93 116.84 0)
+		(layer "F.SilkS")
+		(uuid "1b5aa91a-0f24-4658-ae7c-7ce6c4055b65")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "Volume"
 		(at 52.07 123.19 0)
 		(layer "F.SilkS")
@@ -43410,6 +43635,18 @@
 			(font
 				(size 3 3)
 				(thickness 0.375)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "R"
+		(at 86.36 116.84 0)
+		(layer "F.SilkS")
+		(uuid "780d1a30-8402-474e-a09d-3d5d65ee03a1")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
 			)
 			(justify left bottom)
 		)
