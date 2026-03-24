@@ -76,7 +76,7 @@ Examples:
 | `vco_rev1.pdf` | Electrical schematic (PDF export)|
 | `vco_rev1.kicad_pcb` | Schematic (KiCad 9.0.6)|
 | `vco_rev1.kicad_pcb` | PCB layout (KiCad 9.0.6)|
-| `sim/XXX.asc` | SPICE simulation of the Schmitt Trigger |
+| `firmware/` | Embedded code for the VCO (STM32CubeIDE 2.1.1 - 2026) |
 
 ---
 
