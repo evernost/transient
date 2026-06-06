@@ -1,6 +1,6 @@
 # Headphones Amplifier
 
-Output stage module.
+Output stage module for headphones with gain and balance control.
 
 ---
 
@@ -21,7 +21,7 @@ Block diagram: TODO!
 - Single power supply (+12V)
 - Input impedance: TBD Ohms
 - Output impedance: 32 Ohms
-- Overload indicator
+- Overload indicator (excessive power)
 
 
 
@@ -70,11 +70,22 @@ Section is TODO.
 | File | Description |
 |-----|-------------|
 | `headphones_amp_rev_A.pdf` | Electrical schematic (PDF export)|
-| `headphones_amp_rev_A.kicad_pcb` | Schematic (KiCad 9.0.6)|
-| `headphones_amp_rev_A.kicad_pcb` | PCB layout (KiCad 9.0.6)|
-| `sim/XXX.asc` | SPICE simulation of the Schmitt Trigger |
+| `headphones_amp_rev_A.kicad_pcb` | Schematic (KiCad 9.0.7)|
+| `headphones_amp_rev_A.kicad_pcb` | PCB layout (KiCad 9.0.7)|
+| `sim/XXX.asc` | SPICE simulation of the final stage |
 
 ---
+
+## Tools
+Designed with KiCAD 9.0.7
+
+Grid dimensions:
+- 0.25mm: PCB outline
+- 25mil: parts placement and routing
+
+---
+
+
 
 ## Calibration / Tuning
 - Tune the bias voltage on $Q_5$ and $Q_{11}$
