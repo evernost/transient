@@ -116,7 +116,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -144,6 +144,12 @@
 		(path "/7e8acc43-3f9b-44d0-af14-6d52970ee31e")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -281,7 +287,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -309,6 +315,12 @@
 		(path "/5f331e4e-746b-4b94-85fe-f978526c1e24")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -476,6 +488,12 @@
 		(path "/51f153c5-cc57-4362-bc89-515246c1db6e")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -622,7 +640,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q18-C)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "46b673e2-ca0b-4b27-b7b5-3da9537dc60f")
 		)
@@ -633,7 +651,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q18-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "80dadf3f-8b60-40cb-bea5-2a66fc72819b")
 		)
@@ -644,7 +662,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q18-E)")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "66f31b1f-456c-4f00-8567-ab3919a0cae6")
 		)
@@ -690,7 +708,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -718,6 +736,12 @@
 		(path "/2abcf8bc-fdc2-4e2b-ad9a-6b4624a87211")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -820,7 +844,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q13-C)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "eeda3a12-62fe-43b5-b183-b00fdfeb846a")
 		)
@@ -831,7 +855,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(R37-Pad1)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "7fa3aa23-0c92-41a8-8135-b3440e282317")
 		)
@@ -842,7 +866,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "03d69956-fefd-4ce8-8422-a5459e85bd6c")
 		)
@@ -888,7 +912,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -916,6 +940,12 @@
 		(path "/8f633638-62ba-4318-916c-50f93daacf40")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1083,6 +1113,12 @@
 		(path "/d35f5dee-fec7-472c-a0e9-02dbd08de214")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1218,7 +1254,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q1-B)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "e27ae44f-1486-4b65-900d-535112f8a3a8")
 		)
@@ -1229,7 +1265,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q7-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "30416c9c-d3cd-48f7-9491-1c3b42a612a6")
 		)
@@ -1240,7 +1276,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q2-B)")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "3c0566d0-4788-40de-bf77-76ee3f780f47")
 		)
@@ -1286,7 +1322,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1314,6 +1350,12 @@
 		(path "/6b15d9b8-de0d-4e35-8339-067f9190d635")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1481,6 +1523,12 @@
 		(path "/0ebb021b-c90f-45c8-b930-4dbaa88e4ed1")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1627,7 +1675,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q3-C)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "0d51b9e3-846b-4aef-88f4-dd2f358ea067")
 		)
@@ -1638,7 +1686,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q3-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "0269e58c-2e7e-4755-8b80-6a7c15d1b472")
 		)
@@ -1649,7 +1697,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "de5de2e0-e794-4f27-b323-a0afbba9bbf0")
 		)
@@ -1695,7 +1743,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1723,6 +1771,12 @@
 		(path "/c57d3bb8-6b5a-4cba-809b-fa5be0f93412")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1860,7 +1914,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1888,6 +1942,12 @@
 		(path "/8779d007-f20e-4d41-8492-dfe7350f9237")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2025,7 +2085,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2054,6 +2114,12 @@
 		(path "/d58ac3a0-59af-4b58-84d3-270003ada229")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2215,7 +2281,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(RV3A-W)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "125a1f9c-1be5-4c52-8794-c032c6f34676")
 		)
@@ -2226,7 +2292,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(C10-Pad2)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "b8ee64d6-328b-4325-bb59-b225ebde326b")
 		)
@@ -2237,7 +2303,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(RV3B-W)")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "a48dc07e-e6cb-4d67-949f-c577910ca4db")
 		)
@@ -2283,7 +2349,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2311,6 +2377,12 @@
 		(path "/b7958ebd-63ee-439b-a3a5-b592a07c30a3")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4360,7 +4432,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4388,6 +4460,12 @@
 		(path "/2065d9ba-3b8d-4b7b-ab22-b4ccdb892d9b")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4525,7 +4603,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4553,6 +4631,12 @@
 		(path "/09468a00-b6f5-4145-8a71-3a0004ddc35c")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4720,6 +4804,12 @@
 		(path "/350f2c8b-d1aa-40b3-8e70-e8a381ab064d")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4855,7 +4945,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q15-C)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "dd296a7e-1513-4b1d-8416-644c9aa2bb5e")
 		)
@@ -4866,7 +4956,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q14-C)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "f09e0048-2501-4e88-94ad-7fd84e7cb38d")
 		)
@@ -4877,7 +4967,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+12V")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "9a6635d7-4da2-466d-8b30-7d9d13eb4d25")
 		)
@@ -4923,7 +5013,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4951,6 +5041,12 @@
 		(path "/a07cd918-37cd-4e07-8847-a868faa4e60d")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7019,6 +7115,12 @@
 		(path "/d50e387f-8889-420c-a0e9-e880e387e89e")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7165,7 +7267,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q4-C)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "f1e5b1e7-e319-4eab-a124-a8779c8a4853")
 		)
@@ -7176,7 +7278,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q3-C)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "38ffb441-0a23-4647-9bba-0a636db464b9")
 		)
@@ -7187,7 +7289,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+12V")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "aae59825-0e4e-41a1-8a9a-b6aff63949cc")
 		)
@@ -7233,7 +7335,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7262,6 +7364,12 @@
 		(path "/1f2271f2-f2c4-4714-bfd6-cd0f0b3bee0b")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7434,7 +7542,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(J5-Pin_2)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "e785f86d-bee5-4ba6-aeba-0b6e479596ec")
 		)
@@ -7445,7 +7553,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+12V")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "38ab52d6-cda4-403a-9181-f30bbf4dbfdb")
 		)
@@ -7456,7 +7564,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(SW1-Pad3)")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "df40959a-9a0e-46ab-90bc-d401325b6028")
 		)
@@ -7502,7 +7610,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7532,7 +7640,12 @@
 		(path "/d631e8fc-8660-4624-a690-77e553421b67")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -7572,7 +7685,7 @@
 			(size 2 2)
 			(layers "F.Cu" "F.Mask")
 			(net "Net-(Q2-B)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "0f641f8a-5d47-4d19-9265-5e102f66a94f")
 		)
@@ -7607,7 +7720,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7635,6 +7748,12 @@
 		(path "/c2eebc27-77c0-4fd3-b940-0d6636175a35")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7772,7 +7891,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7800,6 +7919,12 @@
 		(path "/cc8b996d-5509-41d3-adae-13ed81b3b4e3")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9849,7 +9974,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9879,7 +10004,12 @@
 		(path "/613d9a0c-91cf-4088-90aa-f875d04af890")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -9919,7 +10049,7 @@
 			(size 2 2)
 			(layers "F.Cu" "F.Mask")
 			(net "Net-(Q18-C)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "70001a7e-00e9-4b7e-9b7a-8723a339530d")
 		)
@@ -9953,7 +10083,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9994,6 +10124,12 @@
 		(path "/9cd8c610-bccc-4a38-85f5-81c9cbc69d05")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10121,7 +10257,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "1f4477bd-057a-4292-9f99-f9cecc952f09")
 		)
@@ -10132,7 +10268,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(D1-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "7fe869d1-989c-40ff-b622-c7708ee30f71")
 		)
@@ -10178,7 +10314,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10206,6 +10342,12 @@
 		(path "/326fc452-4124-4ee5-91ae-7c74960a5ba3")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10343,7 +10485,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10371,6 +10513,12 @@
 		(path "/f8224d7c-76c2-4cc2-9cf7-47dc88217130")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10497,7 +10645,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10525,6 +10673,12 @@
 		(path "/91b82cd2-e715-45ba-8f53-039b86319b70")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10662,7 +10816,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10690,6 +10844,12 @@
 		(path "/96838ee7-924f-4ee5-8987-debb88ca5d31")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10827,7 +10987,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10855,7 +11015,13 @@
 		(path "/0a4593b4-dc3c-4bb3-bd96-78a3c0ccbcc4")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -10898,7 +11064,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "afe66696-26e3-4ddf-b429-8b2e9e358fb3")
@@ -10910,7 +11076,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "72671485-d925-404e-9c92-1944000f4ef4")
@@ -10922,7 +11088,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "67526baf-a6f6-43ea-a287-143532b291b9")
@@ -10934,7 +11100,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "1b457340-3e82-4b33-8bbe-069ee69386f5")
@@ -10946,7 +11112,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "3d3eadec-7af7-4924-863e-7be5fa21c2aa")
@@ -10958,7 +11124,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "25a6bdd9-8f35-4ac3-b8d0-3b01af4e9a6f")
@@ -10970,7 +11136,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "e224367e-1198-401b-90b3-a502eafa56fd")
@@ -10982,7 +11148,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "63d795ed-cec9-47df-ab87-bea522bd51c8")
@@ -10994,7 +11160,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "5f2f1ee4-9212-4512-aad9-f82786a37b51")
@@ -11030,7 +11196,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11071,6 +11237,12 @@
 		(path "/883be768-c1a4-4482-8ec4-aa26deec1d18")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11198,7 +11370,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(D2-K)")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "2dcf6f34-160a-46ad-8ada-35e4d9c31d81")
 		)
@@ -11209,7 +11381,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+12V")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "1f368645-e4b8-43e8-a38c-482da913c85f")
 		)
@@ -11255,7 +11427,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11283,6 +11455,12 @@
 		(path "/785a9428-da1b-4bdd-b9e0-ddc57ec5200c")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13332,7 +13510,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13360,6 +13538,12 @@
 		(path "/34c4de67-e4d2-4577-89f8-1379f0302a78")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15439,6 +15623,12 @@
 		(path "/59ad499b-f328-43bd-b2b1-7a5703dc6078")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15585,7 +15775,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q17-C)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "e86d8600-4750-48ad-8b64-371c603b653f")
 		)
@@ -15596,7 +15786,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q17-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "39064afc-5ecd-43c9-9aaf-aa3cffa4650c")
 		)
@@ -15607,7 +15797,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q17-E)")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "9c78d48e-e2d9-4277-a217-19ca6fa1e3e9")
 		)
@@ -15683,6 +15873,12 @@
 		(path "/579e45a4-69e3-4f2f-9f82-f94c23fc26ad")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15818,7 +16014,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q10-E)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "73e7600b-45c1-49f5-8467-0d9d30991a2b")
 		)
@@ -15829,7 +16025,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q11-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "9ecf55aa-1330-44f5-8a95-fdeaeefcbaa6")
 		)
@@ -15840,7 +16036,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q11-E)")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "20ab29ea-33db-4359-a857-59f766a5f2b2")
 		)
@@ -15886,7 +16082,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -15914,6 +16110,12 @@
 		(path "/f2023f11-ab20-4afb-bff6-a00d5133fe30")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16070,6 +16272,12 @@
 		(path "/9d6e1db5-6c5a-472b-90a2-a9bb1e2ae51b")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16216,7 +16424,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q8-C)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "1c9372f2-cef4-4a8b-ad7c-3940e53136a7")
 		)
@@ -16227,7 +16435,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q17-C)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "24c84a4b-b88f-4dfb-a947-77d1c3fba9cb")
 		)
@@ -16238,7 +16446,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q8-E)")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "66bc2744-8254-4238-8d95-ff4d110c827b")
 		)
@@ -16284,7 +16492,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16312,6 +16520,12 @@
 		(path "/ba7b4bbf-1459-4b4c-8e72-b2cb4234d013")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16449,7 +16663,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16477,6 +16691,12 @@
 		(path "/63b4933a-2ba5-420d-b737-5f22e6dca4ad")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "SH" "1" "3" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16620,7 +16840,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(RV8-A)")
-			(pinfunction "A")
+			(pinfunction "A_1")
 			(pintype "passive")
 			(uuid "76cfabda-ce6e-4464-8960-ba5bb293e83f")
 		)
@@ -16631,7 +16851,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "W")
+			(pinfunction "W_2")
 			(pintype "passive")
 			(uuid "34bd72d1-9491-42b5-a822-f055824e81b8")
 		)
@@ -16642,7 +16862,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(RV8-B)")
-			(pinfunction "B")
+			(pinfunction "B_3")
 			(pintype "passive")
 			(uuid "f4e5e65a-581a-4ddd-a23e-7615aabcc16e")
 		)
@@ -16653,7 +16873,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SH")
+			(pinfunction "SH_SH")
 			(pintype "passive")
 			(uuid "47449285-8469-431d-a45e-c01cd3ddb8aa")
 		)
@@ -16664,7 +16884,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SH")
+			(pinfunction "SH_SH")
 			(pintype "passive")
 			(uuid "6923d7ed-0aec-4181-aac3-08c86226f9e3")
 		)
@@ -16710,7 +16930,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16738,6 +16958,12 @@
 		(path "/739826d5-5403-4ba7-b83c-fa38a85a6673")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16947,7 +17173,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "out_R")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "be1642bf-b900-4893-8ff8-297e6ffa9314")
 		)
@@ -16958,7 +17184,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "a61d9353-ce68-401d-a712-842820bf96e3")
 		)
@@ -17004,7 +17230,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17032,6 +17258,12 @@
 		(path "/93a3fa0b-b411-4c70-a83c-38c006729c3b")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17169,7 +17401,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17197,6 +17429,12 @@
 		(path "/d69fc5b4-77b3-4ea8-9c14-4f22002df7ed")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19246,7 +19484,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -19274,6 +19512,12 @@
 		(path "/cd63da89-2d67-4b35-a11f-08fa61e29017")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19376,7 +19620,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(R14-Pad2)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "fb7383ef-ed68-4765-a131-c6f218fad8b2")
 		)
@@ -19387,7 +19631,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q7-B)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "093bb01c-cb67-4a3c-a60b-8af7571f7fec")
 		)
@@ -19398,7 +19642,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(R15-Pad1)")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "4ba245f5-e2d7-4d87-9e27-4f0531a86ad0")
 		)
@@ -19444,7 +19688,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -19472,6 +19716,12 @@
 		(path "/8a79cd37-8b98-47fd-a313-3647c13a3e5a")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19609,7 +19859,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -19637,6 +19887,12 @@
 		(path "/3709aba5-6bf3-467c-99c1-94e29f89647f")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19774,7 +20030,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19802,6 +20058,12 @@
 		(path "/ccbec3c9-64ea-4790-9004-a1b36444f104")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19939,7 +20201,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19969,7 +20231,12 @@
 		(path "/f5f433bf-10c2-4327-a3f2-945eb18a17b1")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -20009,7 +20276,7 @@
 			(size 2 2)
 			(layers "F.Cu" "F.Mask")
 			(net "Net-(Q10-E)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "bc01f004-0c6d-48d8-bd7f-f31337b5c724")
 		)
@@ -20044,7 +20311,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -20072,6 +20339,12 @@
 		(path "/7c9e5560-d0ec-43be-9301-d176668f7ab9")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20209,7 +20482,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -20237,6 +20510,12 @@
 		(path "/1fbcd95b-2228-4bc8-ad6a-87c4587ee41c")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20374,7 +20653,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -20402,6 +20681,12 @@
 		(path "/c6dcd8b8-ac53-4ba4-8a55-424b1aae636a")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20539,7 +20824,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20569,7 +20854,12 @@
 		(path "/9b355a97-67d0-4c7a-9ff1-61b675eeb89e")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -20609,7 +20899,7 @@
 			(size 2 2)
 			(layers "F.Cu" "F.Mask")
 			(net "Net-(Q1-B)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "567cce75-f849-4d06-ac53-ca0e49593e6a")
 		)
@@ -20644,7 +20934,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20685,6 +20975,12 @@
 		(path "/83b14963-1d31-4d66-8840-76b1cfbf05de")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20841,7 +21137,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(D4-K)")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "b0be7cb3-e12d-407c-8dc7-3688e5279515")
 		)
@@ -20852,7 +21148,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+12V")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "70778945-68d5-4130-b270-9aaa7360c315")
 		)
@@ -20898,7 +21194,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20926,6 +21222,12 @@
 		(path "/d046e82f-5d97-41a9-b81b-fe37c27ce492")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21063,7 +21365,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21091,6 +21393,12 @@
 		(path "/9be70329-70d8-4a83-b25d-4ded6e96eef7")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21228,7 +21536,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21256,6 +21564,12 @@
 		(path "/e40cdd5f-bbe4-40c1-add3-1e0ee59212ea")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21421,6 +21735,12 @@
 		(path "/ba991184-65a6-4869-89e4-a024d504cb26")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "3" "1")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21575,7 +21895,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q12-E)")
-			(pinfunction "E")
+			(pinfunction "E_1")
 			(pintype "passive")
 			(uuid "6c190f22-9a66-4a1a-804e-1ba67e7bcae2")
 		)
@@ -21586,7 +21906,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q10-C)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "41a10bee-0c25-436f-a11b-1540aa1904be")
 		)
@@ -21597,7 +21917,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q12-C)")
-			(pinfunction "C")
+			(pinfunction "C_3")
 			(pintype "passive")
 			(uuid "76b2c827-7bc4-4a29-91ef-fa99a269ead2")
 		)
@@ -21643,7 +21963,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21671,6 +21991,12 @@
 		(path "/70178f9e-489d-4500-9dae-645a542e5bdb")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21808,7 +22134,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21836,6 +22162,12 @@
 		(path "/4eeb006a-882c-415c-bd11-5fe693763535")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23885,7 +24217,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23915,7 +24247,12 @@
 		(path "/dc05bc6b-d8d7-4209-a953-37e793f22eb5")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -23955,7 +24292,7 @@
 			(size 2 2)
 			(layers "F.Cu" "F.Mask")
 			(net "Net-(Q11-B)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "22284c38-5340-4d18-9e48-61ea2bed6f0a")
 		)
@@ -23990,7 +24327,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -24018,6 +24355,12 @@
 		(path "/9178ed63-83a6-4883-bc28-a1b913809c1d")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24155,7 +24498,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24183,6 +24526,12 @@
 		(path "/6dd830f9-0d85-4499-be07-d0c79481b5f5")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24320,7 +24669,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24348,6 +24697,12 @@
 		(path "/5d66c0f1-a12a-4c55-a30f-c2edcc76083d")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24485,7 +24840,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24515,6 +24870,16 @@
 		(path "/fe90d8fa-aae5-4aba-9111-06281ab03e38")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "7" "1" "3" "2")
+			)
+			(unit
+				(name "B")
+				(pins "8" "4" "6" "5")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25183,7 +25548,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(J3-Pin_2)")
-			(pinfunction "A")
+			(pinfunction "A_1")
 			(pintype "passive")
 			(uuid "3521927f-4cc7-4b13-974b-64a609a11375")
 		)
@@ -25194,7 +25559,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(RV3A-W)")
-			(pinfunction "W")
+			(pinfunction "W_2")
 			(pintype "passive")
 			(uuid "1ed804a6-caf8-47cd-8501-a53d1623c6b0")
 		)
@@ -25205,7 +25570,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "B")
+			(pinfunction "B_3")
 			(pintype "passive")
 			(uuid "f01c7dd0-581f-41b1-b0dd-6520c78a80ce")
 		)
@@ -25216,7 +25581,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(J4-Pin_2)")
-			(pinfunction "A")
+			(pinfunction "A_4")
 			(pintype "passive")
 			(uuid "4820a84d-ce0e-43da-8122-97235fab69f7")
 		)
@@ -25227,7 +25592,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(RV3B-W)")
-			(pinfunction "W")
+			(pinfunction "W_5")
 			(pintype "passive")
 			(uuid "539d352c-5347-49d4-b753-bb642b483cb9")
 		)
@@ -25238,7 +25603,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "B")
+			(pinfunction "B_6")
 			(pintype "passive")
 			(uuid "a853f9cb-1550-4813-b4f9-87756e0dce0c")
 		)
@@ -25249,7 +25614,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SH1")
+			(pinfunction "SH1_7")
 			(pintype "passive")
 			(uuid "8effcfa9-0a5f-4315-a8bd-8983dfc8fd4c")
 		)
@@ -25260,7 +25625,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "SH2")
+			(pinfunction "SH2_8")
 			(pintype "passive")
 			(uuid "6809a16e-2ba8-4e23-838b-4161e4a5bd97")
 		)
@@ -25396,6 +25761,12 @@
 		(path "/56ee5523-010b-4d23-93bf-505583fc0b68")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25542,7 +25913,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q6-C)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "66ecc2b4-4e3f-4561-858f-0d59090b1fe3")
 		)
@@ -25553,7 +25924,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q6-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "cf666232-c6d3-49df-991c-25de5035498b")
 		)
@@ -25564,7 +25935,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q6-E)")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "65ebd55b-5968-4dc1-8462-c94a8cf35cda")
 		)
@@ -25610,7 +25981,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25638,6 +26009,12 @@
 		(path "/7f080b75-43b7-40b7-ba58-9b50cf2d2bd1")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25775,7 +26152,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -25803,6 +26180,12 @@
 		(path "/0d0c150a-4e8e-42c9-bef2-89b26c8b5413")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25916,7 +26299,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(R17-Pad2)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "5875351d-f84f-4020-8f4c-58526694ecb3")
 		)
@@ -25927,7 +26310,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q5-B)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "a2748399-7a9f-44d4-bb99-a30fd20acb6f")
 		)
@@ -25938,7 +26321,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(R16-Pad1)")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "9fa02441-3a39-49d7-aa40-a51fbf8a866a")
 		)
@@ -25984,7 +26367,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -26012,6 +26395,12 @@
 		(path "/7c787c53-20b0-426f-9f64-6a760c1074f8")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26149,7 +26538,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26177,6 +26566,12 @@
 		(path "/05cff9a8-8f3d-4f3a-9fa0-3df803e24b17")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26314,7 +26709,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26342,7 +26737,13 @@
 		(path "/a1018d66-9cd6-4cbe-864a-7e3883acbf75")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -26385,7 +26786,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "ea15f7d9-b6d4-4008-9061-666a6a53ca86")
@@ -26397,7 +26798,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "7d3d42bf-4571-4036-843c-c7e6b0a81c4d")
@@ -26409,7 +26810,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "84e688ad-cc02-4de4-bc0c-64d56e293077")
@@ -26421,7 +26822,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "d21847a8-ea9f-4e38-8229-f9c76773043c")
@@ -26433,7 +26834,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "943eefc2-f7c1-4f28-a4af-602b4aae9f3f")
@@ -26445,7 +26846,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "cffa6557-fb28-4752-bd5e-62bfc8680080")
@@ -26457,7 +26858,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "eff790f8-106b-4971-84fd-2942c72f4e91")
@@ -26469,7 +26870,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "cd4a22ca-8257-40a1-9240-005328b54c22")
@@ -26481,7 +26882,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "14c92f5d-29f1-415b-aa5a-dcdce06ca1ed")
@@ -26517,7 +26918,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -26545,6 +26946,12 @@
 		(path "/8492cccd-b694-4815-b683-abbf68ce8e8f")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28611,6 +29018,12 @@
 		(path "/9b1d3422-a482-43fe-8d9b-e1d7f0a4a49e")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "3" "1")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28754,7 +29167,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q13-E)")
-			(pinfunction "E")
+			(pinfunction "E_1")
 			(pintype "passive")
 			(uuid "dc78f641-f7c7-42fe-981e-a3d137550603")
 		)
@@ -28765,7 +29178,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q10-E)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "12c5e066-4511-4315-bb5f-138afa3ffc1c")
 		)
@@ -28776,7 +29189,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q13-C)")
-			(pinfunction "C")
+			(pinfunction "C_3")
 			(pintype "passive")
 			(uuid "855509bc-eb34-45a1-bf13-8e715d205cc3")
 		)
@@ -28822,7 +29235,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -28850,6 +29263,12 @@
 		(path "/de979f2b-f760-46a9-935e-c1516038d14d")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29059,7 +29478,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "a23b5d70-7903-41f0-9bd3-f3c0d3786388")
 		)
@@ -29070,7 +29489,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(J4-Pin_2)")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "1697eb7d-0b81-4d82-aa2b-a9e31b3b13e8")
 		)
@@ -29116,7 +29535,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29144,6 +29563,12 @@
 		(path "/862ddc07-c6ca-42e1-aed6-b6a3dcb276b5")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29281,7 +29706,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29309,6 +29734,12 @@
 		(path "/085a0b47-5c70-4518-bd1a-cfae5eac00f3")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29446,7 +29877,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29474,6 +29905,12 @@
 		(path "/19e1d2a2-36c8-44ee-b2ed-4ceb1f92a40a")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29611,7 +30048,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29639,6 +30076,12 @@
 		(path "/eb7dc0ef-d6ca-40db-a47a-e3277cdde131")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29776,7 +30219,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29804,6 +30247,12 @@
 		(path "/8f0ce784-2dd2-44df-abb3-524695c7647b")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31852,7 +32301,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -31880,6 +32329,12 @@
 		(path "/4f31a52d-7af0-470f-933f-5dc4198dfcb4")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33929,7 +34384,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -33957,6 +34412,12 @@
 		(path "/b2342490-448c-4f79-9f15-32de1316d8bd")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34094,7 +34555,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -34122,6 +34583,12 @@
 		(path "/663e326b-6643-4c3b-9b51-bb7e25e14a21")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34259,7 +34726,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -34287,6 +34754,12 @@
 		(path "/c7dda55e-c2b9-4138-8c4e-0e98a22af9cb")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34413,7 +34886,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34443,7 +34916,12 @@
 		(path "/bf7af1a2-9e5d-47ae-91af-5819523536cc")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -34483,7 +34961,7 @@
 			(size 2 2)
 			(layers "F.Cu" "F.Mask")
 			(net "Net-(Q5-B)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "a976b488-d695-492f-9146-8fde81384fb3")
 		)
@@ -34518,7 +34996,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -34546,6 +35024,12 @@
 		(path "/7418a1f4-d3ca-4e1a-a9e2-a70022816187")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34683,7 +35167,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -34711,6 +35195,12 @@
 		(path "/3a90836e-f3b4-4495-bd39-4f2863db3754")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34824,7 +35314,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(R27-Pad2)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "eb162f59-1700-45b9-a680-e1f272f71ca1")
 		)
@@ -34835,7 +35325,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q11-B)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "c69a3f0c-2e5b-43be-a929-9342f82d964d")
 		)
@@ -34846,7 +35336,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(R28-Pad1)")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "d25a2ea8-4934-447c-b8aa-c3c3ff9b89e1")
 		)
@@ -34892,7 +35382,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -34920,6 +35410,12 @@
 		(path "/e3575b67-ea11-4104-ad75-e562d76f4811")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -35057,7 +35553,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -35085,6 +35581,12 @@
 		(path "/79127741-c90e-44a0-a7e3-2a508a00c287")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -35222,7 +35724,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -35250,6 +35752,12 @@
 		(path "/7e6c43ec-32b5-445d-9376-7b6411ffa5c8")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -35561,7 +36069,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "379416b4-8e25-40ad-a4dd-a7dcff2e2642")
 		)
@@ -35572,7 +36080,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "bb7ffd45-2869-4244-bf35-b426bd35c53f")
 		)
@@ -35583,7 +36091,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(J5-Pin_2)")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "1518a585-bfe4-47ea-ac35-e6979cc20134")
 		)
@@ -35594,7 +36102,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(J5-Pin_2)")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "2eb28ca1-4fcf-40fb-b2cb-1425fc788fb1")
 		)
@@ -35640,7 +36148,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -35668,7 +36176,13 @@
 		(path "/f026ba96-9acf-4c27-bae9-2774395f6cca")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -35711,7 +36225,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "a67fdb4a-58f7-474b-9007-853e3cbb0e63")
@@ -35723,7 +36237,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "2aedd874-e23c-4369-b7a8-eeb7cddbd879")
@@ -35735,7 +36249,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "186f21e0-66e4-4c98-be02-e0c766b94011")
@@ -35747,7 +36261,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "cff080d6-f9d0-429a-a950-c2fda17c45fc")
@@ -35759,7 +36273,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "d567cc18-85b1-431c-b960-de1c8d8fb098")
@@ -35771,7 +36285,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "aadf5096-16cb-4ebf-80a4-fc29781f9433")
@@ -35783,7 +36297,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "ab3fece4-09b9-44d6-8c93-8d655dcf778f")
@@ -35795,7 +36309,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "4e05c412-ddbe-4078-a122-f22708ff366b")
@@ -35807,7 +36321,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "bd034991-92f9-496b-a239-e17ca7abdbe8")
@@ -35843,7 +36357,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -35871,6 +36385,12 @@
 		(path "/5fe686a5-b32e-4c0f-ad4c-f66e4bb36511")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36080,7 +36600,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "07a74050-260d-48a6-a974-cf0e9e866e41")
 		)
@@ -36091,7 +36611,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(J3-Pin_2)")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "a2cee5ca-e4b6-4ea4-8ee0-da756ccc3c48")
 		)
@@ -36167,6 +36687,12 @@
 		(path "/6d5cb4f5-29a3-4de2-88b2-a83027e1d31e")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36302,7 +36828,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q10-C)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "f3b460ce-dc49-4a55-b18c-367494bf69d9")
 		)
@@ -36313,7 +36839,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q10-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "7c98e6a0-1ffb-4245-a441-c4bb08a9f9b2")
 		)
@@ -36324,7 +36850,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q10-E)")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "137e49c3-56c4-4803-8e2e-d3d91780c991")
 		)
@@ -36370,7 +36896,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -36398,6 +36924,12 @@
 		(path "/9da467c2-689b-440e-89ae-cbaf768d2447")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36535,7 +37067,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -36563,6 +37095,12 @@
 		(path "/91a3d15b-c30e-412a-bae9-4b41b9bdd98f")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36700,7 +37238,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -36728,6 +37266,12 @@
 		(path "/13121c36-a614-4f3c-99fe-bf287839b2fb")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36865,7 +37409,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -36895,7 +37439,12 @@
 		(path "/fbc7ba77-fb97-462b-a499-ed61703b498a")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -36935,7 +37484,7 @@
 			(size 2 2)
 			(layers "F.Cu" "F.Mask")
 			(net "Net-(Q17-C)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "6758f375-fed7-42e3-b643-24ab6b7fe561")
 		)
@@ -36970,7 +37519,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -36998,6 +37547,12 @@
 		(path "/88d348dc-30b6-4427-b09a-012cddc7a59a")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -37207,7 +37762,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "out_L")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "5020e8c1-03d8-4860-a80e-0a12400013bb")
 		)
@@ -37218,7 +37773,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "44b5dc88-9e2d-4a0a-8f6a-5d89953d027c")
 		)
@@ -37264,7 +37819,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -37292,6 +37847,12 @@
 		(path "/1869dba9-5dbc-4f2a-864d-93c7aa1764e0")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -37418,7 +37979,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -37446,6 +38007,12 @@
 		(path "/bbe14392-3108-477e-9b6a-943397635e9b")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -37548,7 +38115,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q2-C)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "68c7a55d-6acc-494a-9c96-dec9a6069d34")
 		)
@@ -37559,7 +38126,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(R6-Pad1)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "2ea4b93c-b61a-4d44-912d-fc69b1c1fb50")
 		)
@@ -37570,7 +38137,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "90c01e02-ae2b-485f-9287-ac08ee548caa")
 		)
@@ -37616,7 +38183,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -37644,6 +38211,12 @@
 		(path "/c15e1a4a-2029-4d34-b429-434c12712566")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -37781,7 +38354,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -37809,6 +38382,12 @@
 		(path "/da327737-fe70-4008-9170-239e29bef3c7")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -37945,7 +38524,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -37973,6 +38552,12 @@
 		(path "/195d9f28-0286-480a-b469-e84e33db81df")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -40022,7 +40607,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -40052,7 +40637,12 @@
 		(path "/4fb70867-87cd-4343-97a5-aea3ce4ccd92")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -40092,7 +40682,7 @@
 			(size 2 2)
 			(layers "F.Cu" "F.Mask")
 			(net "Net-(Q10-C)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "2e7afdf8-3b9c-42ff-a397-bfe2155115e2")
 		)
@@ -40157,6 +40747,12 @@
 		(path "/3a78d249-5b4d-4756-9fd9-7f62ea423631")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -40292,7 +40888,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q14-C)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "394a00e6-2522-4f15-870c-6e408b819d49")
 		)
@@ -40303,7 +40899,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q14-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "16009925-981b-46b7-9001-cf350f9e16f2")
 		)
@@ -40314,7 +40910,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "7e9e9de8-fab9-4f46-bb0f-fd0c2dc77613")
 		)
@@ -40388,6 +40984,12 @@
 		(path "/8b965fc4-3f5c-4cab-93af-3705378d404c")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "3" "1")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -40531,7 +41133,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q2-E)")
-			(pinfunction "E")
+			(pinfunction "E_1")
 			(pintype "passive")
 			(uuid "aafd3b8e-5d0c-4ee0-86b5-af52bbda2b9c")
 		)
@@ -40542,7 +41144,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q2-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "47c283e0-4029-416a-a942-5abb73fecb34")
 		)
@@ -40553,7 +41155,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q2-C)")
-			(pinfunction "C")
+			(pinfunction "C_3")
 			(pintype "passive")
 			(uuid "d3c24c5d-1cfd-4f2f-9654-4474ca449ac0")
 		)
@@ -40599,7 +41201,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -40627,6 +41229,12 @@
 		(path "/c4c14658-3594-4e27-8dc6-150e4f2c9415")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -40783,6 +41391,12 @@
 		(path "/1065071c-7702-479c-aac4-986b2d3a0d0c")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -40918,7 +41532,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q16-C)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "7f73b9a4-2797-4799-aad7-afddad5d625f")
 		)
@@ -40929,7 +41543,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q16-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "313adfd6-a1a6-459a-85f5-6e63880f7875")
 		)
@@ -40940,7 +41554,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q16-E)")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "0c7810c3-92d2-4555-bb47-c0bae3d66949")
 		)
@@ -40986,7 +41600,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -41014,6 +41628,12 @@
 		(path "/2ad862bc-d6a1-409c-8087-c3093f6564a1")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41179,6 +41799,12 @@
 		(path "/9fdfed10-a6b1-46b8-845c-1953ba9c3ee5")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "3" "1")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41333,7 +41959,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q1-E)")
-			(pinfunction "E")
+			(pinfunction "E_1")
 			(pintype "passive")
 			(uuid "2dbe14b7-869e-4c64-a011-065347f19365")
 		)
@@ -41344,7 +41970,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q1-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "ddf132c9-de6d-41b0-b778-9ae60705dfd8")
 		)
@@ -41355,7 +41981,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q1-C)")
-			(pinfunction "C")
+			(pinfunction "C_3")
 			(pintype "passive")
 			(uuid "fdc9e084-c0f0-497b-8626-949ff4b57d01")
 		)
@@ -41401,7 +42027,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -41429,6 +42055,12 @@
 		(path "/24f5307e-da0f-41fa-b6fb-84769a2ced90")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41566,7 +42198,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41596,6 +42228,12 @@
 		(path "/2c582e3b-12aa-44a8-8e56-5d104371d1af")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "S" "R" "RN" "T" "TN")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41901,7 +42539,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -41929,7 +42567,13 @@
 		(path "/34ea9751-d7da-4b3a-91db-b6f40db4fcc4")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -41972,7 +42616,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "b1e94541-eee8-4d14-a721-63878a8ba060")
@@ -41984,7 +42628,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "3af861e7-1b4f-48e9-b20f-ed44fe2fc5e9")
@@ -41996,7 +42640,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "7954da84-d54f-4263-9d06-8916c92c269b")
@@ -42008,7 +42652,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "c08fa544-2364-42c8-b9c3-dfaf69cbbeaf")
@@ -42020,7 +42664,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "8153cb62-c1b5-4858-afe6-987a83ec3bea")
@@ -42032,7 +42676,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "28f7ab64-53a2-40bf-b143-b83f4c1fb182")
@@ -42044,7 +42688,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "06ad4b6a-9f47-41a7-a5a7-033a0d6a4d7a")
@@ -42056,7 +42700,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "8476f3e9-f116-4839-be22-9a0e295b2edf")
@@ -42068,7 +42712,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "input")
 			(zone_connect 2)
 			(uuid "8495f551-03f9-48d6-bd3d-c60ab939d1b1")
@@ -42105,7 +42749,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -42133,6 +42777,12 @@
 		(path "/196bc6fe-f078-4e0a-bd2e-252829a4b378")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "S" "R" "RN" "T" "TN")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42380,7 +43030,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -42408,6 +43058,12 @@
 		(path "/a117d7ab-7bdd-4631-b8d6-120dfb81c3a6")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42510,7 +43166,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(R29-Pad2)")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "cfb1113c-2e1c-4638-a9ab-64fee14cb4f9")
 		)
@@ -42521,7 +43177,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q10-B)")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "5801572f-ed66-4ec3-91de-3deca0d1bb06")
 		)
@@ -42532,7 +43188,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(R30-Pad1)")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "2a2066d2-e128-41c0-a225-4ecff9c30220")
 		)
@@ -42578,7 +43234,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -42606,6 +43262,12 @@
 		(path "/efa028a4-c52b-42f3-ab49-df24c10bc59f")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42743,7 +43405,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -42771,6 +43433,12 @@
 		(path "/2780f5e2-9c1a-4776-ba77-ac9c914baebb")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42908,7 +43576,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -42936,6 +43604,12 @@
 		(path "/51cbf4fd-4694-4327-93ca-469bae6b8103")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -43103,6 +43777,12 @@
 		(path "/bc5412d1-8d9e-43dd-8685-4ebdfd9baef1")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -43249,7 +43929,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q2-B)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "3f3bc46a-7a0f-4d97-9172-849be3739fb4")
 		)
@@ -43260,7 +43940,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q5-B)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "ec6862fc-d78b-4a62-92a7-627ed0e615b8")
 		)
@@ -43271,7 +43951,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q5-E)")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "84ea7de6-5c7f-43cf-bff8-a1528f2a7b58")
 		)
@@ -43347,6 +44027,12 @@
 		(path "/7d0f6c45-bb1d-41a7-9483-b6f4dad4fc1c")
 		(sheetname "/")
 		(sheetfile "headphones_amp_rev_A.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "2" "1" "3")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -43493,7 +44179,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q9-C)")
-			(pinfunction "C")
+			(pinfunction "C_1")
 			(pintype "passive")
 			(uuid "eec88890-1593-4996-9dcd-39137f13afca")
 		)
@@ -43504,7 +44190,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q18-C)")
-			(pinfunction "B")
+			(pinfunction "B_2")
 			(pintype "input")
 			(uuid "2e83120e-7941-4c6c-a719-ba9b8efdb0e0")
 		)
@@ -43515,7 +44201,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(Q9-E)")
-			(pinfunction "E")
+			(pinfunction "E_3")
 			(pintype "passive")
 			(uuid "b754534f-7e21-41fe-a08d-5d0371ff43b7")
 		)
