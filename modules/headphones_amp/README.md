@@ -70,18 +70,22 @@ Section is TODO.
 | File | Description |
 |-----|-------------|
 | `headphones_amp_rev_A.pdf` | Electrical schematic (PDF export)|
-| `headphones_amp_rev_A.kicad_pcb` | Schematic (KiCad 9.0.7)|
-| `headphones_amp_rev_A.kicad_pcb` | PCB layout (KiCad 9.0.7)|
+| `headphones_amp_rev_A.kicad_sch` | Schematic (KiCad 10.0.7)|
+| `headphones_amp_rev_A.kicad_pcb` | PCB layout (KiCad 10.0.7)|
 | `sim/XXX.asc` | SPICE simulation of the final stage |
 
 ---
 
 ## Tools
-Designed with KiCAD 9.0.7
+Designed with KiCAD 10.0.7
 
-Grid dimensions:
-- 0.25mm: PCB outline
-- 25mil: parts placement and routing
+### KiCAD Grid dimensions
+
+| Name   | Size    | Description        |
+|--------|---------|--------------------|
+| Grid 1 | 0.25 mm | PCB outline        |
+| Grid 2 | 50 mil  | Parts placement    |
+| Grid 3 | 50 mil  | Routing            |
 
 ---
 
