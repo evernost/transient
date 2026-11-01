@@ -43,3 +43,8 @@ Connector -> TestPoint -> TestPoint:TestPoint_Pad_D2.0mm
 
 ### Mount holes
 MountingHole:MountingHole_3.2mm_M3_Pad_Via
+
+
+### Project paths
+${KIPRJMOD}/../../../../libraries/symbols/ProjectLib_Transient.kicad_sym
+${KIPRJMOD}/../../../../libraries/footprints/ProjectLib_Transient.pretty

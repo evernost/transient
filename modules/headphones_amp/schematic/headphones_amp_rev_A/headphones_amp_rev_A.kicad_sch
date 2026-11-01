@@ -3745,8 +3745,8 @@
 	)
 	(text_box "2mA\n"
 		(exclude_from_sim no)
-		(at 200.66 228.6 0)
-		(size 6.35 3.81)
+		(at 198.12 228.6 0)
+		(size 8.89 3.81)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3783,8 +3783,8 @@
 	)
 	(text_box "2mA\n"
 		(exclude_from_sim no)
-		(at 189.23 100.33 0)
-		(size 6.35 3.81)
+		(at 186.69 100.33 0)
+		(size 8.89 3.81)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
