@@ -36,7 +36,7 @@ LED_THT:LED_D3.0mm
 ## Others
 
 ### Pin header
-Connector_Generic -> Conn_01x02 -> Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical
+Connector_Generic -> Conn_01x02 -> Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
 
 ### Test point
 Connector -> TestPoint -> TestPoint:TestPoint_Pad_D2.0mm

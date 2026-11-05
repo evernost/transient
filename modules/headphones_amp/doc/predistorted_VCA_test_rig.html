@@ -1,0 +1,291 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Predistorted VCA Test Rig</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: one drawing sheet (schematic + title block) across the top, then a two-column reference area: numbers and parts on the left, bring-up and experiments on the right. */
+:root {
+  --paper: #eceff0;
+  --sheet: #fafbf9;
+  --ink: #1a2228;
+  --muted: #56636b;
+  --rule: #c5cdd0;
+  --grid: #e4e8e6;
+  --accent: #2448c8;
+  --accent-soft: #e2e8fb;
+  --note: #56636b;
+  --f-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --f-body: "Barlow", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0f1417; --sheet: #141a1e; --ink: #dce3e6; --muted: #95a3aa;
+    --rule: #2d383e; --grid: #1a2227; --accent: #8ea7ff; --accent-soft: #1d2645; --note: #95a3aa;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0f1417; --sheet: #141a1e; --ink: #dce3e6; --muted: #95a3aa;
+  --rule: #2d383e; --grid: #1a2227; --accent: #8ea7ff; --accent-soft: #1d2645; --note: #95a3aa;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 40px;
+}
+
+/* Header */
+header { display: grid; gap: 10px; max-width: 68ch; }
+.eyebrow {
+  font-family: var(--f-display); font-weight: 600; font-size: 14px;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+h1 {
+  font-family: var(--f-display); font-weight: 700; font-size: clamp(34px, 5vw, 52px);
+  line-height: 1; letter-spacing: -0.01em; margin: 0; text-wrap: balance;
+}
+.lede { margin: 0; color: var(--muted); font-size: 17px; }
+.lede strong { color: var(--ink); font-weight: 600; }
+
+/* Drawing sheet */
+.sheet {
+  background: var(--sheet);
+  border: 1.5px solid var(--ink);
+  display: grid;
+  min-width: 0;
+}
+.sheet-scroll {
+  overflow-x: auto;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: -1px -1px;
+  border-bottom: 1.5px solid var(--ink);
+}
+.schem { display: block; width: 100%; min-width: 900px; height: auto; padding: 8px 4px; }
+.schem text { font-family: var(--f-body); font-weight: 500; font-variant-numeric: tabular-nums; }
+
+.sheet-foot { display: grid; grid-template-columns: 1fr auto; min-width: 0; }
+.legend {
+  display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center;
+  padding: 12px 16px; font-size: 14px; color: var(--muted); min-width: 0;
+}
+.legend span { display: inline-flex; gap: 8px; align-items: center; }
+.swatch { width: 22px; height: 0; border-top: 2.5px solid var(--accent); }
+.legend b { color: var(--ink); font-weight: 600; }
+
+.titleblock {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  border-left: 1.5px solid var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.titleblock div { padding: 6px 12px; border-left: 1px solid var(--rule); display: grid; align-content: center; }
+.titleblock div:first-child { border-left: 0; }
+.titleblock .tb-title { grid-column: 1 / -1; border-left: 0; border-bottom: 1px solid var(--rule); }
+.tb-k {
+  font-family: var(--f-display); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+}
+.tb-v { font-family: var(--f-display); font-size: 17px; font-weight: 600; line-height: 1.2; }
+.tb-title .tb-v { font-size: 20px; }
+
+/* Reference area */
+.ref { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px 48px; align-items: start; }
+.col { display: grid; gap: 40px; min-width: 0; }
+section { display: grid; gap: 14px; min-width: 0; }
+h2 {
+  font-family: var(--f-display); font-weight: 700; font-size: 26px; line-height: 1.1;
+  margin: 0; padding-bottom: 8px; border-bottom: 1.5px solid var(--ink);
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px; text-wrap: balance;
+}
+h2 small { font-family: var(--f-body); font-weight: 400; font-size: 13px; color: var(--muted); letter-spacing: 0; }
+
+.tbl-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th {
+  font-family: var(--f-display); font-weight: 600; font-size: 12px; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--muted); padding-top: 0;
+}
+td.val { font-weight: 600; white-space: nowrap; }
+td.how { color: var(--muted); }
+td.ref-d { font-family: var(--f-display); font-weight: 700; font-size: 16px; white-space: nowrap; }
+tr.hl td.ref-d { color: var(--accent); }
+.fine { font-size: 13.5px; color: var(--muted); margin: 0; }
+var { font-style: italic; }
+sub { font-size: 0.72em; }
+
+ol.steps, ol.exps { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; counter-reset: n; }
+ol.steps li, ol.exps li { counter-increment: n; display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 0 10px; }
+ol.steps li::before, ol.exps li::before {
+  content: counter(n);
+  font-family: var(--f-display); font-weight: 700; font-size: 15px;
+  width: 26px; height: 26px; display: grid; place-items: center;
+  border: 1.5px solid var(--ink); border-radius: 50%; margin-top: -1px;
+}
+ol.exps li::before { border-radius: 0; }
+li p { margin: 0; }
+li p + p { margin-top: 6px; }
+.exp-name { font-weight: 600; }
+.expect {
+  margin-top: 6px; padding: 6px 10px; background: var(--accent-soft);
+  border-left: 2.5px solid var(--accent); font-size: 14.5px;
+}
+.expect b { font-weight: 600; }
+
+@media (max-width: 860px) {
+  .ref { grid-template-columns: minmax(0, 1fr); }
+  .sheet-foot { grid-template-columns: minmax(0, 1fr); }
+  .titleblock { border-left: 0; border-top: 1px solid var(--rule); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .titleblock div:nth-child(2n) { border-left: 0; }
+  .titleblock div:nth-child(n+2) { border-top: 1px solid var(--rule); }
+  .titleblock .tb-title { border-bottom: 0; }
+}
+@media (max-width: 480px) {
+  .page { padding-block: 24px 48px; gap: 32px; }
+  table { font-size: 14px; }
+  td.val { white-space: normal; }
+}
+</style>
+
+<div class="page">
+  <header>
+    <div class="eyebrow">Breadboard experiment · Gilbert gain cell</div>
+    <h1>Predistorted VCA test rig</h1>
+    <p class="lede">A BJT differential pair whose input is first warped by two diode-connected transistors. The diodes take the logarithm of the input current split, the pair takes the exponential, and the two cancel, so the pair accepts <strong>volts instead of millivolts</strong>. SW1 takes the diodes out so you can hear what they do.</p>
+  </header>
+
+  <figure class="sheet" style="margin:0">
+    <div class="sheet-scroll">
+<svg class="schem" role="img" aria-labelledby="schem-title" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:lang="en" viewBox="-143.6 -395.5 1194.5 690.2"><title id="schem-title">Schematic: BJT differential pair VCA with predistortion diodes Q3 and Q4, offset trim, and TL072 difference-amplifier output</title><circle cx="91.8" cy="-0" r="19.8" style="stroke:var(--ink);fill:none;stroke-width:1.4;" /><circle cx="232.2" cy="-0" r="19.8" style="stroke:var(--ink);fill:none;stroke-width:1.4;" /><circle cx="-7.26" cy="-108" r="19.8" style="stroke:var(--accent);fill:none;stroke-width:1.4;" /><circle cx="331.26" cy="-108" r="19.8" style="stroke:var(--accent);fill:none;stroke-width:1.4;" /><path d="M 72.0,-0.0 L 85.2,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 85.2,-13.2 L 85.2,13.2" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 85.2,-6.6 L 99.06,-18.48 L 99.06,-25.08" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 85.2,6.6 L 99.06,18.48 L 99.06,25.08" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 85.2,6.6 L 92.227,12.623" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 97.541 17.178 L 89.884 15.356 L 94.57 9.89 Z" style="stroke:var(--ink);fill:var(--ink);stroke-linecap:butt;stroke-linejoin:miter;" /><path d="M 238.79999999999998,-0.0 L 252,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 238.79999999999998,13.2 L 238.8,-13.2" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 224.94,-25.08 L 224.94,-18.48 L 238.8,-6.6" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 224.94,25.08 L 224.94,18.48 L 238.8,6.6" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 231.77330942128768,12.62287763889628 L 238.8,6.6" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 226.459 17.178 L 229.43 9.89 L 234.116 15.356 Z" style="stroke:var(--ink);fill:var(--ink);stroke-linecap:butt;stroke-linejoin:miter;" /><path d="M 0.0,-0.0 L 36,-0 L 72,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 324.0,-0.0 L 288,-0 L 252,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 99.05999999999999,-25.08 L 99.06,-37.74 L 99.06,-50.4" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 224.94,-25.08 L 224.94,-37.74 L 224.94,-50.4" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 99.05999999999999,-50.4 L 99.06,-72 L 90.06,-75 L 108.06,-81 L 90.06,-87 L 108.06,-93 L 90.06,-99 L 108.06,-105 L 99.06,-108 L 99.06,-129.6" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 99.05999999999999,-129.6 L 99.06,-144" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 99.05999999999999,-144.0 L 92.31,-144" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 99.05999999999999,-144.0 L 105.81,-144" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 224.94,-50.4 L 224.94,-72 L 215.94,-75 L 233.94,-81 L 215.94,-87 L 233.94,-93 L 215.94,-99 L 233.94,-105 L 224.94,-108 L 224.94,-129.6" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 224.94,-129.6 L 224.94,-144" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 224.94,-144.0 L 218.19,-144" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 224.94,-144.0 L 231.69,-144" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 99.05999999999999,-50.4 L 108.96,-50.4 L 118.86,-50.4" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 224.94,-50.4 L 215.04,-50.4 L 205.14,-50.4" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 99.05999999999999,25.08 L 99.06,48.54 L 99.06,72" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 224.94,25.08 L 224.94,48.54 L 224.94,72" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 99.05999999999999,72.0 L 162,72 L 224.94,72" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 162.0,72.0 L 162,93.6 L 171,96.6 L 153,102.6 L 171,108.6 L 153,114.6 L 171,120.6 L 153,126.6 L 162,129.6 L 162,151.2" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 162.0,151.20000000000002 L 162,176.4 L 171,179.4 L 153,185.4 L 171,191.4 L 153,197.4 L 171,203.4 L 153,209.4 L 162,212.4 L 162,237.6" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 144.0,185.4 L 176.463,200.383" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 181.184 202.562 L 175.256 202.998 L 177.67 197.768 Z" style="stroke:var(--ink);fill:var(--ink);stroke-linecap:butt;stroke-linejoin:miter;" /><path d="M 162.0,237.6 L 162,252" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 162.0,252.0 L 155.25,252" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 162.0,252.0 L 168.75,252" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -27.060001200000002,-108.0 L -13.86,-108" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -13.860001200000001,-121.2 L -13.86,-94.8" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -13.860001200000001,-114.6 L -0,-126.48 L -0,-133.08" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -13.860001200000001,-101.4 L -0,-89.52 L -0,-82.92" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -13.860001200000001,-101.4 L -6.833,-95.377" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -1.519 -90.822 L -9.176 -92.644 L -4.49 -98.11 Z" style="stroke:var(--accent);fill:var(--accent);stroke-linecap:butt;stroke-linejoin:miter;" /><path d="M 337.86000119999994,-108.0 L 351.06,-108" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 337.86000119999994,-94.8 L 337.86,-121.2" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 324.0000012,-133.08 L 324,-126.48 L 337.86,-114.6" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 324.0000012,-82.92 L 324,-89.52 L 337.86,-101.4" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 330.83331062128764,-95.37712236110372 L 337.86,-101.4" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 325.519 -90.822 L 328.49 -98.11 L 333.176 -92.644 Z" style="stroke:var(--accent);fill:var(--accent);stroke-linecap:butt;stroke-linejoin:miter;" /><path d="M -27.060001200000002,-108.0 L -27.06,-130.5 L -27.06,-153" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -27.060001200000002,-153.0 L -13.53,-153 L -0,-153" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -1.2000000033651759e-06,-133.08 L -0,-143.04 L -0,-153" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -1.2000000033651759e-06,-153.0 L -0,-173.7 L -0,-194.4" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 351.0600012,-108.0 L 351.06,-130.5 L 351.06,-153" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 351.0600012,-153.0 L 337.53,-153 L 324,-153" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 324.0000012,-133.08 L 324,-143.04 L 324,-153" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 324.0000012,-153.0 L 324,-173.7 L 324,-194.4" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -1.2000000033651759e-06,-82.92 L -0,-41.46 L -0,-0" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 324.0000012,-82.92 L 324,-41.46 L 324,-0" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -1.2000000033651759e-06,-194.4 L 162,-194.4 L 324,-194.4" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 162.0,-194.4 L 162,-208.8 M 158.4,-217.44 L 145.8,-237.6 M 162,-244.8 L 162,-259.2" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 162.0,-259.2 L 162,-280.8 L 153,-283.8 L 171,-289.8 L 153,-295.8 L 171,-301.8 L 153,-307.8 L 171,-313.8 L 162,-316.8 L 162,-338.4" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 162.0,-338.40000000000003 L 162,-352.8" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 162.0,-352.8 L 155.25,-352.8" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 162.0,-352.8 L 168.75,-352.8" style="stroke:var(--accent);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 0.0,-0.0 L -0,18 L 9,21 L -9,27 L 9,33 L -9,39 L 9,45 L -9,51 L -0,54 L -0,72" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M -1.3226185430791413e-14,72.0 L -0,86.4 L -9,86.4 L 9,86.4 M -6.3,90.72 L 6.3,90.72 M -1.8,95.04 L 1.8,95.04" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 324.0,-0.0 L 324,18 L 333,21 L 315,27 L 333,33 L 315,39 L 333,45 L 315,51 L 324,54 L 324,72" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 324.0,72.0 L 324,86.4 L 315,86.4 L 333,86.4 M 317.7,90.72 L 330.3,90.72 M 322.2,95.04 L 325.8,95.04" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 0.0,-0.0 L -28.8,-0 L -31.8,9 L -37.8,-9 L -43.8,9 L -49.8,-9 L -55.8,9 L -61.8,-9 L -64.8,-0 L -93.6,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 324.0,-0.0 L 367.2,-0 L 410.4,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 410.40000000000003,-0.0 L 410.4,18 L 419.4,21 L 401.4,27 L 419.4,33 L 401.4,39 L 419.4,45 L 401.4,51 L 410.4,54 L 410.4,72" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 410.40000000000003,72.0 L 410.4,86.4 L 401.4,86.4 L 419.4,86.4 M 404.1,90.72 L 416.7,90.72 M 408.6,95.04 L 412.2,95.04" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 410.40000000000003,-0.0 L 439.2,-0 L 442.2,-9 L 448.2,9 L 454.2,-9 L 460.2,9 L 466.2,-9 L 472.2,9 L 475.2,-0 L 504,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 529.9200000000001,-54.0 L 529.92,-27 L 520.92,-24 L 538.92,-18 L 520.92,-12 L 538.92,-6 L 520.92,-0 L 538.92,6 L 529.92,9 L 529.92,36" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 504.0,-9.000000000000007 L 511.92,-9" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 518.92 -9 L 511.92 -6.3 L 511.92 -11.7 Z" style="stroke:var(--ink);fill:var(--ink);stroke-linecap:butt;stroke-linejoin:miter;" /><path d="M 529.9200000000001,36.0 L 529.92,50.4" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 529.9200000000001,50.4 L 523.17,50.4" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 529.9200000000001,50.4 L 536.67,50.4" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 529.9200000000001,-54.0 L 529.92,-68.4" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 529.9200000000001,-68.39999999999999 L 523.17,-68.4" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 529.9200000000001,-68.39999999999999 L 536.67,-68.4" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 778.2288568297001,-0.0 L 778.229,-45 L 856.171,-0 L 778.229,45 L 778.229,-0 M 856.171,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 784.3716426222751,-22.5 L 791.572,-22.5" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 784.3716426222751,22.5 L 791.572,22.5" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 787.9716426222751,26.099999999999998 L 787.972,18.9" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 755.7288568297001,-22.5 L 778.229,-22.5" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 755.7288568297001,22.5 L 778.229,22.5" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 856.1711431702997,-0.0 L 878.671,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 755.7288568297001,-22.5 L 744.929,-22.5 L 734.129,-22.5" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 755.7288568297001,22.5 L 744.929,22.5 L 734.129,22.5" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 734.1288568297001,-22.5 L 705.329,-22.5 L 702.329,-13.5 L 696.329,-31.5 L 690.329,-13.5 L 684.329,-31.5 L 678.329,-13.5 L 672.329,-31.5 L 669.329,-22.5 L 640.529,-22.5" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 734.1288568297001,22.5 L 705.329,22.5 L 702.329,31.5 L 696.329,13.5 L 690.329,31.5 L 684.329,13.5 L 678.329,31.5 L 672.329,13.5 L 669.329,22.5 L 640.529,22.5" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 734.1288568297001,22.5 L 734.129,47.7 L 743.129,50.7 L 725.129,56.7 L 743.129,62.7 L 725.129,68.7 L 743.129,74.7 L 725.129,80.7 L 734.129,83.7 L 734.129,108.9" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 734.1288568297001,108.89999999999999 L 734.129,123.3 L 725.129,123.3 L 743.129,123.3 M 727.829,127.62 L 740.429,127.62 M 732.329,131.94 L 735.929,131.94" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 734.1288568297001,-22.5 L 734.129,-51.3 L 734.129,-80.1" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 734.1288568297001,-80.10000000000001 L 797.4,-80.1 L 800.4,-89.1 L 806.4,-71.1 L 812.4,-89.1 L 818.4,-71.1 L 824.4,-89.1 L 830.4,-71.1 L 833.4,-80.1 L 896.671,-80.1" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 896.6711431702997,-80.10000000000001 L 896.671,-40.05 L 896.671,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 878.6711431702997,-0.0 L 887.671,-0 L 896.671,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><path d="M 896.6711431702997,-0.0 L 918.271,-0 L 939.871,-0" style="stroke:var(--ink);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;" /><text x="117.05999999999999" y="-7.249999999999999" dominant-baseline="central" style="fill:var(--ink)" font-size="12.649999999999999" text-anchor="start"><tspan x="117.05999999999999" dy="12.649999999999999">Q1</tspan></text><text x="199.74" y="-7.249999999999999" dominant-baseline="central" style="fill:var(--ink)" font-size="12.649999999999999" text-anchor="end"><tspan x="199.74" dy="12.649999999999999">Q2</tspan></text><text x="86.46" y="-108.75" dominant-baseline="central" style="fill:var(--ink)" font-size="12.5" text-anchor="end"><tspan x="86.46" dy="12.5">R6</tspan><tspan x="86.46" dy="12.5">4.7k</tspan></text><text x="99.05999999999999" y="-158.1" dominant-baseline="ideographic" style="fill:var(--ink)" font-size="10.5" text-anchor="middle"><tspan x="99.05999999999999" dy="10.5">+15 V</tspan></text><text x="237.53999999999996" y="-108.75" dominant-baseline="central" style="fill:var(--ink)" font-size="12.5" text-anchor="start"><tspan x="237.53999999999996" dy="12.5">R7</tspan><tspan x="237.53999999999996" dy="12.5">4.7k</tspan></text><text x="224.94" y="-158.1" dominant-baseline="ideographic" style="fill:var(--ink)" font-size="10.5" text-anchor="middle"><tspan x="224.94" dy="10.5">+15 V</tspan></text><text x="119.57999999999998" y="-72.77499999999999" dominant-baseline="central" style="fill:var(--ink)" font-size="9.774999999999999" text-anchor="middle"><tspan x="119.57999999999998" dy="9.774999999999999">COL1</tspan></text><text x="197.22" y="-72.77499999999999" dominant-baseline="central" style="fill:var(--ink)" font-size="9.774999999999999" text-anchor="middle"><tspan x="197.22" dy="9.774999999999999">COL2</tspan></text><text x="174.6" y="92.85000000000001" dominant-baseline="central" style="fill:var(--ink)" font-size="12.5" text-anchor="start"><tspan x="174.6" dy="12.5">R8</tspan><tspan x="174.6" dy="12.5">10k</tspan></text><text x="192.35999999999999" y="175.65" dominant-baseline="central" style="fill:var(--ink)" font-size="12.5" text-anchor="start"><tspan x="192.35999999999999" dy="12.5">RV1</tspan><tspan x="192.35999999999999" dy="12.5">100k lin</tspan></text><text x="162.0" y="245.1" dominant-baseline="hanging" style="fill:var(--ink)" font-size="10.5" text-anchor="middle"><tspan x="162.0" dy="10.5">−15 V</tspan></text><text x="145.79999999999998" y="105.42500000000001" dominant-baseline="central" style="fill:var(--note)" font-size="9.774999999999999" text-anchor="end"><tspan x="145.79999999999998" dy="9.774999999999999">tail ↓ 0.13–1.5 mA</tspan></text><text x="144.0" y="188.87499999999997" dominant-baseline="central" style="fill:var(--ink)" font-size="10.924999999999999" text-anchor="end"><tspan x="144.0" dy="10.924999999999999">GAIN</tspan></text><text x="144.0" y="208.6" dominant-baseline="central" style="fill:var(--ink)" font-size="9.2" text-anchor="end"><tspan x="144.0" dy="9.2">sets tail current</tspan></text><text x="-41.4600012" y="-124.25" dominant-baseline="central" style="fill:var(--accent)" font-size="12.649999999999999" text-anchor="end"><tspan x="-41.4600012" dy="12.649999999999999">Q3</tspan></text><text x="358.26000120000003" y="-124.25" dominant-baseline="central" style="fill:var(--accent)" font-size="12.649999999999999" text-anchor="start"><tspan x="358.26000120000003" dy="12.649999999999999">Q4</tspan></text><circle cx="162" cy="-213.12" r="4.32" style="stroke:var(--accent);fill:var(--sheet);stroke-width:1.4;" /><circle cx="162" cy="-240.48" r="4.32" style="stroke:var(--accent);fill:var(--sheet);stroke-width:1.4;" /><text x="169.92" y="-242.55" dominant-baseline="central" style="fill:var(--accent)" font-size="10.5" text-anchor="start"><tspan x="169.92" dy="10.5">SW1</tspan><tspan x="169.92" dy="10.5">DIODES ON/OFF</tspan></text><text x="174.6" y="-317.55" dominant-baseline="central" style="fill:var(--accent)" font-size="12.5" text-anchor="start"><tspan x="174.6" dy="12.5">R1</tspan><tspan x="174.6" dy="12.5">15k</tspan></text><text x="162.0" y="-366.90000000000003" dominant-baseline="ideographic" style="fill:var(--accent)" font-size="10.5" text-anchor="middle"><tspan x="162.0" dy="10.5">+15 V</tspan></text><text x="142.2" y="-312.175" dominant-baseline="central" style="fill:var(--accent)" font-size="9.774999999999999" text-anchor="end"><tspan x="142.2" dy="9.774999999999999">↓ 0.93 mA</tspan></text><text x="-12.600000000000005" y="17.249999999999993" dominant-baseline="central" style="fill:var(--ink)" font-size="12.5" text-anchor="end"><tspan x="-12.600000000000005" dy="12.5">R2</tspan><tspan x="-12.600000000000005" dy="12.5">1k</tspan></text><text x="311.40000000000003" y="17.249999999999993" dominant-baseline="central" style="fill:var(--ink)" font-size="12.5" text-anchor="end"><tspan x="311.40000000000003" dy="12.5">R3</tspan><tspan x="311.40000000000003" dy="12.5">1k</tspan></text><text x="-6.480000000000002" y="-19.854999999999997" dominant-baseline="central" style="fill:var(--ink)" font-size="9.774999999999999" text-anchor="end"><tspan x="-6.480000000000002" dy="9.774999999999999">TP1</tspan></text><text x="337.67999999999995" y="-19.854999999999997" dominant-baseline="central" style="fill:var(--ink)" font-size="9.774999999999999" text-anchor="start"><tspan x="337.67999999999995" dy="9.774999999999999">TP2</tspan></text><text x="-46.800000000000004" y="-25.100000000000005" dominant-baseline="ideographic" style="fill:var(--ink)" font-size="12.5" text-anchor="middle"><tspan x="-46.800000000000004" dy="12.5">R4</tspan></text><text x="-46.800000000000004" y="0.09999999999999254" dominant-baseline="hanging" style="fill:var(--ink)" font-size="12.5" text-anchor="middle"><tspan x="-46.800000000000004" dy="12.5">10k</tspan></text><text x="423.0" y="17.25" dominant-baseline="central" style="fill:var(--ink)" font-size="12.5" text-anchor="start"><tspan x="423.0" dy="12.5">R5</tspan><tspan x="423.0" dy="12.5">10k</tspan></text><text x="457.20000000000005" y="-25.1" dominant-baseline="ideographic" style="fill:var(--ink)" font-size="12.5" text-anchor="middle"><tspan x="457.20000000000005" dy="12.5">R9</tspan></text><text x="457.20000000000005" y="0.09999999999999964" dominant-baseline="hanging" style="fill:var(--ink)" font-size="12.5" text-anchor="middle"><tspan x="457.20000000000005" dy="12.5">220k</tspan></text><text x="542.52" y="-27.75" dominant-baseline="central" style="fill:var(--ink)" font-size="12.5" text-anchor="start"><tspan x="542.52" dy="12.5">RV2</tspan><tspan x="542.52" dy="12.5">100k</tspan></text><text x="529.9200000000001" y="43.5" dominant-baseline="hanging" style="fill:var(--ink)" font-size="10.5" text-anchor="middle"><tspan x="529.9200000000001" dy="10.5">−15 V</tspan></text><text x="529.9200000000001" y="-82.5" dominant-baseline="ideographic" style="fill:var(--ink)" font-size="10.5" text-anchor="middle"><tspan x="529.9200000000001" dy="10.5">+15 V</tspan></text><text x="547.9200000000001" y="28.675" dominant-baseline="hanging" style="fill:var(--ink)" font-size="10.924999999999999" text-anchor="start"><tspan x="547.9200000000001" dy="10.924999999999999">OFFSET</tspan><tspan x="547.9200000000001" dy="10.924999999999999">TRIM</tspan></text><text x="-100.8" y="109.02500000000002" dominant-baseline="hanging" style="fill:var(--ink)" font-size="9.774999999999999" text-anchor="start"><tspan x="-100.8" dy="9.774999999999999">Q1–Q4: same type and batch,</tspan><tspan x="-100.8" dy="9.774999999999999">VBE-matched, glued together</tspan></text><text x="804.6" y="-18.2625" dominant-baseline="central" style="fill:var(--ink)" font-size="9.774999999999999" text-anchor="middle"><tspan x="804.6" dy="9.774999999999999">U1A</tspan><tspan x="804.6" dy="9.774999999999999">TL072</tspan></text><text x="687.3288568297002" y="-60.1" dominant-baseline="ideographic" style="fill:var(--ink)" font-size="12.5" text-anchor="middle"><tspan x="687.3288568297002" dy="12.5">R12</tspan><tspan x="687.3288568297002" dy="12.5">100k</tspan></text><text x="687.3288568297002" y="22.599999999999994" dominant-baseline="hanging" style="fill:var(--ink)" font-size="12.5" text-anchor="middle"><tspan x="687.3288568297002" dy="12.5">R10</tspan><tspan x="687.3288568297002" dy="12.5">100k</tspan></text><text x="746.7288568297001" y="46.95" dominant-baseline="central" style="fill:var(--ink)" font-size="12.5" text-anchor="start"><tspan x="746.7288568297001" dy="12.5">R11</tspan><tspan x="746.7288568297001" dy="12.5">100k</tspan></text><text x="815.4" y="-105.2" dominant-baseline="ideographic" style="fill:var(--ink)" font-size="12.5" text-anchor="middle"><tspan x="815.4" dy="12.5">R13</tspan></text><text x="815.4" y="-80.0" dominant-baseline="hanging" style="fill:var(--ink)" font-size="12.5" text-anchor="middle"><tspan x="815.4" dy="12.5">100k</tspan></text><text x="948.1511431702997" y="8.225000000000001" dominant-baseline="central" style="fill:var(--ink)" font-size="9.774999999999999" text-anchor="middle"><tspan x="948.1511431702997" dy="9.774999999999999">= COL2 − COL1</tspan></text><text x="813.6" y="49.62499999999999" dominant-baseline="hanging" style="fill:var(--ink)" font-size="9.774999999999999" text-anchor="start"><tspan x="813.6" dy="9.774999999999999">U1 pin 8 → +15 V</tspan><tspan x="813.6" dy="9.774999999999999">U1 pin 4 → −15 V</tspan><tspan x="813.6" dy="9.774999999999999">100 nF rail decoupling</tspan></text><circle cx="99.06" cy="-50.4" r="3.24" style="stroke:var(--ink);fill:var(--ink);stroke-width:1.4;" /><circle cx="224.94" cy="-50.4" r="3.24" style="stroke:var(--ink);fill:var(--ink);stroke-width:1.4;" /><circle cx="123.18" cy="-50.4" r="4.32" style="stroke:var(--ink);fill:var(--sheet);stroke-width:1.4;" /><circle cx="200.82" cy="-50.4" r="4.32" style="stroke:var(--ink);fill:var(--sheet);stroke-width:1.4;" /><circle cx="162" cy="72" r="3.24" style="stroke:var(--ink);fill:var(--ink);stroke-width:1.4;" /><circle cx="-0" cy="-153" r="3.24" style="stroke:var(--accent);fill:var(--accent);stroke-width:1.4;" /><circle cx="324" cy="-153" r="3.24" style="stroke:var(--accent);fill:var(--accent);stroke-width:1.4;" /><circle cx="162" cy="-194.4" r="3.24" style="stroke:var(--accent);fill:var(--accent);stroke-width:1.4;" /><circle cx="0" cy="-0" r="3.24" style="stroke:var(--ink);fill:var(--ink);stroke-width:1.4;" /><circle cx="324" cy="-0" r="3.24" style="stroke:var(--ink);fill:var(--ink);stroke-width:1.4;" /><circle cx="-93.6" cy="-0" r="4.68" style="stroke:var(--ink);fill:var(--sheet);stroke-width:1.4;" /><text x="-101.88" y="-13.50000000000001" dominant-baseline="central" style="fill:var(--ink)" font-size="13.5" text-anchor="end"><tspan x="-101.88" dy="13.5">IN</tspan></text><circle cx="410.4" cy="-0" r="3.24" style="stroke:var(--ink);fill:var(--ink);stroke-width:1.4;" /><circle cx="734.129" cy="-22.5" r="3.24" style="stroke:var(--ink);fill:var(--ink);stroke-width:1.4;" /><circle cx="734.129" cy="22.5" r="3.24" style="stroke:var(--ink);fill:var(--ink);stroke-width:1.4;" /><circle cx="640.529" cy="-22.5" r="4.32" style="stroke:var(--ink);fill:var(--sheet);stroke-width:1.4;" /><text x="632.6088568297001" y="-34.000000000000014" dominant-baseline="central" style="fill:var(--ink)" font-size="11.5" text-anchor="end"><tspan x="632.6088568297001" dy="11.5">COL1</tspan></text><circle cx="640.529" cy="22.5" r="4.32" style="stroke:var(--ink);fill:var(--sheet);stroke-width:1.4;" /><text x="632.6088568297001" y="10.99999999999999" dominant-baseline="central" style="fill:var(--ink)" font-size="11.5" text-anchor="end"><tspan x="632.6088568297001" dy="11.5">COL2</tspan></text><circle cx="896.671" cy="-0" r="3.24" style="stroke:var(--ink);fill:var(--ink);stroke-width:1.4;" /><circle cx="944.551" cy="-0" r="4.68" style="stroke:var(--ink);fill:var(--sheet);stroke-width:1.4;" /><text x="952.8311431702997" y="-13.5" dominant-baseline="central" style="fill:var(--ink)" font-size="13.5" text-anchor="start"><tspan x="952.8311431702997" dy="13.5">OUT</tspan></text></svg>
+    </div>
+    <div class="sheet-foot">
+      <figcaption class="legend">
+        <span><i class="swatch"></i><b>Predistortion</b> Q3, Q4, R1, SW1</span>
+        <span><b>TP1 − TP2</b> probe base-to-base</span>
+        <span><b>COL1, COL2</b> wire to the output-stage inputs of the same name</span>
+      </figcaption>
+      <div class="titleblock">
+        <div class="tb-title"><span class="tb-k">Title</span><span class="tb-v">Predistorted diff-pair VCA · test rig</span></div>
+        <div><span class="tb-k">Supply</span><span class="tb-v">±15 V</span></div>
+        <div><span class="tb-k">Rev</span><span class="tb-v">A</span></div>
+        <div><span class="tb-k">Date</span><span class="tb-v">2026-11-01</span></div>
+        <div><span class="tb-k">Sheet</span><span class="tb-v">1 / 1</span></div>
+      </div>
+    </div>
+  </figure>
+
+  <div class="ref">
+    <div class="col">
+      <section aria-labelledby="op-h">
+        <h2 id="op-h">Operating point <small>simulated, SW1 closed</small></h2>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Quantity</th><th>Value</th><th>From</th></tr></thead>
+            <tbody>
+              <tr><td>Diode current <var>I</var><sub>D</sub></td><td class="val">0.93 mA</td><td class="how">(15 V − 1.05 V) / R1</td></tr>
+              <tr><td>Tail current <var>I</var><sub>T</sub></td><td class="val">0.13 – 1.47 mA</td><td class="how">≈ 14.8 V / (R8 + RV1)</td></tr>
+              <tr><td>Gain, OUT / IN</td><td class="val">0.06 – 0.70</td><td class="how">≈ (R6 / R4) · (<var>I</var><sub>T</sub> / <var>I</var><sub>D</sub>)</td></tr>
+              <tr><td>Input at hard clip</td><td class="val">±9 V</td><td class="how">R4 · <var>I</var><sub>D</sub></td></tr>
+              <tr><td>THD, 4 Vpp in</td><td class="val">0.6 %</td><td class="how">almost all 2nd harmonic</td></tr>
+              <tr><td>THD, 10 Vpp in</td><td class="val">1.5 %</td><td class="how">same at every gain setting</td></tr>
+              <tr><td>TP1 − TP2, 8 Vpp in</td><td class="val">44 mVpp</td><td class="how">the predistorted signal</td></tr>
+              <tr><td>DC at TP1, TP2</td><td class="val">+0.42 V</td><td class="how">emitters sit near −0.2 V</td></tr>
+              <tr><td>DC at Q3, Q4 collectors</td><td class="val">+1.05 V</td><td class="how">one V<sub>BE</sub> above TP1, TP2</td></tr>
+              <tr><td>DC at COL1, COL2</td><td class="val">11.5 – 14.7 V</td><td class="how">max to min gain</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fine">From a numerical model with matched transistors (β = 200). Real parts land close; mismatch shows up as a DC offset that RV2 removes.</p>
+      </section>
+
+      <section aria-labelledby="bom-h">
+        <h2 id="bom-h">Parts</h2>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Ref</th><th>Part</th><th>Role</th></tr></thead>
+            <tbody>
+              <tr><td class="ref-d">Q1–Q4</td><td class="val">NPN: BC547B, BC550C or 2N3904</td><td class="how">One type, one bag. Pick four with V<sub>BE</sub> within about 1 mV at 0.5 mA and glue them together. Socket Q3 and Q4.</td></tr>
+              <tr class="hl"><td class="ref-d">R1</td><td class="val">15k</td><td class="how">Diode current</td></tr>
+              <tr><td class="ref-d">R2, R3</td><td class="val">1k</td><td class="how">Base-node returns</td></tr>
+              <tr><td class="ref-d">R4</td><td class="val">10k</td><td class="how">Turns the input voltage into a current</td></tr>
+              <tr><td class="ref-d">R5</td><td class="val">10k</td><td class="how">Gives TP2 the same load R4 puts on TP1. Without it the balance is off by about 5 %, more than the trim covers.</td></tr>
+              <tr><td class="ref-d">R6, R7</td><td class="val">4.7k 1 %</td><td class="how">Collector loads</td></tr>
+              <tr><td class="ref-d">R8</td><td class="val">10k</td><td class="how">Caps the tail current at 1.5 mA</td></tr>
+              <tr><td class="ref-d">R9</td><td class="val">220k</td><td class="how">Trim injection, covers about ±3.5 mV of V<sub>BE</sub> mismatch</td></tr>
+              <tr><td class="ref-d">R10–R13</td><td class="val">100k 1 %</td><td class="how">Difference amp. Matching sets how well it rejects the 11 V common-mode level.</td></tr>
+              <tr><td class="ref-d">RV1</td><td class="val">100k linear</td><td class="how">Gain</td></tr>
+              <tr><td class="ref-d">RV2</td><td class="val">100k linear, multi-turn</td><td class="how">Offset trim</td></tr>
+              <tr class="hl"><td class="ref-d">SW1</td><td class="val">SPST toggle</td><td class="how">Diodes in or out</td></tr>
+              <tr><td class="ref-d">U1</td><td class="val">TL072</td><td class="how">U1A is the output stage. U1B is spare for experiment 5.</td></tr>
+              <tr><td class="ref-d">—</td><td class="val">2 × 100 nF</td><td class="how">Rail decoupling close to the transistors</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div class="col">
+      <section aria-labelledby="bring-h">
+        <h2 id="bring-h">Bring-up and trim</h2>
+        <ol class="steps">
+          <li><p>Short IN to ground, close SW1 and turn RV1 to minimum resistance (maximum tail current).</p></li>
+          <li><p>Check the DC levels against the table. If COL1 and COL2 differ by more than about 0.3 V, the pair is mismatched by more than 2 mV: swap parts before trimming.</p></li>
+          <li><p>Adjust RV2 until OUT reads 0 V DC.</p></li>
+          <li><p>Turn RV1 through its range. OUT should stay within a few millivolts of zero. Every mismatch in this circuit is a current-ratio error that scales with the tail current, so one trim holds across the whole gain range. A slow drift means the four transistors haven't settled to the same temperature.</p></li>
+          <li><p>Feed a 4 Vpp, 1 kHz sine. At maximum gain OUT should be about 2.8 Vpp.</p></li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="exp-h">
+        <h2 id="exp-h">Experiments</h2>
+        <ol class="exps">
+          <li><div>
+            <p><span class="exp-name">Diodes in and out.</span> Keep the 4 Vpp input and open SW1. Q3 and Q4 switch off and the bases see IN ÷ 11 directly. Turn your monitor down first.</p>
+            <p class="expect">Small-signal gain jumps to about 10, and the 4 Vpp sine becomes a squashed square, about 26 % THD. The bare pair is clean only below about 0.3 Vpp. RV2 shifts its balance, so re-centre by eye while SW1 is open and re-trim after closing it.</p>
+          </div></li>
+          <li><div>
+            <p><span class="exp-name">See the predistortion.</span> Probe TP1 and TP2 on two channels and display TP1 − TP2.</p>
+            <p class="expect">About 44 mVpp at 8 Vpp in, with stretched, pointed peaks: the inverse of the pair's tanh curve. OUT stays a clean sine.</p>
+          </div></li>
+          <li><div>
+            <p><span class="exp-name">Gain law.</span> Halve the tail current with RV1.</p>
+            <p class="expect">The output halves and the waveshape doesn't change. Gain is proportional to <var>I</var><sub>T</sub>, and distortion is the same at every gain setting.</p>
+          </div></li>
+          <li><div>
+            <p><span class="exp-name">Temperature.</span> Before you glue the four together, hold a fingertip on Q1 alone.</p>
+            <p class="expect">OUT drifts as Q1's V<sub>BE</sub> falls by about 2 mV per °C. This is why the four are glued together.</p>
+          </div></li>
+          <li><div>
+            <p><span class="exp-name">Remove the 2nd harmonic.</span> Lift R5 from ground and drive it from U1B wired as a unity-gain inverter (100k in, 100k feedback) fed from IN.</p>
+            <p class="expect">The base nodes stop moving together, so R1's current stays constant. The 2nd harmonic falls from about 1.2 % to under 0.01 % at 8 Vpp, and gain doubles.</p>
+          </div></li>
+          <li><div>
+            <p><span class="exp-name">Colour swaps.</span> Replace Q3 and Q4 with 1N4148s, anodes to the top node. Separately, raise R1 to 22k–47k.</p>
+            <p class="expect">The 1N4148s give a gain of about 1.2 and a soft compression, about 3 % THD at 8 Vpp. A larger R1 lowers <var>I</var><sub>D</sub>: more gain and an earlier clip, so R1 works like a drive control.</p>
+          </div></li>
+        </ol>
+      </section>
+    </div>
+  </div>
+</div>
+
+</body></html>
