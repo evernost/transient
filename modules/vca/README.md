@@ -40,7 +40,7 @@ Block diagram: TODO!
 | Control | Type | Description |
 |--------|------|-------------|
 | Cutoff | Potentiometer | Manual cutoff frequency |
-| Resonance | Potentiometer | Feedback amount |
+
 
 ---
 
@@ -60,12 +60,27 @@ Section is TODO.
 
 ## Files
 
-| File | Description |
-|-----|-------------|
-| `schematic.pdf` | Electrical schematic |
-| `pcb.kicad_pcb` | PCB layout |
-| `firmware/` | MCU code (if applicable) |
-| `simulation/` | SPICE or other simulations |
+| File                      | Description                       |
+|---------------------------|-----------------------------------|
+| `vca_rev_A.pdf`           | Electrical schematic (PDF export)|
+| `vca_amp_rev_A.kicad_sch` | Schematic (KiCad 10.0.7)|
+| `vca_amp_rev_A.kicad_pcb` | PCB layout (KiCad 10.0.7)|
+| `sim/XXX.asc`             | SPICE simulation |
+
+---
+
+## Tools
+Designed with KiCAD 10.0.7
+
+### KiCAD Grid dimensions
+
+| Name   | Size    | Description        |
+|--------|---------|--------------------|
+| Grid 1 | 0.25 mm | PCB outline        |
+| Grid 2 | 50 mil  | Parts placement    |
+| Grid 3 | 50 mil  | Routing            |
+
+Track size: 500µm
 
 ---
 
@@ -86,7 +101,7 @@ No calibration required.
 | Revision | Date | Notes |
 |--------|------|-------|
 | Rev A | YYYY-MM-DD | Initial prototype |
-| Rev B | YYYY-MM-DD | Fixed grounding issue |
+
 
 ---
 
@@ -99,6 +114,6 @@ Links to other submodules in the repository:
 ---
 
 ## References
-- Elektor Voiced/Devoiced detector, April 1981 p.32-33
+
 
 

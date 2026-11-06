@@ -87,6 +87,8 @@ Designed with KiCAD 10.0.7
 | Grid 2 | 50 mil  | Parts placement    |
 | Grid 3 | 50 mil  | Routing            |
 
+Track size: 500µm
+
 ---
 
 
