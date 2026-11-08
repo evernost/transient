@@ -76,7 +76,7 @@ Designed with KiCAD 10.0.7
 
 | Name   | Size    | Description        |
 |--------|---------|--------------------|
-| Grid 1 | 0.25 mm | PCB outline        |
+| Grid 1 | 0.5 mm  | PCB outline        |
 | Grid 2 | 50 mil  | Parts placement    |
 | Grid 3 | 50 mil  | Routing            |
 
