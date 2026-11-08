@@ -11,8 +11,11 @@ Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
 
 ## Capacitor
 
-### Through Hole Capacitor
+### Through Hole
 Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm
+
+### Surface Mount
+Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder
 
 ### Trimpot
 R_Potentiometer_US -> Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical
@@ -37,6 +40,9 @@ LED_THT:LED_D3.0mm
 
 ### Pin header
 Connector_Generic -> Conn_01x02 -> Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
+
+### Push Button
+Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxG
 
 ### Test point
 Connector -> TestPoint -> TestPoint:TestPoint_Pad_D2.0mm
