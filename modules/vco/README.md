@@ -71,12 +71,12 @@ Examples:
 
 ## Files
 
-| File | Description |
-|-----|-------------|
-| `vco_rev1.pdf` | Electrical schematic (PDF export)|
-| `vco_rev1.kicad_pcb` | Schematic (KiCad 9.0.6)|
-| `vco_rev1.kicad_pcb` | PCB layout (KiCad 9.0.6)|
-| `firmware/` | Embedded code for the VCO (STM32CubeIDE 2.1.1 - 2026) |
+| File                  | Description                       |
+|-----------------------|-----------------------------------|
+| `vco_rev_A.pdf`       | Electrical schematic (PDF export) |
+| `vco_rev_A.kicad_sch` | Schematic (KiCad 10.0.8)          |
+| `vco_rev_A.kicad_pcb` | PCB layout (KiCad 10.0.8)|
+| `firmware/`           | Embedded code for the VCO (STM32CubeIDE 2.1.1 - 2026) |
 
 ---
 
@@ -94,9 +94,10 @@ Examples:
 
 ## Revision History
 
-| Revision | Date | Notes |
-|--------|------|-------|
-| Rev A | 30 January 2026 | Initial prototype |
+| Revision | Date             | Notes                           |
+|----------|------------------|---------------------------------|
+| Rev A    | 10 November 2026 | Initial prototype               |
+| Rev B    | TBA              | Added MCU for the tune control  |
 
 
 ---

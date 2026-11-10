@@ -42,13 +42,14 @@ LED_THT:LED_D3.0mm
 Connector_Generic -> Conn_01x02 -> Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
 
 ### Push Button
-Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxG
+Switch -> SW_Push -> Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC6xxG
+
 
 ### Test point
 Connector -> TestPoint -> TestPoint:TestPoint_Pad_D2.0mm
 
-### Mount holes
-MountingHole:MountingHole_3.2mm_M3_Pad_Via
+### Mount holes (grounded)
+Mechanical -> MountingHole_Pad -> MountingHole:MountingHole_3.2mm_M3_Pad_Via
 
 
 ### Project paths
