@@ -53,7 +53,7 @@ Block diagram: TODO!
 
 ## Electrical Characteristics
 
-- **Supply voltage:** ±12V
+- **Supply voltage:** +12V
 - **Current consumption:** TBD mA
 - **Signal levels:** TBD
 
@@ -87,7 +87,7 @@ Designed with KiCAD 10.0.7
 | Grid 2 | 25 mil  | Parts placement    |
 | Grid 3 | 25 mil  | Routing            |
 
-**Rationale**: grid 2/3 were initially 50 mil, but turned out to be too coarse for precise tracks.
+**Rationale**: Grid 2 and Grid 3 were initially 50 mil, but turned out to be too coarse for precise tracks.
 
 
 ### KiCAD Track settings

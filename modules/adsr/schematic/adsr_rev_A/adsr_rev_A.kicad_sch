@@ -11,6 +11,129 @@
 		(company "QuBi")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016)
@@ -1692,6 +1815,12 @@
 		(uuid "0e919a62-d93a-44f9-877a-811a63820dd6")
 	)
 	(junction
+		(at 63.5 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41d84b5b-cf70-475c-b5ba-e8e560a62885")
+	)
+	(junction
 		(at 154.94 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1702,6 +1831,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c060c7c-5a62-40a3-85af-eff34fb54122")
+	)
+	(junction
+		(at 63.5 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "706fa111-5bb0-4a4c-974b-c78ca7e89b02")
 	)
 	(junction
 		(at 132.08 119.38)
@@ -1744,6 +1879,16 @@
 			(type default)
 		)
 		(uuid "11c92932-62f2-4ae7-bab1-3f476b013d63")
+	)
+	(wire
+		(pts
+			(xy 63.5 68.58) (xy 68.58 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b15d30a-d21a-4474-8d05-4ae2bda6f792")
 	)
 	(wire
 		(pts
@@ -1797,6 +1942,26 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 68.58) (xy 63.5 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "401ae9dd-0194-42e5-beae-9c308bc88329")
+	)
+	(wire
+		(pts
+			(xy 58.42 59.69) (xy 63.5 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44cc2d09-c02c-438c-83ef-c3d46b926f09")
+	)
+	(wire
+		(pts
 			(xy 143.51 119.38) (xy 144.78 119.38)
 		)
 		(stroke
@@ -1814,6 +1979,16 @@
 			(type default)
 		)
 		(uuid "4ce05b53-b70a-4512-88fa-c15c9a9e6c81")
+	)
+	(wire
+		(pts
+			(xy 63.5 68.58) (xy 63.5 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f696334-8c60-459b-b23b-7b4d2dee9ffc")
 	)
 	(wire
 		(pts
@@ -1877,6 +2052,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 59.69) (xy 68.58 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f1c1516-ceb9-4fa5-b88d-e6e21e041ebc")
+	)
+	(wire
+		(pts
 			(xy 119.38 135.89) (xy 119.38 144.78)
 		)
 		(stroke
@@ -1937,6 +2122,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 68.58) (xy 63.5 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "911bbb26-83ee-4d12-b7c1-cb30f0e46c30")
+	)
+	(wire
+		(pts
 			(xy 154.94 119.38) (xy 154.94 125.73)
 		)
 		(stroke
@@ -1944,6 +2139,16 @@
 			(type default)
 		)
 		(uuid "913aeb29-82dc-4829-81a5-3c788a6df134")
+	)
+	(wire
+		(pts
+			(xy 68.58 68.58) (xy 68.58 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92483bb0-f460-4be4-9026-696b1bf3167e")
 	)
 	(wire
 		(pts
@@ -1984,6 +2189,26 @@
 			(type default)
 		)
 		(uuid "bc39d3c5-0eef-4aeb-b571-197e41781fdc")
+	)
+	(wire
+		(pts
+			(xy 68.58 59.69) (xy 68.58 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9c7c3e6-71c6-4dd3-94ab-51dbc0d7a644")
+	)
+	(wire
+		(pts
+			(xy 58.42 67.31) (xy 58.42 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9d3bef2-4a1c-4f08-a344-4a5a101d13e7")
 	)
 	(wire
 		(pts
@@ -2054,6 +2279,16 @@
 			(type default)
 		)
 		(uuid "ef790f6c-0e74-4203-b31d-e187fd7bbbaa")
+	)
+	(wire
+		(pts
+			(xy 58.42 58.42) (xy 58.42 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa72cc06-f998-4cc7-95c8-f4545572428b")
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -2137,7 +2372,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 77.47 49.53 0)
+		(at 68.58 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2148,7 +2383,7 @@
 		(fields_autoplaced yes)
 		(uuid "096f3259-b2de-426d-a850-4ca1bc3071e8")
 		(property "Reference" "H2"
-			(at 80.01 46.9899 0)
+			(at 71.12 53.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2159,7 +2394,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 80.01 49.5299 0)
+			(at 71.12 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2170,7 +2405,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 77.47 49.53 0)
+			(at 68.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2181,7 +2416,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 49.53 0)
+			(at 68.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2192,7 +2427,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 77.47 49.53 0)
+			(at 68.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2371,6 +2606,84 @@
 			(project "adsr_rev_A"
 				(path "/a2cdb47c-4988-4c77-8cb7-18c2277c60b9"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c41065f-97b1-45a2-a6b1-7e169d366fd1")
+		(property "Reference" "#PWR09"
+			(at 63.5 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "96376f2d-619e-40a8-9bbb-d410e35b85bf")
+		)
+		(instances
+			(project "adsr_rev_A"
+				(path "/a2cdb47c-4988-4c77-8cb7-18c2277c60b9"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -2783,7 +3096,8 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 52.07 49.53 0)
+		(at 58.42 55.88 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2791,10 +3105,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "66dd6c79-6978-4e1c-a47d-986713e01040")
 		(property "Reference" "H1"
-			(at 54.61 46.9899 0)
+			(at 55.88 53.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2805,7 +3118,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 54.61 49.5299 0)
+			(at 55.88 55.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2816,7 +3129,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 52.07 49.53 0)
+			(at 58.42 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2827,7 +3140,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 49.53 0)
+			(at 58.42 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2838,7 +3151,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 52.07 49.53 0)
+			(at 58.42 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3210,7 +3523,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 77.47 60.96 0)
+		(at 68.58 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3221,7 +3534,7 @@
 		(fields_autoplaced yes)
 		(uuid "aca3dd11-c0f6-4a75-bc0f-44466e80b80a")
 		(property "Reference" "H3"
-			(at 80.01 58.4199 0)
+			(at 71.12 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3232,7 +3545,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 80.01 60.9599 0)
+			(at 71.12 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3243,7 +3556,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 77.47 60.96 0)
+			(at 68.58 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3254,7 +3567,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 60.96 0)
+			(at 68.58 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3265,7 +3578,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 77.47 60.96 0)
+			(at 68.58 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3637,7 +3950,8 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 52.07 59.69 0)
+		(at 58.42 64.77 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3645,10 +3959,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d9ed6371-068e-4348-9c5a-70a09dfc0d83")
 		(property "Reference" "H4"
-			(at 54.61 57.1499 0)
+			(at 55.88 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3659,7 +3972,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 54.61 59.6899 0)
+			(at 55.88 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3670,7 +3983,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 52.07 59.69 0)
+			(at 58.42 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3681,7 +3994,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 59.69 0)
+			(at 58.42 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3692,7 +4005,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 52.07 59.69 0)
+			(at 58.42 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3901,6 +4214,85 @@
 			(project "adsr_rev_A"
 				(path "/a2cdb47c-4988-4c77-8cb7-18c2277c60b9"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 109.22 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3e660bf-807f-459b-b361-cde0a28e3886")
+		(property "Reference" "TP1"
+			(at 111.76 50.0379 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 111.76 52.5779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 114.3 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 109.22 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6b8bbbac-d00f-4091-bbfa-4263dd6ea991")
+		)
+		(instances
+			(project "adsr_rev_A"
+				(path "/a2cdb47c-4988-4c77-8cb7-18c2277c60b9"
+					(reference "TP1")
 					(unit 1)
 				)
 			)

@@ -72,15 +72,23 @@ Section is TODO.
 ## Tools
 Designed with KiCAD 10.0.7
 
-### KiCAD Grid dimensions
+### KiCAD Grid Settings
 
 | Name   | Size    | Description        |
 |--------|---------|--------------------|
-| Grid 1 | 0.5 mm  | PCB outline        |
-| Grid 2 | 50 mil  | Parts placement    |
-| Grid 3 | 50 mil  | Routing            |
+| Grid 1 | 0.25 mm | PCB outline        |
+| Grid 2 | 25 mil  | Parts placement    |
+| Grid 3 | 25 mil  | Routing            |
 
-Track size: 500µm
+**Rationale**: Grid 2 and Grid 3 were initially 50 mil, but turned out to be too coarse for precise tracks.
+
+
+### KiCAD Track settings
+
+| Name    | Size   | Description                |
+|---------|--------|----------------------------|
+| Class 1 | 500 um | Regular traces (signal)    |
+| Class 2 | 800 um | Power traces               |
 
 ---
 
