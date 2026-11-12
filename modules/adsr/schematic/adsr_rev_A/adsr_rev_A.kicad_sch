@@ -1821,6 +1821,12 @@
 		(uuid "41d84b5b-cf70-475c-b5ba-e8e560a62885")
 	)
 	(junction
+		(at 262.89 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5757af60-a589-4823-8d57-0466dc784f83")
+	)
+	(junction
 		(at 154.94 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1849,6 +1855,26 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ff2fba0b-9c68-4995-b345-539e9174bf8e")
+	)
+	(wire
+		(pts
+			(xy 285.75 124.46) (xy 285.75 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "009bb397-0f67-4e2e-8a3e-b21f70dee4d8")
+	)
+	(wire
+		(pts
+			(xy 278.13 119.38) (xy 262.89 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "062ae577-7154-4b6b-a9c1-72e42751ca36")
 	)
 	(wire
 		(pts
@@ -1942,6 +1968,26 @@
 	)
 	(wire
 		(pts
+			(xy 262.89 114.3) (xy 262.89 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ad51fe8-2998-41e0-81cd-6fbbe2f3c17f")
+	)
+	(wire
+		(pts
+			(xy 298.45 123.19) (xy 298.45 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b505c56-ecfb-4eec-8f4f-4ed945773d52")
+	)
+	(wire
+		(pts
 			(xy 58.42 68.58) (xy 63.5 68.58)
 		)
 		(stroke
@@ -1959,6 +2005,16 @@
 			(type default)
 		)
 		(uuid "44cc2d09-c02c-438c-83ef-c3d46b926f09")
+	)
+	(wire
+		(pts
+			(xy 298.45 111.76) (xy 285.75 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "464abbf8-32ff-4858-8111-13044d340619")
 	)
 	(wire
 		(pts
@@ -2072,6 +2128,16 @@
 	)
 	(wire
 		(pts
+			(xy 285.75 128.27) (xy 290.83 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7002abb0-181f-4222-8ba7-5be41b66fc0f")
+	)
+	(wire
+		(pts
 			(xy 128.27 130.81) (xy 132.08 130.81)
 		)
 		(stroke
@@ -2099,6 +2165,16 @@
 			(type default)
 		)
 		(uuid "8956f908-c1ce-4215-b48b-c7b9679691cd")
+	)
+	(wire
+		(pts
+			(xy 262.89 119.38) (xy 262.89 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8990bf1b-f7ec-49c8-a09e-e685e3c25fdb")
 	)
 	(wire
 		(pts
@@ -2169,6 +2245,16 @@
 			(type default)
 		)
 		(uuid "9c37d915-3e4b-4ac5-bc40-a5526e412e7b")
+	)
+	(wire
+		(pts
+			(xy 285.75 111.76) (xy 285.75 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3246a21-e9c9-4e49-b5b3-d050ad0e5b77")
 	)
 	(wire
 		(pts
@@ -2289,6 +2375,167 @@
 			(type default)
 		)
 		(uuid "fa72cc06-f998-4cc7-95c8-f4545572428b")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 262.89 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "017d01e0-ffe4-407b-8503-fe71be2c3d6c")
+		(property "Reference" "C2"
+			(at 266.7 129.5399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5.6µF"
+			(at 266.7 132.0799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Rect_L13.0mm_W6.0mm_P10.00mm_FKS3_FKP3_MKS4"
+			(at 263.8552 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 262.89 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83c46cd3-8197-4f42-bf3a-80eca15d2958")
+		)
+		(pin "2"
+			(uuid "bb4b6b94-9451-47c0-878c-4280bfd4815f")
+		)
+		(instances
+			(project "adsr_rev_A"
+				(path "/a2cdb47c-4988-4c77-8cb7-18c2277c60b9"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 262.89 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08af1f45-ac5f-4192-9e58-0e095b4b23f7")
+		(property "Reference" "TP2"
+			(at 265.43 109.7279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 265.43 112.2679 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 267.97 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 262.89 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "85f3c728-3449-4e17-9141-b8db4edc141c")
+		)
+		(instances
+			(project "adsr_rev_A"
+				(path "/a2cdb47c-4988-4c77-8cb7-18c2277c60b9"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:R_US")
@@ -3334,6 +3581,116 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BC548")
+		(at 283.21 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8afa743f-75f5-410f-a087-16e5d23d07ea")
+		(property "Reference" "Q4"
+			(at 288.29 118.1099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC548"
+			(at 288.29 120.6499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
+			(at 288.29 121.285 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
+			(at 283.21 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"
+			(at 283.21 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 283.21 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 283.21 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a38c255f-bb07-43d3-babf-50ecff7d3eaf")
+		)
+		(pin "3"
+			(uuid "c012f9fe-2c88-4c23-accc-44e7b9fd6cf5")
+		)
+		(pin "1"
+			(uuid "70af52d0-af84-4a6a-b195-86f0eec5aaac")
+		)
+		(instances
+			(project "adsr_rev_A"
+				(path "/a2cdb47c-4988-4c77-8cb7-18c2277c60b9"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 72.39 102.87 0)
 		(unit 1)
@@ -3595,6 +3952,116 @@
 			(project "adsr_rev_A"
 				(path "/a2cdb47c-4988-4c77-8cb7-18c2277c60b9"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC558")
+		(at 318.77 114.1086 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "adfb6f78-3b98-4e75-bd8c-874500234456")
+		(property "Reference" "Q6"
+			(at 323.85 112.8385 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC558"
+			(at 323.85 115.3785 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
+			(at 323.85 116.0136 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(at 318.77 114.1086 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "0.1A Ic, 30V Vce, PNP Small Signal Transistor, TO-92"
+			(at 318.77 114.1086 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 318.77 114.1086 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 318.77 114.1086 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7b17e4f0-7cd3-4b65-b4be-9242c923e3ec")
+		)
+		(pin "3"
+			(uuid "6bd851ff-8fa6-4d36-bc4a-49b33b342c37")
+		)
+		(pin "1"
+			(uuid "fb710930-f5f5-4967-9f48-96c8a769e23c")
+		)
+		(instances
+			(project "adsr_rev_A"
+				(path "/a2cdb47c-4988-4c77-8cb7-18c2277c60b9"
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -4293,6 +4760,116 @@
 			(project "adsr_rev_A"
 				(path "/a2cdb47c-4988-4c77-8cb7-18c2277c60b9"
 					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC548")
+		(at 295.91 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6542248-bb48-44d8-a342-c8460838e300")
+		(property "Reference" "Q5"
+			(at 300.99 126.9999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC548"
+			(at 300.99 129.5399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92L_Inline_Wide"
+			(at 300.99 130.175 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
+			(at 295.91 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"
+			(at 295.91 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 295.91 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 295.91 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ce976599-11fa-4507-a5c9-74c2cc4c0110")
+		)
+		(pin "3"
+			(uuid "1a425683-22d3-4277-aa59-9e9e9abd0341")
+		)
+		(pin "1"
+			(uuid "92b6db52-f012-4a96-90f3-4370c7e02394")
+		)
+		(instances
+			(project "adsr_rev_A"
+				(path "/a2cdb47c-4988-4c77-8cb7-18c2277c60b9"
+					(reference "Q5")
 					(unit 1)
 				)
 			)
