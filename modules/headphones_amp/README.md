@@ -67,12 +67,12 @@ Section is TODO.
 
 ## Files
 
-| File | Description |
-|-----|-------------|
-| `headphones_amp_rev_A.pdf` | Electrical schematic (PDF export)|
-| `headphones_amp_rev_A.kicad_sch` | Schematic (KiCad 10.0.7)|
-| `headphones_amp_rev_A.kicad_pcb` | PCB layout (KiCad 10.0.7)|
-| `sim/XXX.asc` | SPICE simulation of the final stage |
+| File                              | Description                           |
+|-----------------------------------|---------------------------------------|
+| `headphones_amp_rev_A.pdf`        | Electrical schematic (PDF export)     |
+| `headphones_amp_rev_A.kicad_sch`  | Schematic (KiCad 10.0.8)              |
+| `headphones_amp_rev_A.kicad_pcb`  | PCB layout (KiCad 10.0.8)             |
+| `sim/XXX.asc`                     | SPICE simulation of the final stage   |
 
 ---
 
