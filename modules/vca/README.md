@@ -60,17 +60,17 @@ Section is TODO.
 
 ## Files
 
-| File                      | Description                       |
-|---------------------------|-----------------------------------|
-| `vca_rev_A.pdf`           | Electrical schematic (PDF export)|
-| `vca_amp_rev_A.kicad_sch` | Schematic (KiCad 10.0.7)|
-| `vca_amp_rev_A.kicad_pcb` | PCB layout (KiCad 10.0.7)|
-| `sim/XXX.asc`             | SPICE simulation |
+| File                  | Description                       |
+|-----------------------|-----------------------------------|
+| `vca_rev_A.pdf`       | Electrical schematic (PDF export) |
+| `vca_rev_A.kicad_sch` | Schematic (KiCad 10.0.8)          |
+| `vca_rev_A.kicad_pcb` | PCB layout (KiCad 10.0.8)         |
+| `sim/XXX.asc`         | SPICE simulation                  |
 
 ---
 
 ## Tools
-Designed with KiCAD 10.0.7
+Designed with KiCAD 10.0.8
 
 ### KiCAD Grid Settings
 

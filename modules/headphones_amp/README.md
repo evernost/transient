@@ -77,7 +77,7 @@ Section is TODO.
 ---
 
 ## Tools
-Designed with KiCAD 10.0.7
+Designed with KiCAD 10.0.8
 
 ### KiCAD Grid Settings
 

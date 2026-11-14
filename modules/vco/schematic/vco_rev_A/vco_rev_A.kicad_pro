@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -206,7 +212,11 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.5,
+        0.8
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -233,7 +243,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -490,7 +505,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "ProjectLib_Transient"
+    ]
   },
   "meta": {
     "filename": "vco_rev_A.kicad_pro",
@@ -665,7 +682,7 @@
         "uuid": "06df6441-3706-4d81-809c-6908b7c5817b"
       }
     ],
-    "used_designators": "#PWR2-14,C2-5,H1-4,J1-2,Q2-3,R3-4,RV2,TP1,U2",
+    "used_designators": "#PWR2-23,C2-9,D1,H1-4,J1-3,Q2-4,R3-11,RV2,TP1-5,U1-5",
     "variants": []
   },
   "sheets": [
