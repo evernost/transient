@@ -1,0 +1,139 @@
+# ADSR - Contour Generator
+
+Contour Generator: Attack, Decay, Sustain, Release.
+
+---
+
+## Overview
+
+- **Type:** Envelope Generator
+- **Domain:** Analog
+- **Status:** Work in progress
+
+Block diagram: TODO!
+
+---
+
+## Features
+- End of ADSR status (required for the voice assignment in polyphony)
+
+
+
+
+---
+
+## Interfaces
+
+### Inputs
+| Name | Type | Range | Description |
+|-----|------|-------|-------------|
+| IN | Audio | ±1V | Input signal |
+| AMP_CV | Analog | 0–5 V | Volume control |
+
+### Outputs
+| Name | Type | Description |
+|------|------|-------------|
+| OUT | Audio | Filtered signal |
+
+---
+
+## Controls
+
+| Control | Type | Description |
+|--------|------|-------------|
+| Cutoff | Potentiometer | Manual cutoff frequency |
+| Resonance | Potentiometer | Feedback amount |
+
+---
+
+## Electrical Characteristics
+
+- **Supply voltage:** +/-12V
+- **Current consumption:** TBD mA
+- **Signal levels:** TBD
+
+---
+
+## Implementation Notes
+Section is TODO.
+
+
+---
+
+## Files
+
+| File                          | Description                           |
+|-------------------------------|---------------------------------------|
+| `adsr_rev_A.pdf`              | Electrical schematic (PDF export)     |
+| `adsr_rev_A.kicad_sch`        | Schematic (KiCad 10.0.8)              |
+| `adsr_rev_A.kicad_pcb`        | PCB layout (KiCad 10.0.8)             |
+| `sim/adsr_output_stage.asc`   | SPICE simulation of the output buffer |
+
+---
+
+## Tools
+Designed with KiCAD 10.0.8
+
+### KiCAD Grid Settings
+
+| Name   | Size    | Description        |
+|--------|---------|--------------------|
+| Grid 1 | 0.25 mm | PCB outline        |
+| Grid 2 | 25 mil  | Parts placement    |
+| Grid 3 | 25 mil  | Routing            |
+
+**Rationale**: Grid 2 and Grid 3 were initially 50 mil, but turned out to be too coarse for precise tracks.
+
+
+### KiCAD Track settings
+
+| Name    | Size   | Description                |
+|---------|--------|----------------------------|
+| Class 1 | 500 um | Regular tracks (signal)    |
+| Class 2 | 800 um | Power tracks               |
+
+---
+
+
+
+## Calibration / Tuning
+- Tune the bias voltage on $Q_5$ and $Q_{11}$
+- Tune the quiescent current 
+- Tune the overload threshold
+
+
+---
+
+## Known Issues / TODO
+
+- [ ] Make the bias point higher: 1.6V might clip too early
+- [ ] Add a reverse polarity protection
+
+
+---
+
+## Revision History
+
+| Revision  | Date          | Notes             |
+|-----------|---------------|-------------------|
+| Rev A     | YYYY-MM-DD    | First prototype   |
+| Rev B     | YYYY-MM-DD    |                   |
+
+---
+
+## Related Modules
+
+Links to other submodules in the repository:
+- `../vca/`
+- `../ring_modulator/`
+
+---
+
+## References
+- ARP Odyssey Schematic
+
+
+
+
+
+
