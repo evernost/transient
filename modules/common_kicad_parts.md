@@ -13,6 +13,7 @@ Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
 
 ### Through Hole
 Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm
+Capacitor_THT:CP_Radial_D10.0mm_P5.00mm
 
 ### Surface Mount
 Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder

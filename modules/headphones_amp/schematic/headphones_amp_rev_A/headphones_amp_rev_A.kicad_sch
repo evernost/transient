@@ -4441,6 +4441,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 142.24) (xy 257.81 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fbf9e7c-21e6-4a93-993e-f0a982822181")
+	)
+	(wire
+		(pts
 			(xy 173.99 52.07) (xy 173.99 50.8)
 		)
 		(stroke
@@ -4641,13 +4651,13 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 142.24) (xy 270.51 142.24)
+			(xy 255.27 106.68) (xy 255.27 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "231c914a-0a64-43e3-a659-4d28baadf89e")
+		(uuid "23693bdf-5f87-4ced-9f6c-e8b09cc89299")
 	)
 	(wire
 		(pts
@@ -5071,6 +5081,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 142.24) (xy 270.51 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4645684f-dbd5-4417-9d32-64cb76505c8b")
+	)
+	(wire
+		(pts
 			(xy 119.38 99.06) (xy 119.38 100.33)
 		)
 		(stroke
@@ -5248,16 +5268,6 @@
 			(type default)
 		)
 		(uuid "546e727f-b169-475f-a26b-1507bcfb3bfb")
-	)
-	(wire
-		(pts
-			(xy 270.51 209.55) (xy 260.35 209.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54b235e0-ddef-4a7d-bf74-3f1fd98e8d08")
 	)
 	(wire
 		(pts
@@ -5461,6 +5471,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 207.01) (xy 255.27 234.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6649a2e4-4c5e-4dc3-9a0e-38fe85cbf7e9")
+	)
+	(wire
+		(pts
 			(xy 177.8 207.01) (xy 185.42 207.01)
 		)
 		(stroke
@@ -5478,6 +5498,16 @@
 			(type default)
 		)
 		(uuid "682d7a8f-065e-4a89-b888-bfa2b737c27d")
+	)
+	(wire
+		(pts
+			(xy 257.81 207.01) (xy 257.81 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6831b534-1b8c-4a47-aa37-c4055b13fe9b")
 	)
 	(wire
 		(pts
@@ -5801,7 +5831,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 106.68) (xy 260.35 106.68)
+			(xy 212.09 106.68) (xy 255.27 106.68)
 		)
 		(stroke
 			(width 0)
@@ -6531,6 +6561,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 209.55) (xy 270.51 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb82cccf-d912-4c56-ba09-abc9d488093d")
+	)
+	(wire
+		(pts
 			(xy 106.68 238.76) (xy 106.68 243.84)
 		)
 		(stroke
@@ -6541,13 +6581,13 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 234.95) (xy 260.35 234.95)
+			(xy 255.27 234.95) (xy 223.52 234.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd1733d8-9a2c-47ca-ad57-425497ab0271")
+		(uuid "cdbd06d0-7dce-4121-8e39-a41817106141")
 	)
 	(wire
 		(pts
@@ -6981,16 +7021,6 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 209.55) (xy 260.35 234.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0cf00e0-fbbf-451c-81b5-eac5c327fb83")
-	)
-	(wire
-		(pts
 			(xy 372.11 24.13) (xy 389.89 24.13)
 		)
 		(stroke
@@ -7078,16 +7108,6 @@
 			(type default)
 		)
 		(uuid "f6334b9b-8c8d-4866-9ff0-4aa299d189b8")
-	)
-	(wire
-		(pts
-			(xy 260.35 106.68) (xy 260.35 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f65d226b-0b9b-44e7-936a-4f6b79438a00")
 	)
 	(wire
 		(pts
@@ -9959,6 +9979,89 @@
 			(project "headphones_amp_rev_A"
 				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 257.81 149.86 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a46e3df-1be7-41ba-aae4-6b618e67eac9")
+		(property "Reference" "J10"
+			(at 260.35 149.8599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 255.2701 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 257.81 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 257.81 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5f882f38-d48e-466b-a9e1-1679535a5e64")
+		)
+		(pin "2"
+			(uuid "c4d2c395-9739-481d-b60f-db66c702df72")
+		)
+		(instances
+			(project "headphones_amp_rev_A"
+				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -14562,6 +14665,89 @@
 			(project "headphones_amp_rev_A"
 				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 255.27 201.93 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f929b66-45c8-4987-b803-f63f1dd48574")
+		(property "Reference" "J11"
+			(at 260.35 201.9299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 257.8099 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 255.27 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 255.27 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73fb3eba-ab9d-43d3-a0e4-138936e68b35")
+		)
+		(pin "2"
+			(uuid "d7e88fe3-52aa-48d4-87ab-a9c4659ef4f3")
+		)
+		(instances
+			(project "headphones_amp_rev_A"
+				(path "/d2365754-669a-45b0-8c88-535b259ec7b7"
+					(reference "J11")
 					(unit 1)
 				)
 			)
